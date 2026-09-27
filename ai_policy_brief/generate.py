@@ -150,6 +150,7 @@ def write_index() -> None:
 <body>
   <h1>{config.BRAND_NAME}</h1>
   <p>AI + policy news and non-technical AI jobs, twice a week.</p>
+  <p><a href="jobs.html">See all open AI policy, communications, legal &amp; consulting roles &rarr;</a></p>
 {list_html}
 </body>
 </html>

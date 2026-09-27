@@ -25,7 +25,7 @@ jobs:
           git config user.email "actions@github.com"
           # History is committed on purpose: the week-over-week comparison
           # needs yesterday's snapshot, and a fresh checkout has none.
-          git add data/ai-feed.xml data/ai_job_history.json data/ai_hiring_pulse.json
+          git add data/ai-feed.xml data/ai_job_history.json data/ai_hiring_pulse.json docs/jobs.html
           git diff --staged --quiet || git commit -m "Daily update: AI jobs data"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push

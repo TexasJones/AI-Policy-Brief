@@ -173,4 +173,15 @@ with tempfile.TemporaryDirectory() as d:
     hist2 = a.save_history({str(today - timedelta(days=90)): {"total": 0, "by_bucket": {}, "by_company": {}, "by_region": {}, "new_last_7_days": 0}}, jobs, hp, today)
     assert list(hist2) == [str(today)], "old snapshot pruned"
     assert a.build_pulse(hist2, pp, today)["has_comparison"] is False
+
+    # static all-jobs page: every job present, apply links intact, grouped
+    # so nothing needing a job board gets silently dropped
+    jp = os.path.join(d, "jobs.html")
+    a.write_jobs_page(jobs, jp)
+    page = open(jp, encoding="utf-8").read()
+    assert f"{len(jobs):,} AI-relevant" in page, "job count missing from page"
+    for j in jobs:
+        assert j["apply_url"] in page, f"apply link missing for {j['title']}"
+        assert j["title"] in page
+
 print("ALL END-TO-END CHECKS PASSED" if not fails and not sf else "SOME FAILED")

@@ -693,6 +693,80 @@ def write_feed(jobs: list, path: str = FEED_FILE):
     log.info("Written -> %s (%d jobs)", path, len(jobs))
 
 
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+JOBS_PAGE_PATH = os.path.join(ROOT_DIR, "docs", "jobs.html")
+
+# Kept in sync with template.py's BUCKET_COLORS by hand -- jobs_scraper.py
+# stays free of any import on template.py so the scraper can run standalone.
+_BUCKET_COLORS = {
+    "Policy": "#3357A8",
+    "Communications": "#A8324A",
+    "Legal": "#6B3FA0",
+    "Consulting": "#9F620E",
+}
+
+
+def write_jobs_page(jobs: list, path: str = JOBS_PAGE_PATH) -> None:
+    """Static, no-JS listing of every open role currently in the feed --
+    the newsletter can only feature a handful per issue, and this is where
+    the rest live. Grouped by bucket, newest first (jobs is already sorted
+    that way by collect()); every title links straight to the employer's
+    own application page, exactly like the newsletter does."""
+    buckets = ["Policy", "Communications", "Legal", "Consulting"]
+    by_bucket: dict = {b: [] for b in buckets}
+    for j in jobs:
+        if j["bucket"] in by_bucket:
+            by_bucket[j["bucket"]].append(j)
+
+    sections = []
+    for b in buckets:
+        rows = by_bucket[b]
+        if not rows:
+            continue
+        color = _BUCKET_COLORS.get(b, "#0C7E87")
+        items = "".join(
+            '<li style="padding:10px 0;border-bottom:1px solid #E3E8EC;">'
+            f'<a href="{html.escape(j["apply_url"])}" target="_blank" rel="noopener noreferrer" '
+            f'style="color:#14202B;text-decoration:none;font-weight:700;font-size:15px;">{html.escape(j["title"])}</a>'
+            f'<div style="font-size:13px;color:#475569;margin-top:2px;">{html.escape(j["company"])}'
+            + (f' &middot; {html.escape(j["office_location"])}' if j.get("office_location") else "")
+            + '</div></li>'
+            for j in rows
+        )
+        sections.append(
+            f'<h2 style="font-size:16px;color:{color};margin:32px 0 8px;">{html.escape(b)} '
+            f'<span style="color:#475569;font-weight:400;font-size:13px;">({len(rows)})</span></h2>'
+            f'<ul style="list-style:none;padding:0;margin:0;">{items}</ul>'
+        )
+
+    generated = datetime.now(timezone.utc).strftime("%B %d, %Y")
+    doc = f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polly AI Brief — All Open Roles</title>
+<style>
+  body {{ font-family: -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
+         max-width: 640px; margin: 48px auto; padding: 0 20px; color: #14202B; background: #F2F5F7; }}
+  a:hover {{ text-decoration: underline !important; }}
+</style>
+</head>
+<body>
+  <p style="margin:0 0 4px;"><a href="index.html" style="color:#475569;font-size:13px;text-decoration:none;">&larr; Polly AI Brief</a></p>
+  <h1 style="font-size:1.5rem;margin:8px 0 4px;">All open roles</h1>
+  <p style="color:#475569;font-size:13px;margin:0 0 8px;">{len(jobs):,} AI-relevant policy, communications, legal and consulting roles &middot; updated {generated}</p>
+  <p style="color:#475569;font-size:12px;">Every title links straight to the employer's own application page.</p>
+  {''.join(sections)}
+</body>
+</html>
+"""
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(doc)
+    log.info("Written -> %s (%d jobs)", path, len(jobs))
+
+
 def snapshot(jobs: list) -> dict:
     by_bucket, by_company, by_region = {}, {}, {}
     for j in jobs:
@@ -777,6 +851,7 @@ def main():
         log.error("Only %d jobs found (previous %d); keeping existing data files.", len(jobs), prev)
         raise SystemExit(1)
     write_feed(jobs)
+    write_jobs_page(jobs)
     history = save_history(load_history(), jobs)
     pulse = build_pulse(history)
     log.info("Pulse: %s", json.dumps(pulse.get("by_bucket", {})))

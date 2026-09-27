@@ -212,9 +212,12 @@ def _jobs_block(p: Pulse) -> str:
     if not p.featured:
         return ""
     rows = "".join(_job_block(j) for j in p.featured)
+    see_all = (f'<div style="margin-top:12px;">{_link(f"{config.PAGES_BASE_URL}/jobs.html", f"See all {p.total:,} open roles &rarr;", ACCENT, size=13)}</div>'
+               if p.total > len(p.featured) else "")
     return (_divider() + f'<tr><td class="apb-pad" style="padding:0 40px;">{_heading("Jobs worth a look")}'
             f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0">{rows}</table>'
             f'<div style="font-size:12px;color:{MUTED};margin-top:4px;">Every link goes straight to the employer&rsquo;s application page.</div>'
+            f'{see_all}'
             f'</td></tr>')
 
 
