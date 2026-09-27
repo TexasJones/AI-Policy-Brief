@@ -21,6 +21,16 @@ WHITE = "#FFFFFF"
 HEADLINE_FONT = "Georgia, 'Times New Roman', serif"
 BODY_FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 
+# Hosted, transparent PNG of the Polly bird mark (same artwork as The Polly
+# Brief's, copied into this repo's own docs/assets so the two newsletters
+# stay fully self-contained -- no cross-repo asset dependency). Hosted via
+# GitHub Pages rather than a raw.githubusercontent.com URL: Pages is served
+# through a CDN with real cache headers, which email clients treat better
+# than raw's no-cache response, and it's the same host the newsletter's
+# other links already point to.
+BIRD_LOGO_URL = f"{config.PAGES_BASE_URL}/assets/polly-bird-header.png"
+BIRD_LOGO_RATIO = 45 / 24  # width/height of the source artwork
+
 SECTION_COLORS = {
     "Congress": "#3357A8",
     "White House & Agencies": "#A8324A",
@@ -41,6 +51,14 @@ BUCKET_COLORS = {
 
 def esc(text) -> str:
     return html.escape(text or "")
+
+
+def _bird_img(width: int, alt: str = "Polly") -> str:
+    """Email-safe <img> for the bird mark (no inline SVG -- Outlook desktop
+    and Brevo campaigns don't reliably render it), sized proportionally."""
+    height = round(width / BIRD_LOGO_RATIO)
+    return (f'<img src="{BIRD_LOGO_URL}" width="{width}" height="{height}" alt="{esc(alt)}" '
+            f'style="display:inline-block;vertical-align:middle;border:0;outline:none;max-width:{width}px;">')
 
 
 def _date_label(today: dt.date) -> str:
@@ -291,7 +309,8 @@ def render_brief(pulse: Pulse, news: NewsResult, today: dt.date = None, now: dt.
               ) if config.FOOTER_LINK_URL and config.FOOTER_LINK_TEXT else ""
     address = f'<div style="font-size:11px;color:{MUTED};margin-top:6px;">{esc(mailing_address)}</div>' if mailing_address else ""
     copyright_line = (f'<div style="font-size:11px;color:{MUTED};margin-top:6px;">'
-                       f'&copy; {today.year} {esc(config.BRAND_NAME)}. All rights reserved.</div>')
+                       f'{_bird_img(14, alt="")} <span style="vertical-align:middle;">'
+                       f'&copy; {today.year} {esc(config.BRAND_NAME)}. All rights reserved.</span></div>')
 
     ribbon = (f'<tr><td style="background-color:#FEF3C7;color:#92400E;text-align:center;font-size:11px;'
               f'font-weight:800;letter-spacing:0.8px;text-transform:uppercase;padding:8px 12px;">'
@@ -309,8 +328,11 @@ def render_brief(pulse: Pulse, news: NewsResult, today: dt.date = None, now: dt.
         ribbon,
         f'<tr><td style="background-color:{ACCENT};background:linear-gradient(90deg,{top_bar});height:6px;line-height:6px;font-size:0">&nbsp;</td></tr>',
         '<tr><td class="apb-pad" style="padding:32px 40px 20px 40px">',
-        f'<div style="font-size:26px;font-weight:900;color:{INK};letter-spacing:-0.5px;font-family:{HEADLINE_FONT};line-height:1;">'
-        f'{esc(config.BRAND_NAME)}</div>',
+        '<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>'
+        f'<td style="padding-right:10px;vertical-align:middle;">{_bird_img(30, alt=config.BRAND_NAME)}</td>'
+        f'<td style="vertical-align:middle;"><div style="font-size:26px;font-weight:900;color:{INK};'
+        f'letter-spacing:-0.5px;font-family:{HEADLINE_FONT};line-height:1;">{esc(config.BRAND_NAME)}</div></td>'
+        '</tr></table>',
         f'<div style="font-size:12px;color:{MUTED};margin-top:10px;font-weight:600;">{esc(_date_label(today))}</div>',
         f'<div style="font-size:12px;color:{MUTED};margin-top:4px;">{esc(_read_time(news))}</div>',
         view, subscribe, '</td></tr>',

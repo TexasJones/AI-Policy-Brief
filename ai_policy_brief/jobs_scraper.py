@@ -741,6 +741,11 @@ def write_jobs_page(jobs: list, path: str = JOBS_PAGE_PATH) -> None:
     by hand with template.py's -- this module stays free of any import on
     template.py so the scraper can run standalone."""
     INK, MUTED, HAIRLINE, BG, CARD, ACCENT = "#14202B", "#475569", "#E3E8EC", "#F2F5F7", "#FFFFFF", "#0C7E87"
+    # Kept in sync by hand with config.PAGES_BASE_URL -- this module stays
+    # free of any import on config.py so the scraper can run standalone.
+    bird_img = ('<img src="https://texasjones.github.io/AI-Policy-Brief/assets/polly-bird-header.png" '
+                'width="26" height="14" alt="" style="display:inline-block;vertical-align:middle;'
+                'border:0;outline:none;">')
     HEADLINE_FONT = "Georgia, 'Times New Roman', serif"
     BODY_FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 
@@ -816,7 +821,7 @@ def write_jobs_page(jobs: list, path: str = JOBS_PAGE_PATH) -> None:
     <div style="height:6px;background:linear-gradient(90deg,#3357A8,#A8324A,#9F620E,#6B3FA0,#15803D,#0C7E87,#BE185D,#C2410C);"></div>
     <div class="apb-pad">
       <p style="margin:0 0 14px;"><a href="index.html" style="color:{MUTED};font-size:13px;text-decoration:none;">&larr; Polly AI Brief</a></p>
-      <div style="font-size:24px;font-weight:900;color:{INK};letter-spacing:-0.5px;font-family:{HEADLINE_FONT};">All open roles</div>
+      <div style="font-size:24px;font-weight:900;color:{INK};letter-spacing:-0.5px;font-family:{HEADLINE_FONT};">{bird_img} <span style="vertical-align:middle;">All open roles</span></div>
       <p style="color:{MUTED};font-size:13px;margin:10px 0 2px;">{len(jobs):,} AI-relevant policy, communications, legal and consulting roles &middot; updated {generated}</p>
       <p style="color:{MUTED};font-size:12px;margin:0 0 18px;">Every title links straight to the employer's own application page.</p>
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
