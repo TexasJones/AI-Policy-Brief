@@ -54,6 +54,19 @@ def main():
     assert "5" not in ids, "stale job featured"
     assert sum(1 for j in feat if j.company == "A") <= 2
     assert "7" in ids and "3" in ids
+    # a large employer bulk-posting the same title/city under separate req
+    # IDs (real Accenture/Workday behavior) must not show twice in the
+    # featured spotlight -- each req is still a distinct, real listing, so
+    # this is about what gets featured, not deduping the feed itself
+    dup_lst = [J(10, "Accenture", "Consulting", reg="India"), J(11, "Accenture", "Consulting", reg="India"),
+               J(12, "Accenture", "Consulting", reg="India")]
+    for j, loc in zip(dup_lst, ("Mumbai", "Mumbai", "Gurugram")):
+        j.title, j.location = "Enterprise AI Value Strategy Consultant", loc
+    feat_dup = jobs.pick_featured(dup_lst, seen=set(), per_company=5)
+    slots = [(j.title, j.company, j.location) for j in feat_dup]
+    assert len(slots) == len(set(slots)), f"same title/company/city featured twice: {slots}"
+    assert len(feat_dup) == 2, "the two distinct city listings should both be kept"
+
     pulse = jobs.build_pulse(lst, seen={"1"}, pulse_json={})
     assert pulse.total == 7 and pulse.new_since_last == 6 and pulse.week_change is None
     assert jobs.build_pulse([], set(), {}).total == 0

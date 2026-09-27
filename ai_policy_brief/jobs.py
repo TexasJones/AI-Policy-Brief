@@ -106,7 +106,7 @@ def pick_featured(jobs: list[Job], seen: set, per_bucket: int = None, max_total:
     for b in by_bucket:
         by_bucket[b].sort(key=lambda j: (j.job_id in seen, j.region != "US", j.age_days, j.company, j.title))
 
-    picked, company_counts, taken = [], {}, {b: 0 for b in BUCKETS}
+    picked, company_counts, taken, picked_slots = [], {}, {b: 0 for b in BUCKETS}, set()
     progress = True
     while progress and len(picked) < max_total:
         progress = False
@@ -117,8 +117,19 @@ def pick_featured(jobs: list[Job], seen: set, per_bucket: int = None, max_total:
                 j = by_bucket[b].pop(0)
                 if company_counts.get(j.company, 0) >= per_company:
                     continue
+                # Large employers (Accenture, PwC, ...) sometimes post several
+                # near-identical requisitions -- same title, same company,
+                # same city -- under separate req IDs. Each is a real,
+                # separately-applicable posting (kept in full on jobs.html and
+                # counted in the total), but showing the same-looking listing
+                # twice in an 8-job spotlight reads as a bug. Skip a repeat
+                # here and let the next distinct listing take the slot.
+                slot = (j.title.strip().lower(), j.company, j.location)
+                if slot in picked_slots:
+                    continue
                 picked.append(j)
                 company_counts[j.company] = company_counts.get(j.company, 0) + 1
+                picked_slots.add(slot)
                 taken[b] += 1
                 progress = True
                 break
