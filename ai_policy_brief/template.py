@@ -12,7 +12,7 @@ from .jobs import Pulse, Job
 from .news import NewsResult, Story
 
 INK = "#14202B"
-MUTED = "#5F6C79"
+MUTED = "#475569"
 ACCENT = "#0C7E87"
 HAIRLINE = "#E3E8EC"
 BG = "#F2F5F7"
@@ -28,7 +28,7 @@ SECTION_COLORS = {
     "Courts & Legal": "#6B3FA0",
     "Global": "#15803D",
     "Industry & Labs": "#0C7E87",
-    "Research & Partnerships": "#B45309",
+    "Research & Partnerships": "#BE185D",
 }
 BUCKET_COLORS = {
     "Policy": "#3357A8",
