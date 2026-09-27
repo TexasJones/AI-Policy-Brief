@@ -1,4 +1,5 @@
 name: Send AI Policy Brief
+run-name: ${{ inputs.test_to != '' && 'AI Policy Brief (TEST)' || 'AI Policy Brief' }}
 # Triggered by an external scheduler (workflow_dispatch) at 7:00 a.m. Eastern.
 # The gate below only lets Tuesday and Friday through, so the scheduler can
 # call this every day without sending on the wrong days.
@@ -21,11 +22,14 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       run: ${{ steps.g.outputs.run }}
+    env:
+      TEST_TO: ${{ inputs.test_to }}
+      ALLOW_OFF_DAY: ${{ inputs.allow_off_day }}
     steps:
       - id: g
         run: |
           dow=$(TZ=America/New_York date +%u)   # 1=Mon ... 7=Sun
-          if [ "$dow" = "2" ] || [ "$dow" = "5" ] || [ "${{ inputs.allow_off_day }}" = "true" ] || [ -n "${{ inputs.test_to }}" ]; then
+          if [ "$dow" = "2" ] || [ "$dow" = "5" ] || [ "$ALLOW_OFF_DAY" = "true" ] || [ -n "$TEST_TO" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "Not a send day (Eastern weekday $dow); skipping."
@@ -35,50 +39,65 @@ jobs:
     needs: gate
     if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     permissions:
       contents: write
     env:
+      TEST_TO: ${{ inputs.test_to }}
       BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
       BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
       BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
       BREVO_SENDER_NAME: AI Policy Brief
       MAILING_ADDRESS: ${{ secrets.MAILING_ADDRESS }}
       SUBSCRIBE_URL: ${{ vars.SUBSCRIBE_URL }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
-      - name: Refresh jobs (falls back to the last committed feed)
+      - name: Skip if this issue was already sent
+        id: chk
+        if: env.TEST_TO == ''
+        run: python -m ai_policy_brief.send --check
+      - name: Refresh jobs (keeps the last committed feed if the scrape fails)
+        if: steps.chk.outputs.sent != 'true'
         continue-on-error: true
         run: python -m ai_policy_brief.jobs_scraper
       - name: Build issue
+        if: steps.chk.outputs.sent != 'true'
         run: python -m ai_policy_brief.generate
       - name: Publish web copy
-        if: inputs.test_to == ''
+        if: steps.chk.outputs.sent != 'true' && env.TEST_TO == ''
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add docs/briefs data/ai-feed.xml data/ai_job_history.json data/ai_hiring_pulse.json
+          git add docs/briefs data
           git diff --staged --quiet || git commit -m "Publish issue"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep 5
+          done
+          exit 1
       - name: Send via Brevo
+        if: steps.chk.outputs.sent != 'true'
         run: |
-          if [ -n "${{ inputs.test_to }}" ]; then
-            python -m ai_policy_brief.send --test-to "${{ inputs.test_to }}"
+          if [ -n "$TEST_TO" ]; then
+            python -m ai_policy_brief.send --test-to "$TEST_TO"
           else
             python -m ai_policy_brief.send
           fi
       - name: Record what this issue used
-        if: inputs.test_to == ''
+        if: steps.chk.outputs.sent != 'true' && env.TEST_TO == ''
         run: |
           python -m ai_policy_brief.generate --commit-state
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add data/recent_stories.json data/last_issue.json data/seen_jobs.json
+          git add data
           git diff --staged --quiet || git commit -m "Record issue state"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push
+          for i in 1 2 3 4; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep 5
+          done
+          exit 1

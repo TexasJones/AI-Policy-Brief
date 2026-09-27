@@ -35,6 +35,7 @@ import os
 import re
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta, timezone
@@ -49,6 +50,7 @@ HISTORY_FILE = os.path.join(DATA_DIR, "ai_job_history.json")
 PULSE_FILE = os.path.join(DATA_DIR, "ai_hiring_pulse.json")
 HISTORY_RETENTION_DAYS = 35
 DESCRIPTION_CHARS = 600
+UNDATED_AGE_DAYS = 14
 
 HEADERS = {
     "User-Agent": (
@@ -90,6 +92,23 @@ EMPLOYERS = [
     {"source": "greenhouse", "slug": "golin", "name": "Golin", "kind": "gated"},
     {"source": "greenhouse", "slug": "voxglobal", "name": "VOX Global", "kind": "gated"},
     {"source": "greenhouse", "slug": "brunswickgroup", "name": "Brunswick Group", "kind": "gated", "us_only": True},
+    # ── Big tech and consultancies with their own career sites (AI signal in the
+    # title required: these boards give no description text to check). ──
+    # Google: server-rendered results pages; no dates or locations are exposed
+    # in the markup this parser reads, so postings are treated as undated.
+    {"source": "google", "slug": "google", "name": "Google", "kind": "gated", "undated": True,
+     "queries": ["AI policy", "AI public affairs", "AI communications", "AI legal counsel", "AI governance"]},
+    # Microsoft: Eightfold search API (GET). Field names are read defensively.
+    {"source": "eightfold", "slug": "microsoft", "name": "Microsoft", "kind": "gated",
+     "host": "apply.careers.microsoft.com", "domain": "microsoft.com",
+     "queries": ["AI policy", "responsible AI", "AI public affairs", "AI legal counsel", "AI communications"]},
+    # PwC and Accenture: Workday career sites (public JSON search).
+    {"source": "workday", "slug": "pwc", "name": "PwC", "kind": "gated", "us_only": True,
+     "host": "pwc.wd3.myworkdayjobs.com", "tenant": "pwc", "site": "US_Experienced_Careers",
+     "queries": ["AI strategy", "responsible AI", "AI governance", "AI policy", "generative AI"]},
+    {"source": "workday", "slug": "accenture", "name": "Accenture", "kind": "gated", "us_only": True,
+     "host": "accenture.wd103.myworkdayjobs.com", "tenant": "accenture", "site": "AccentureCareers",
+     "queries": ["AI strategy", "responsible AI", "AI governance", "AI policy", "generative AI"]},
     # ── General policy think tanks (AI signal required) ──
     {"source": "greenhouse", "slug": "centerforamericanprogress", "name": "Center for American Progress", "kind": "gated"},
 ]
@@ -109,23 +128,32 @@ EXCLUDE_TITLE = re.compile(
     r"""(
         engineer | developer | software | devops | \bsre\b | architect |
         scientist | \bml\b | machine\ learning | reinforcement |
-        \bdata\b\s+(?:engineer|analyst|operations) | analytics | \bresearcher\b |
+        \bdata\b\s+(?:engineer|analyst|operations) |
         research\s+(?:scientist|engineer|lead) | technical\s+(?:program|project|lead) |
         \btutor\b | annotator | \brater\b | data\s+labeling | contributor\s+program |
         account\s+(?:executive|director|manager) | sales | \bbdr\b | business\s+development |
         customer\s+(?:success|support|trust) | partnerships?\s+(?:lead|manager|director) |
         head\s+of\s+partnerships? |
         marketing | brand\s+(?:manager|design) | copywriter | designer |
-        accountant | accounting | controller | payroll | \btax\b | treasury |
-        finance | financial | investor | capital\s+markets | procurement | sourcing |
+        accountant | accounting | controller | payroll | treasury |
+        capital\s+markets | procurement | sourcing | content\s+strategist | social\s+media |
         recruit | talent | sourcer | people\s+(?:partner|ops|operations) | \bhr\b |
-        executive\s+assistant | administrative | office\s+manager | receptionist |
+        executive\s+assistant | office\s+manager | receptionist |
         facilities | \bav\b | data\s+center\s+(?:operations|architect|controls|electrical|mechanical|supply) |
         expressions?\s+of\s+interest | future\s+opportunit | general\s+application |
         deployment\s+specialist | solutions? | enablement | \bcsm\b
     )""",
     re.IGNORECASE | re.VERBOSE,
 )
+
+# Soft exclusions: words that usually mean a non-bucket role, but not when the
+# title is clearly a policy or legal role ("Tax Policy Advisor", "Senior Policy
+# Researcher", "Administrative Law Counsel", "Financial Services Policy Counsel").
+EXCLUDE_TITLE_SOFT = re.compile(
+    r"analytics|\bresearcher\b|\btax\b|financ|investor|administrative", re.IGNORECASE)
+SOFT_OVERRIDE = re.compile(
+    r"\b(polic(?:y|ies)|counsel|attorney|legal|regulatory|government\s+affairs|public\s+affairs)\b",
+    re.IGNORECASE)
 
 BUCKET_TITLE_PATTERNS = [
     ("Legal", re.compile(
@@ -134,7 +162,7 @@ BUCKET_TITLE_PATTERNS = [
     # Communications is checked before Policy so "Policy Communications
     # Manager" lands in Communications, where a comms professional would look.
     ("Communications", re.compile(
-        r"(communications?|\bcomms\b|public\s+relations|\bpr\b|media\s+relations|"
+        r"(\bcommunications?\b|\bcomms\b|public\s+relations|\bpr\b|media\s+relations|"
         r"\bpress\b|spokes|speechwriter|external\s+affairs|community\s+engagement|"
         r"stakeholder\s+engagement|editorial|storytelling)",
         re.IGNORECASE)),
@@ -170,7 +198,7 @@ AI_TITLE_SIGNAL = re.compile(
     re.IGNORECASE,
 )
 AI_DESC_STRONG = re.compile(
-    r"(artificial\s+intelligence|ai\s+(?:policy|governance|regulation|safety|client|practice|sector)|"
+    r"\b(artificial\s+intelligence|ai\s+(?:policy|governance|regulation|safety|client|practice|sector)|"
     r"responsible\s+ai|generative\s+ai|frontier\s+(?:ai|model))",
     re.IGNORECASE,
 )
@@ -189,7 +217,8 @@ NON_US_SIGNALS = [
     "south korea", "london", "brussels", "berlin", "munich", "paris", "dublin",
     "zürich", "zurich", "mumbai", "bangalore", "sydney", "toronto", "seoul", "milan",
     "ontario", "alberta", "british columbia", "international", "europe", "emea",
-    "apac", "ch", "ie",
+    "apac", "ch", "ie", "frankfurt", "hamburg", "vancouver", "montreal", "ottawa", "bengaluru",
+    "delhi", "hyderabad", "pune", "gurgaon", "chennai", "tel aviv", "haifa", "israel",
 ]
 
 # US signals: explicit country name, a two-letter US state/DC code after a
@@ -230,8 +259,15 @@ def is_us_location(location: str) -> bool:
     """
     if not location:
         return True  # unknown -> keep
-    if US_STATE_RE.search(f" ,{location}") or US_WORD_RE.search(location):
-        return True
+    # Judge each office separately: "Berlin, DE" carries a code that is also a
+    # US state (Delaware), and "Toronto, CA" one that is also California.
+    for segment in re.split(r"[;|]", location):
+        low_seg = segment.lower()
+        foreign = any(re.search(rf"\b{re.escape(s)}\b", low_seg) for s in NON_US_SIGNALS)
+        if US_WORD_RE.search(segment):
+            return True
+        if US_STATE_RE.search(f" ,{segment}") and not foreign:
+            return True
     low = location.lower()
     if any(re.search(rf"\b{re.escape(s)}\b", low) for s in NON_US_SIGNALS):
         return False
@@ -263,6 +299,8 @@ def classify(title: str, departments=None):
     Title is the primary signal; department is a fallback for generic titles.
     """
     if EXCLUDE_TITLE.search(title):
+        return None, "excluded title"
+    if EXCLUDE_TITLE_SOFT.search(title) and not SOFT_OVERRIDE.search(title):
         return None, "excluded title"
     if EVERGREEN_TITLE.search(title):
         return None, "evergreen"
@@ -356,7 +394,129 @@ def raw_jobs_lever(employer: dict):
         }
 
 
+def post_json(url: str, payload: dict, timeout: int = 20, retries: int = 3):
+    body = json.dumps(payload).encode("utf-8")
+    headers = dict(HEADERS, **{"Content-Type": "application/json"})
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, data=body, headers=headers, method="POST")
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return json.loads(resp.read().decode("utf-8", errors="replace"))
+        except urllib.error.HTTPError as e:
+            if e.code == 404 or attempt == retries - 1:
+                raise
+            time.sleep(2 ** attempt)
+        except Exception:
+            if attempt == retries - 1:
+                raise
+            time.sleep(2 ** attempt)
+
+
+def _workday_posted(text: str) -> str:
+    """Workday gives 'Posted Today', 'Posted 3 Days Ago', 'Posted 30+ Days Ago'."""
+    text = (text or "").lower()
+    if "yesterday" in text:
+        return str(date.today() - timedelta(days=1))
+    m = re.search(r"(\d+)\+?\s+day", text)
+    if m:
+        return str(date.today() - timedelta(days=int(m.group(1))))
+    return str(date.today())
+
+
+def raw_jobs_workday(employer: dict):
+    base = f"https://{employer['host']}"
+    api = f"{base}/wday/cxs/{employer['tenant']}/{employer['site']}/jobs"
+    for query in employer["queries"]:
+        data = post_json(api, {"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": query})
+        for j in data.get("jobPostings", []):
+            path = j.get("externalPath", "")
+            bullets = j.get("bulletFields") or []
+            raw_id = str(bullets[0]) if bullets else path.rsplit("_", 1)[-1]
+            yield {
+                "raw_id": raw_id,
+                "title": j.get("title", ""),
+                "location": j.get("locationsText", "") or "",
+                "apply_url": f"{base}/en-US/{employer['site']}{path}" if path else "",
+                "description": "",
+                "posted": _workday_posted(j.get("postedOn", "")),
+                "departments": [],
+            }
+        time.sleep(0.3)
+
+
+def raw_jobs_eightfold(employer: dict):
+    base = f"https://{employer['host']}"
+    for query in employer["queries"]:
+        qs = urllib.parse.urlencode({"domain": employer["domain"], "query": query, "start": 0,
+                                     "sort_by": "timestamp"})
+        data = json.loads(fetch_url(f"{base}/api/pcsx/search?{qs}"))
+        for j in (data.get("data") or {}).get("positions", []):
+            pid = str(j.get("id", ""))
+            locs = j.get("locations") or j.get("standardizedLocations") or j.get("location") or ""
+            if isinstance(locs, list):
+                locs = "; ".join(str(x) for x in locs[:2])
+            ts = j.get("postedTs") or j.get("creationTs") or j.get("postedDate") or ""
+            posted = ""
+            if isinstance(ts, (int, float)) or str(ts).isdigit():
+                posted = datetime.fromtimestamp(int(ts), tz=timezone.utc).strftime("%Y-%m-%d")
+            yield {
+                "raw_id": pid,
+                "title": j.get("name") or j.get("title") or "",
+                "location": str(locs),
+                "apply_url": f"{base}{j.get('positionUrl') or '/careers/job/' + pid}" if pid else "",
+                "description": "",
+                "posted": posted,
+                "departments": [],
+            }
+        time.sleep(0.3)
+
+
+GOOGLE_JOB_LINK = re.compile(
+    r'href="(?:https://www\.google\.com)?(/about/careers/applications/jobs/results/(\d+)-([a-z0-9\-]+))[^"]*"')
+_UPPER_WORDS = {"ai": "AI", "erm": "ERM", "ux": "UX", "us": "US", "emea": "EMEA", "gtm": "GTM",
+                "llm": "LLM", "uk": "UK", "eu": "EU", "cx": "CX", "hr": "HR"}
+_SMALL_WORDS = {"and", "of", "for", "the", "to", "in", "at", "on"}
+
+
+def _title_from_slug(slug: str) -> str:
+    words = slug.split("-")
+    out = []
+    for i, w in enumerate(words):
+        if w in _UPPER_WORDS:
+            out.append(_UPPER_WORDS[w])
+        elif w in _SMALL_WORDS and i:
+            out.append(w)
+        else:
+            out.append(w.capitalize())
+    return " ".join(out)
+
+
+def raw_jobs_google(employer: dict):
+    seen = set()
+    for query in employer["queries"]:
+        qs = urllib.parse.urlencode({"q": query})
+        page = fetch_url(f"https://www.google.com/about/careers/applications/jobs/results?{qs}")
+        for m in GOOGLE_JOB_LINK.finditer(page):
+            path, job_id, slug = m.groups()
+            if job_id in seen:
+                continue
+            seen.add(job_id)
+            yield {
+                "raw_id": job_id,
+                "title": _title_from_slug(slug),
+                "location": "",
+                "apply_url": f"https://www.google.com{path}",
+                "description": "",
+                "posted": "",
+                "departments": [],
+            }
+        time.sleep(0.5)
+
+
 RAW_FETCHERS = {
+    "workday": raw_jobs_workday,
+    "eightfold": raw_jobs_eightfold,
+    "google": raw_jobs_google,
     "greenhouse": raw_jobs_greenhouse,
     "ashby": raw_jobs_ashby,
     "lever": raw_jobs_lever,
@@ -382,7 +542,12 @@ def build_job(employer: dict, raw: dict):
     if employer["kind"] == "gated" and not has_ai_signal(title, full_text):
         return None
 
-    posted = normalize_posted(raw.get("posted"))
+    if employer.get("undated") or not raw.get("posted"):
+        # No posting date available: use a neutral age so these are not
+        # ranked as brand new just because their date is unknown.
+        posted = str(date.today() - timedelta(days=UNDATED_AGE_DAYS))
+    else:
+        posted = normalize_posted(raw.get("posted"))
     try:
         age_days = (date.today() - datetime.strptime(posted, "%Y-%m-%d").date()).days
     except ValueError:
@@ -438,6 +603,9 @@ def collect(employers=None, fetchers=None) -> list:
 # Output
 # ─────────────────────────────────────────────
 
+_XML_BAD = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\ufffe\uffff]")
+
+
 def write_feed(jobs: list, path: str = FEED_FILE):
     root = ET.Element("jobs")
     root.set("generated", datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
@@ -445,7 +613,7 @@ def write_feed(jobs: list, path: str = FEED_FILE):
     for job in jobs:
         el = ET.SubElement(root, "job")
         for k, v in job.items():
-            ET.SubElement(el, k).text = str(v)
+            ET.SubElement(el, k).text = _XML_BAD.sub("", str(v))
     xml_str = minidom.parseString(
         '<?xml version="1.0" encoding="UTF-8"?>' + ET.tostring(root, encoding="unicode")
     ).toprettyxml(indent="  ")
@@ -523,9 +691,20 @@ def build_pulse(history: dict, path: str = PULSE_FILE, today: date = None) -> di
     return pulse
 
 
+def previous_total(path: str = HISTORY_FILE) -> int:
+    history = load_history(path)
+    return history[max(history)]["total"] if history else 0
+
+
 def main():
     jobs = collect()
     log.info("Total AI-relevant non-technical jobs: %d", len(jobs))
+    # An outage on one big board must not overwrite good data with a partial
+    # feed: keep the last committed files and fail the run visibly instead.
+    prev = previous_total()
+    if not jobs or (prev >= 20 and len(jobs) < prev * 0.5):
+        log.error("Only %d jobs found (previous %d); keeping existing data files.", len(jobs), prev)
+        raise SystemExit(1)
     write_feed(jobs)
     history = save_history(load_history(), jobs)
     pulse = build_pulse(history)

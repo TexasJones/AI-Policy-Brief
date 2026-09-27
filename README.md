@@ -26,3 +26,16 @@ This repo is fully self-contained. It shares no code, data, workflows or secrets
     pip install -r requirements.txt
     python -m ai_policy_brief.generate --sample
     python tests/test_news.py && python tests/test_jobs_scraper.py
+
+## Source status (as of the first build)
+Checked live from a browser-style fetch: The Hill technology feed and Tech Policy Press feed (both valid RSS); Google careers results (server-rendered HTML); Microsoft's Eightfold search API (returns JSON; field names read defensively); Federal Register API. PwC and Accenture use Workday's standard public search.
+
+Not wired, and why: Axios and Politico feeds (the sites disallow automated fetching, so this repo does not fetch them directly; they are covered through Google News headlines), Meta careers (no public feed), Deloitte, KPMG, McKinsey and BCG careers (custom sites), congressional hearings (needs a congress.gov API key).
+
+Candidates to verify and add later (feeds not yet tested): Brookings, CSET, CDT, The Verge policy, Transformer, Lawfare, NIST news, FTC press releases.
+
+## Design notes
+- `docs/mockup.html` is a sample issue with fictional content and a SAMPLE banner.
+- `generate --commit-state` runs only after a successful send; a failed send never marks stories as delivered.
+- The jobs scraper refuses to overwrite data if a run finds under half the previous job count.
+- Optional: set `ANTHROPIC_API_KEY` to add a one-sentence "Why it matters" written only from each story's own description.

@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import calendar
 import datetime as dt
+import html
 import json
 import logging
 import os
@@ -117,17 +118,22 @@ POLICY_RE = re.compile(
 
 SECTION_PATTERNS = [
     ("Courts & Legal", re.compile(r"lawsuit|\bsues?\b|sued|\bcourts?\b|judge|ruling|copyright|antitrust trial|settlement|appeal", re.I)),
-    ("States", re.compile(r"(?<!united )\bstates?\b|statehouse|governor|legislature|attorney general|california|new york|texas|colorado|illinois|florida|utah|newsom|hochul", re.I)),
+    # Congress before Global so "Senate passes bill to restrict chip sales to China" stays with
+    # Congress. Generic words like "lawmakers" or "bill" are left out: they fit states and
+    # foreign legislatures just as often.
+    ("Congress", re.compile(r"congress|\bsenate\b|senators?\b|house (?:committee|republicans|democrats|passes|passed|vote|panel|bill)|"
+                            r"\bndaa\b|\brep\.|\bsen\.|cruz|hawley|blackburn|schumer|thune|capitol hill", re.I)),
+    ("States", re.compile(r"(?<!united )(?<!federal )\bstates?\b(?!\s+department)|statehouse|governor|legislature|attorney general|"
+                          r"california|new york|texas|colorado|illinois|florida|utah|newsom|hochul", re.I)),
     ("Global", re.compile(r"\bEU\b|european|brussels|\bchina\b|chinese|beijing|\buk\b|britain|london|\bindia\b|japan|korea|\bg7\b|\bun\b|united nations|davos|summit", re.I)),
-    ("Congress", re.compile(r"congress|senat|(?<!white )\bhouse\b|lawmaker|\bbills?\b|hearing|\bndaa\b|\brep\.|\bsen\.|republicans|democrats|cruz|hawley|blackburn|schumer|thune", re.I)),
-    ("White House & Agencies", re.compile(r"white house|trump|executive order|\bftc\b|\bfcc\b|\bdoj\b|commerce|pentagon|\bnist\b|export control|agency|sacks|administration|department of", re.I)),
+    ("White House & Agencies", re.compile(r"white house|trump|executive order|\bftc\b|\bfcc\b|\bdoj\b|commerce|pentagon|\bnist\b|export control|agency|sacks|administration|department of|state department", re.I)),
 ]
 
 OPINION_TITLE = re.compile(
     r"^\s*(opinion|editorial|commentary|column|analysis|op-ed|letters?)\s*[:|\-–—]|"
     r"[|\-–—]\s*(opinion|editorial|commentary)\s*$|\bopinion\s*[|:]", re.I)
 OPINION_URL = ("/opinion/", "/opinions/", "/commentary/", "/editorial/", "/op-ed/", "/columnists/")
-GENERIC_TITLE = re.compile(r"^\s*(podcast|newsletter|watch|video|live updates?|the latest|morning|daily)\b", re.I)
+GENERIC_TITLE = re.compile(r"^\s*(?:(?:podcast|newsletter|video)\s*[:|\-\u2013]|live updates?\b)", re.I)
 
 STOP = set("""about after again against also amid been before being could does from have into just more most
 new not over says said than that their them then there these they this those what when where which while will with
@@ -148,6 +154,7 @@ class Story:
     score: float = 0.0
     weight: float = 1.0
     lane: str = "news"
+    why: str = ""
 
     @property
     def emoji(self) -> str:
@@ -190,7 +197,7 @@ def google_news_url(query: str, domain: str, days: int) -> str:
 
 def _strip_html(text: str) -> str:
     text = re.sub(r"<[^>]+>", " ", text or "")
-    text = re.sub(r"&nbsp;|&#160;", " ", text)
+    text = html.unescape(text).replace("\xa0", " ")
     return re.sub(r"\s+", " ", text).strip()
 
 
@@ -350,7 +357,8 @@ def similar(a: frozenset, b: frozenset) -> bool:
     if not a or not b:
         return False
     inter = len(a & b)
-    return inter >= 4 or inter / len(a | b) >= 0.5
+    jac = inter / len(a | b)
+    return (inter >= 3 and jac >= 0.5) or (inter >= 5 and jac >= 0.35)
 
 
 def cluster(stories: list[Story]) -> list[Story]:
@@ -361,8 +369,9 @@ def cluster(stories: list[Story]) -> list[Story]:
         t = tokens(s.title)
         for g in groups:
             if similar(t, g["tokens"]):
+                # Compare later items against the FIRST item's tokens only, so a
+                # cluster cannot keep growing until unrelated stories match it.
                 g["items"].append(s)
-                g["tokens"] = g["tokens"] | t
                 break
         else:
             groups.append({"tokens": t, "items": [s]})

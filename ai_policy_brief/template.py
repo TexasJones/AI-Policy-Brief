@@ -47,12 +47,13 @@ def _date_label(today: dt.date) -> str:
 
 
 def _ago(published: Optional[dt.datetime], now: dt.datetime) -> str:
+    """Calendar-day label in the newsletter's own timezone (a story from 47 hours
+    ago can be two calendar days back, not 'Yesterday')."""
     if published is None:
         return ""
-    hours = (now - published).total_seconds() / 3600
-    if hours < 24:
-        return "Today" if published.astimezone(now.tzinfo).date() == now.date() else "Yesterday"
-    days = int(hours // 24)
+    days = (now.date() - published.astimezone(now.tzinfo).date()).days
+    if days <= 0:
+        return "Today"
     return "Yesterday" if days == 1 else f"{days} days ago"
 
 
@@ -105,10 +106,16 @@ def _story_meta(s: Story, now: dt.datetime) -> str:
             f'{" &middot; ".join(bits)}</div>')
 
 
+def _why(s: Story) -> str:
+    return (f'<div style="font-size:14px;color:{INK};line-height:1.5;margin:4px 0;">'
+            f'<strong>Why it matters:</strong> {esc(s.why)}</div>') if getattr(s, "why", "") else ""
+
+
 def _story_block(s: Story, now: dt.datetime) -> str:
     color = SECTION_COLORS.get(s.section, ACCENT)
     summary = (f'<div style="font-size:14px;color:{MUTED};line-height:1.55;margin:6px 0 4px;">'
                f'{_bold_lead_in(s.summary)}</div>') if s.summary else ""
+    summary += _why(s)
     return (f'<tr><td style="padding-bottom:18px;">'
             f'<div style="margin-bottom:8px;">{_badge(s.emoji + " " + s.section, color)}</div>'
             f'<div style="font-family:{HEADLINE_FONT};font-size:17px;font-weight:700;color:{INK};line-height:1.35;">'
@@ -124,6 +131,9 @@ def _lead_block(s: Story, now: dt.datetime) -> str:
             f'Also reported by {", ".join(esc(o) for o in s.also_covered_by[:3])}</div>') if s.also_covered_by else ""
     summary = (f'<div style="font-size:14px;color:rgba(255,255,255,0.9);line-height:1.5;margin-top:10px;">'
                f'{esc(s.summary)}</div>') if s.summary else ""
+    if getattr(s, "why", ""):
+        summary += (f'<div style="font-size:14px;color:{WHITE};line-height:1.5;margin-top:8px;">'
+                    f'<strong>Why it matters:</strong> {esc(s.why)}</div>')
     return (f'<tr><td class="apb-pad" style="padding:0 40px 4px 40px;">'
             f'<div style="background-color:{color};border-radius:14px;padding:26px 28px 24px 28px;">'
             f'<div style="display:inline-block;background-color:rgba(255,255,255,0.18);color:{WHITE};'
@@ -208,6 +218,23 @@ def _jobs_block(p: Pulse) -> str:
             f'</td></tr>')
 
 
+def _coming_up_block(deadlines) -> str:
+    if not deadlines:
+        return ""
+    rows = ""
+    for d in deadlines:
+        due = f"{d.due.strftime('%b')} {d.due.day}"
+        rows += (f'<tr><td style="padding:0 0 12px 0;">'
+                 f'<div style="font-size:11px;font-weight:800;color:{MUTED};text-transform:uppercase;'
+                 f'letter-spacing:0.6px;">Comments due {esc(due)} &middot; {esc(d.kind)}</div>'
+                 f'<a href="{esc(d.url)}" target="_blank" rel="noopener noreferrer" '
+                 f'style="color:{INK};text-decoration:none;font-size:15px;font-weight:700;line-height:1.35;">{esc(d.title)}</a>'
+                 f'<div style="font-size:13px;color:{MUTED};margin-top:2px;">{esc(d.agency)}</div></td></tr>')
+    return (_divider() + f'<tr><td class="apb-pad" style="padding:0 40px;">{_heading("Coming up")}'
+            f'<div style="font-size:12px;color:{MUTED};margin:-8px 0 12px;">Open federal comment periods on AI</div>'
+            f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0">{rows}</table></td></tr>')
+
+
 def _read_time(news: NewsResult) -> str:
     chunks = []
     for s in ([news.lead] if news.lead else []) + list(news.stories):
@@ -224,7 +251,7 @@ def _share_link() -> str:
 
 
 def render_brief(pulse: Pulse, news: NewsResult, today: dt.date = None, now: dt.datetime = None,
-                 view_url: str = None, mailing_address: str = "") -> str:
+                 view_url: str = None, mailing_address: str = "", upcoming=None, sample: bool = False) -> str:
     now = now or dt.datetime.now(dt.timezone.utc)
     today = today or now.date()
 
@@ -256,6 +283,9 @@ def render_brief(pulse: Pulse, news: NewsResult, today: dt.date = None, now: dt.
               ) if config.FOOTER_LINK_URL and config.FOOTER_LINK_TEXT else ""
     address = f'<div style="font-size:11px;color:{MUTED};margin-top:6px;">{esc(mailing_address)}</div>' if mailing_address else ""
 
+    ribbon = (f'<tr><td style="background-color:#FEF3C7;color:#92400E;text-align:center;font-size:11px;'
+              f'font-weight:800;letter-spacing:0.8px;text-transform:uppercase;padding:8px 12px;">'
+              f'Sample issue &middot; illustrative content, not real reporting</td></tr>') if sample else ""
     parts = [
         '<!DOCTYPE html><html><head><meta charset="utf-8">',
         '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
@@ -266,6 +296,7 @@ def render_brief(pulse: Pulse, news: NewsResult, today: dt.date = None, now: dt.
         '<tr><td align="center">',
         f'<table role="presentation" width="600" class="apb-card" cellpadding="0" cellspacing="0" '
         f'style="background-color:{CARD};border-radius:14px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.06)">',
+        ribbon,
         f'<tr><td style="background-color:{ACCENT};background:linear-gradient(90deg,{top_bar});height:6px;line-height:6px;font-size:0">&nbsp;</td></tr>',
         '<tr><td class="apb-pad" style="padding:32px 40px 20px 40px">',
         f'<div style="font-size:26px;font-weight:900;color:{INK};letter-spacing:-0.5px;font-family:{HEADLINE_FONT};line-height:1;">'
@@ -277,6 +308,7 @@ def render_brief(pulse: Pulse, news: NewsResult, today: dt.date = None, now: dt.
         _divider(),
         f'<tr><td class="apb-pad" style="padding:0 40px">{_heading("AI + Policy")}'
         f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0">{stories_html}</table></td></tr>',
+        _coming_up_block(upcoming),
         _divider(),
         _pulse_block(pulse),
         _jobs_block(pulse),
