@@ -64,6 +64,21 @@ def main():
         json.dump({"2026-09-01": {"total": 100}}, open(hist, "w"))
         assert js.previous_total(hist) == 100
 
+    # consecutive stories in the same section show the section badge only
+    # once, not once per story (found in live output: two "Global" stories
+    # back to back each carried their own colored badge)
+    now = dt.datetime(2026, 9, 29, 11, 0, tzinfo=UTC)
+    stories = [
+        news.Story("Global one", "AP", "https://x/1", now, section="Global"),
+        news.Story("Global two", "Reuters", "https://x/2", now, section="Global"),
+        news.Story("Courts one", "Axios", "https://x/3", now, section="Courts & Legal"),
+    ]
+    nr = news.NewsResult(lead=None, stories=stories)
+    from ai_policy_brief.jobs import Pulse
+    html_out = template.render_brief(Pulse(), nr, today=dt.date(2026, 9, 29), now=now)
+    assert html_out.count(">\U0001F30D Global<") == 1, "repeated section badge not suppressed"
+    assert html_out.count("Courts &amp; Legal<") == 1
+
     # public web copy has no dead unsubscribe placeholder
     with tempfile.TemporaryDirectory() as d:
         generate.ROOT = type(generate.ROOT)(d)

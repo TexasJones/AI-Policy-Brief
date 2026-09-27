@@ -5,7 +5,13 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from ai_policy_brief import jobs_scraper as a
 
 
-def employer(source):
+def employer(source, slug=None):
+    """Look up a fixture employer by source (and slug, when a source has more
+    than one entry) rather than just taking the first match -- EMPLOYERS gets
+    new entries added over time, and "first Workday employer" is not a stable
+    thing to build a fixture around."""
+    if slug:
+        return next(e for e in a.EMPLOYERS if e["source"] == source and e["slug"] == slug)
     return next(e for e in a.EMPLOYERS if e["source"] == source)
 
 
@@ -26,7 +32,7 @@ def main():
         {"title": "Tax Manager", "externalPath": "/job/x_R9", "locationsText": "NY", "postedOn": "Posted Today", "bulletFields": ["R9"]},
         {"title": "AI Governance Consultant", "externalPath": "/job/y_R8", "locationsText": "London, UK",
          "postedOn": "Posted 30+ Days Ago", "bulletFields": ["R8"]}]}
-    jobs = a.collect([dict(employer("workday"), queries=["q"])])
+    jobs = a.collect([dict(employer("workday", "pwc"), queries=["q"])])
     assert [j["title"] for j in jobs] == ["Responsible AI Policy Manager"], [j["title"] for j in jobs]  # us_only drops London
     assert jobs[0]["apply_url"].startswith("https://pwc.wd3.myworkdayjobs.com/en-US/US_Experienced_Careers/job/")
     assert jobs[0]["age_days"] == 3
@@ -56,7 +62,7 @@ def main():
     real_page_size = a.WORKDAY_PAGE_SIZE
     a.WORKDAY_PAGE_SIZE = 2  # match the fixture's page size so the "short page" stop condition fires correctly
     try:
-        ids = {j["job_id"].rsplit("-", 1)[-1] for j in a.collect([dict(employer("workday"), queries=["q"], us_only=False)])}
+        ids = {j["job_id"].rsplit("-", 1)[-1] for j in a.collect([dict(employer("workday", "pwc"), queries=["q"], us_only=False)])}
     finally:
         a.WORKDAY_PAGE_SIZE = real_page_size
     assert ids == {"R100", "R200", "R300"}, ids   # not collapsed by the shared "dup" bulletFields
