@@ -219,7 +219,13 @@ def main() -> int:
             print("  ", key, count)
         for s in ([result.lead] if result.lead else []) + result.stories:
             print(" -", s.section, "|", s.outlet, "|", s.title)
-        view_url = f"{config.PAGES_BASE_URL}/briefs/{today.isoformat()}.html"
+        # A test send (TEST_TO set) never gets its web copy committed and
+        # pushed -- the workflow skips that step on purpose so test issues
+        # don't clutter the public archive. Linking to it anyway would just
+        # be a 404 in the recipient's inbox, so leave the link out entirely
+        # for test sends, same as sample mode does.
+        is_test = bool(os.environ.get("TEST_TO", "").strip())
+        view_url = None if is_test else f"{config.PAGES_BASE_URL}/briefs/{today.isoformat()}.html"
 
     html_out = render_brief(pulse, result, today=today, now=now, view_url=view_url, mailing_address=mailing, upcoming=deadlines, sample=args.sample)
     Path(args.out).write_text(html_out, encoding="utf-8")
