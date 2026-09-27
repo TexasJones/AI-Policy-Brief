@@ -73,7 +73,34 @@ SECTIONS = [
     ("Courts & Legal", "⚖️"),
     ("Global", "\U0001F30D"),
     ("Industry & Labs", "\U0001F916"),
+    ("Research & Partnerships", "\U0001F393"),
 ]
+
+RESEARCH_SECTION = "Research & Partnerships"
+
+# Research lane: universities, consulting/Big Four firms, think tanks.
+# (display name, domain). Each is searched with a site: restricted query.
+RESEARCH_SOURCES = [
+    ("KPMG", "kpmg.com"), ("Deloitte", "deloitte.com"), ("PwC", "pwc.com"), ("EY", "ey.com"),
+    ("McKinsey", "mckinsey.com"), ("BCG", "bcg.com"), ("Accenture", "accenture.com"),
+    ("UT Austin", "utexas.edu"), ("Stanford HAI", "hai.stanford.edu"), ("MIT", "news.mit.edu"),
+    ("Harvard", "harvard.edu"), ("Georgetown CSET", "cset.georgetown.edu"),
+    ("Brookings", "brookings.edu"), ("RAND", "rand.org"), ("CSIS", "csis.org"),
+    ("Pew Research", "pewresearch.org"),
+]
+# Unrestricted queries to catch partnerships and studies reported anywhere.
+RESEARCH_QUERIES = [
+    '("AI" OR "artificial intelligence") (university OR "business school" OR institute) '
+    '(partnership OR partners OR collaboration OR "joint") (KPMG OR Deloitte OR PwC OR EY OR McKinsey OR BCG OR Accenture)',
+    '("AI" OR "artificial intelligence") ("new study" OR "new report" OR survey OR "researchers find") '
+    '(policy OR workforce OR jobs OR governance OR regulation)',
+]
+RESEARCH_SITE_QUERY = '(AI OR "artificial intelligence") (study OR report OR survey OR partnership OR collaboration)'
+
+RESEARCH_RE = re.compile(
+    r"\bstud(?:y|ies)\b|survey|\breport\b|researchers?|research\b|white ?paper|\bindex\b|"
+    r"partner(?:s|ship|ing)?\b|collaborat|alliance|\bjoint\b|\bcenter\b|\binstitute\b|"
+    r"universit|business school|\blab\b|consortium|launch(?:es)? (?:new )?(?:program|initiative|center)", re.I)
 
 AI_RE = re.compile(
     r"\bAI\b|artificial intelligence|chatbot|generative|large language|\bLLMs?\b|"
@@ -120,6 +147,7 @@ class Story:
     also_covered_by: list = field(default_factory=list)
     score: float = 0.0
     weight: float = 1.0
+    lane: str = "news"
 
     @property
     def emoji(self) -> str:
@@ -223,6 +251,49 @@ def collect_google(fetch: Callable, now: dt.datetime, window_hours: int, status:
     return stories
 
 
+def _split_outlet(title: str, fallback: str):
+    if " - " in title:
+        head, tail = title.rsplit(" - ", 1)
+        if len(tail) <= 40:
+            return head.strip(), tail.strip()
+    return title, fallback
+
+
+def collect_research(fetch: Callable, days: int, status: dict) -> list[Story]:
+    """Partnerships, studies and reports from universities, consulting firms and
+    think tanks. Unrestricted queries catch coverage anywhere; site-restricted
+    ones catch the institutions' own announcements."""
+    stories = []
+    jobs_ = [(f"research:query{i + 1}", "", f'{q} when:{days}d') for i, q in enumerate(RESEARCH_QUERIES)]
+    jobs_ += [(f"research:{name}", domain, f"{RESEARCH_SITE_QUERY} site:{domain} when:{days}d")
+              for name, domain in RESEARCH_SOURCES]
+    for key, domain, q in jobs_:
+        url = "https://news.google.com/rss/search?" + urlencode(
+            {"q": q, "hl": "en-US", "gl": "US", "ceid": "US:en"})
+        text = fetch(url)
+        got = 0
+        if text:
+            fallback = key.split(":", 1)[1] if domain else ""
+            for e in _parse(text):
+                raw_title = (e.get("title") or "").strip()
+                title, outlet = _split_outlet(raw_title, fallback)
+                src = e.get("source") or {}
+                href = (src.get("href") or "") if isinstance(src, dict) else ""
+                if domain and href and domain not in href:
+                    continue
+                if domain:
+                    outlet = fallback
+                link = e.get("link") or ""
+                if not title or not link:
+                    continue
+                stories.append(Story(title=title, outlet=outlet or "Source", url=link,
+                                     published=_entry_time(e), weight=0.9, lane="research",
+                                     paywalled=any(d in href for d in ("wsj.com", "nytimes.com", "washingtonpost.com"))))
+                got += 1
+        status[key] = got
+    return stories
+
+
 def collect_direct(fetch: Callable, status: dict) -> list[Story]:
     stories = []
     for name, url in DIRECT_FEEDS:
@@ -249,6 +320,8 @@ def collect_direct(fetch: Callable, status: dict) -> list[Story]:
 
 def is_relevant(s: Story) -> bool:
     blob = f"{s.title} {s.summary}"
+    if s.lane == "research":
+        return bool(AI_RE.search(blob) and RESEARCH_RE.search(blob))
     return bool(AI_RE.search(blob) and POLICY_RE.search(blob))
 
 
@@ -259,6 +332,8 @@ def is_opinion(s: Story) -> bool:
 
 
 def classify(s: Story) -> str:
+    if s.lane == "research":
+        return RESEARCH_SECTION
     blob = f"{s.title} {s.summary}"
     for name, pattern in SECTION_PATTERNS:
         if pattern.search(blob):
@@ -379,7 +454,9 @@ def get_news(now: dt.datetime = None, fetch: Callable = None, recent: list = Non
     recent = load_recent() if recent is None else recent
     status: dict = {}
 
-    raw = collect_google(fetch, now, hours, status) + collect_direct(fetch, status)
+    days = max(1, -(-hours // 24))
+    raw = (collect_google(fetch, now, hours, status) + collect_direct(fetch, status)
+           + collect_research(fetch, days, status))
     cutoff = now - dt.timedelta(hours=hours)
 
     fresh = []

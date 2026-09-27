@@ -7,7 +7,7 @@ This repo is fully self-contained. It shares no code, data, workflows or secrets
 ## Layout
 - `ai_policy_brief/jobs_scraper.py` reads employer job boards (Greenhouse, Ashby, Lever) and writes `data/ai-feed.xml`, history and a weekly pulse.
 - `ai_policy_brief/jobs.py` picks featured jobs and the hiring pulse from that feed.
-- `ai_policy_brief/news.py` gathers, filters, groups and ranks stories (Axios, Politico, WSJ, Washington Post, NYT, Reuters, AP, The Hill, Tech Policy Press, Lawfare). Paywalled outlets: headline and link only.
+- `ai_policy_brief/news.py` gathers, filters, groups and ranks stories (Axios, Politico, WSJ, Washington Post, NYT, Reuters, AP, The Hill, Tech Policy Press, Lawfare) plus a Research & Partnerships lane (KPMG, Deloitte, PwC, EY, McKinsey, BCG, Accenture, UT Austin, Stanford HAI, MIT, Harvard, CSET, Brookings, RAND, CSIS, Pew). Paywalled outlets: headline and link only.
 - `ai_policy_brief/template.py` renders the email. `generate.py` builds an issue. `send.py` sends via Brevo.
 - `config.py` holds names, cadence, window and selection limits.
 

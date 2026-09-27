@@ -28,6 +28,7 @@ SECTION_COLORS = {
     "Courts & Legal": "#6B3FA0",
     "Global": "#15803D",
     "Industry & Labs": "#0C7E87",
+    "Research & Partnerships": "#B45309",
 }
 BUCKET_COLORS = {
     "Policy": "#3357A8",

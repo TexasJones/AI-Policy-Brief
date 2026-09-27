@@ -43,7 +43,22 @@ FIXTURES = {
 }
 
 
+RESEARCH_FIXTURES = {
+    "kpmg.com": [
+        ("KPMG and UT Austin launch AI governance research partnership - KPMG", 30, "https://n.google/r1", "https://kpmg.com"),
+    ],
+    "query2": [
+        ("New study finds AI policy skills gap across federal workforce - Brookings", 12, "https://n.google/r2", "https://www.brookings.edu"),
+        ("Company unveils new chatbot app - TechBlog", 5, "https://n.google/r3", "https://techblog.example"),
+    ],
+}
+
+
 def fake_fetch(url):
+    if "site%3Akpmg.com" in url:
+        return feed(RESEARCH_FIXTURES["kpmg.com"])
+    if "new+study" in url:
+        return feed(RESEARCH_FIXTURES["query2"])
     for domain, items in FIXTURES.items():
         if f"site%3A{domain}" in url:
             return feed(items)
@@ -69,6 +84,11 @@ def main():
     assert wsj.paywalled and wsj.section == "White House & Agencies", (wsj.paywalled, wsj.section)
     assert next(s for s in by_title.values() if "attorney general" in s.title).section == "States"
     assert next(s for s in by_title.values() if "copyright" in s.title).section == "Courts & Legal"
+
+    research = [s for s in by_title.values() if s.section == news.RESEARCH_SECTION]
+    assert any("KPMG" in s.title and s.outlet == "KPMG" for s in research), "KPMG/UT partnership missing"
+    assert any("skills gap" in s.title for s in research), "study missing"
+    assert not any("chatbot app" in s.title for s in by_title.values()), "off-topic research item leaked"
 
     # cross-issue memory: same stories are dropped next time
     recent = [{"date": "2026-09-26", "tokens": sorted(news.tokens(t))} for t in titles]
