@@ -20,10 +20,18 @@ Two kinds of employer:
   * Gated (PR / public affairs firms, general policy think tanks): a role is
     kept only if it shows an AI signal, so routine PR openings stay out.
 
-Candidate employers found in research but NOT wired in (no supported public
-API), for a later pass:
-    Center for Democracy & Technology  -> Trakstar (cdt.hire.trakstar.com)
-    Americans for Responsible Innovation -> JazzHR (ari.applytojob.com)
+Candidate employers found in research but NOT wired in, for a later pass:
+    Center for Democracy & Technology -> Trakstar RSS feed exists
+        (cdt.hire.trakstar.com/jobfeeds/cdt) but only 3 postings total (1
+        relevant); not worth a new fetcher type yet.
+    Access Now -> BambooHR, working public JSON pattern
+        (accessnow.bamboohr.com/careers/list) but 0 open policy roles
+        currently; same call as CDT.
+    Public Knowledge, Public Citizen, Americans for Responsible Innovation
+        -> all on JazzHR (*.applytojob.com), no public API.
+    EFF -> Paycom, no public API. EPIC -> email-only applications.
+    Deloitte -> proprietary system (a URL segment reading "greenhouse" is
+        NOT the real Greenhouse ATS; confirmed 404 on the real API).
     GovAI, CSET, AI Now, Data & Society, Partnership on AI, FAS -> own sites
     Google, Google DeepMind, Meta, Microsoft, Amazon, Apple -> own career sites
 """
@@ -83,6 +91,22 @@ EMPLOYERS = [
     {"source": "ashby", "slug": "elevenlabs", "name": "ElevenLabs", "kind": "ai_native"},
     {"source": "lever", "slug": "aisafety", "name": "Center for AI Safety", "kind": "ai_native"},
     {"source": "lever", "slug": "futureof-life", "name": "Future of Life Institute", "kind": "ai_native"},
+    # ── Nonprofits / advocacy orgs (AI signal required -- these cover many
+    # issues, not just AI) ──
+    # Omidyar Network: confirmed real Greenhouse board, live posting found
+    # ("Principal, Programs and Policy (Tech and AI)", San Francisco).
+    {"source": "greenhouse", "slug": "omidyarnetwork", "name": "Omidyar Network", "kind": "gated"},
+    # Mozilla: confirmed real Greenhouse board; roles span multiple countries
+    # (Remote US/Canada/Germany seen), so US-only is applied like the other
+    # global orgs below.
+    {"source": "greenhouse", "slug": "mozilla", "name": "Mozilla", "kind": "gated", "us_only": True},
+    # Gates Foundation: Workday tenant/site confirmed via search results
+    # (gatesfoundation.wd1.myworkdayjobs.com/en-US/Gates/jobs, dozens of
+    # postings referenced) but the POST API itself could not be verified
+    # from this sandbox -- same caveat as the other Workday employers below.
+    {"source": "workday", "slug": "gatesfoundation", "name": "Gates Foundation", "kind": "gated", "us_only": True,
+     "host": "gatesfoundation.wd1.myworkdayjobs.com", "tenant": "Gates", "site": "Gates",
+     "queries": ["AI policy", "artificial intelligence", "responsible AI", "government affairs AI"]},
     # ── PR / public affairs firms (AI signal required) ──
     {"source": "greenhouse", "slug": "hillandknowlton", "name": "Hill & Knowlton", "kind": "gated"},
     {"source": "greenhouse", "slug": "webershandwick", "name": "Weber Shandwick", "kind": "gated", "us_only": True},
