@@ -1,5 +1,5 @@
 name: Send Polly AI Brief
-run-name: ${{ inputs.test_to != '' && 'Polly AI Brief (TEST)' || (inputs.preview && 'Polly AI Brief (PREVIEW)' || 'Polly AI Brief') }}
+run-name: ${{ (inputs.test_to != '' && inputs.preview) && 'Polly AI Brief (TEST + preview also checked)' || (inputs.test_to != '' && 'Polly AI Brief (TEST)') || (inputs.preview && 'Polly AI Brief (PREVIEW)') || 'Polly AI Brief' }}
 # Triggered by an external scheduler (workflow_dispatch) at 7:00 a.m. Eastern.
 # The gate below only lets Tuesday and Friday through, so the scheduler can
 # call this every day without sending on the wrong days.
@@ -87,7 +87,14 @@ jobs:
           done
           exit 1
       - name: Send via Brevo
-        if: steps.chk.outputs.sent != 'true' && inputs.preview != true
+        # A test send (test_to set) always goes out, even if "preview" was
+        # also checked by mistake -- it only ever reaches the given address,
+        # so there's no reason to let a stray preview checkbox silently
+        # swallow it (this happened live: a run named "(TEST)" completed
+        # successfully with this step skipped and nothing landed in the
+        # inbox, because preview was also checked and this condition used to
+        # require preview != true unconditionally).
+        if: steps.chk.outputs.sent != 'true' && (env.TEST_TO != '' || inputs.preview != true)
         run: |
           if [ -n "$TEST_TO" ]; then
             python -m ai_policy_brief.send --test-to "$TEST_TO"
