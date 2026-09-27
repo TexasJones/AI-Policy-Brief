@@ -1,4 +1,4 @@
-"""Build one issue of the AI Policy Brief.
+"""Build one issue of the Polly AI Brief.
 
     python -m ai_policy_brief.generate                 # live issue
     python -m ai_policy_brief.generate --sample        # fixture data, no network

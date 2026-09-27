@@ -1,4 +1,4 @@
-"""HTML email for the AI Policy Brief. Table layout with inline styles, the
+"""HTML email for the Polly AI Brief. Table layout with inline styles, the
 email-safe pattern; one small media query reflows it on phones."""
 from __future__ import annotations
 

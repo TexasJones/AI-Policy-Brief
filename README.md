@@ -1,4 +1,4 @@
-# AI Policy Brief
+# Polly AI Brief
 
 Twice-weekly newsletter (Tuesday and Friday, 7 a.m. Eastern): AI + policy news from top outlets, plus non-technical AI jobs (policy, communications, legal, consulting) with direct apply links.
 

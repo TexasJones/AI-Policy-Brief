@@ -1,9 +1,9 @@
-"""Settings for the AI Policy Brief. Nothing here is shared with any other
+"""Settings for the Polly AI Brief. Nothing here is shared with any other
 newsletter; change values here rather than hunting through modules."""
 import os
 
-BRAND_NAME = "AI Policy Brief"
-SUBJECT_PREFIX = "AI Policy Brief: "
+BRAND_NAME = "Polly AI Brief"
+SUBJECT_PREFIX = "Polly AI Brief: "
 SUBJECT_MAX_CHARS = 60
 
 # GitHub Pages copy of each issue (Settings -> Pages: main branch, /docs).

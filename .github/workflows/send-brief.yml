@@ -1,5 +1,5 @@
-name: Send AI Policy Brief
-run-name: ${{ inputs.test_to != '' && 'AI Policy Brief (TEST)' || 'AI Policy Brief' }}
+name: Send Polly AI Brief
+run-name: ${{ inputs.test_to != '' && 'Polly AI Brief (TEST)' || 'Polly AI Brief' }}
 # Triggered by an external scheduler (workflow_dispatch) at 7:00 a.m. Eastern.
 # The gate below only lets Tuesday and Friday through, so the scheduler can
 # call this every day without sending on the wrong days.
@@ -47,7 +47,7 @@ jobs:
       BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
       BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
       BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
-      BREVO_SENDER_NAME: AI Policy Brief
+      BREVO_SENDER_NAME: Polly AI Brief
       MAILING_ADDRESS: ${{ secrets.MAILING_ADDRESS }}
       SUBSCRIBE_URL: ${{ vars.SUBSCRIBE_URL }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

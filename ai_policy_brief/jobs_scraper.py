@@ -1,5 +1,5 @@
 """
-AI Policy Brief job feed.
+Polly AI Brief job feed.
 
 Self-contained: this repo shares no code, data or workflows with any other
 newsletter. Files written (all under data/):
