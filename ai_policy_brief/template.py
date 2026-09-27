@@ -112,13 +112,14 @@ def _why(s: Story) -> str:
             f'<strong>Why it matters:</strong> {esc(s.why)}</div>') if getattr(s, "why", "") else ""
 
 
-def _story_block(s: Story, now: dt.datetime) -> str:
+def _story_block(s: Story, now: dt.datetime, show_badge: bool = True) -> str:
     color = SECTION_COLORS.get(s.section, ACCENT)
     summary = (f'<div style="font-size:14px;color:{MUTED};line-height:1.55;margin:6px 0 4px;">'
                f'{_bold_lead_in(s.summary)}</div>') if s.summary else ""
     summary += _why(s)
+    badge = f'<div style="margin-bottom:8px;">{_badge(s.emoji + " " + s.section, color)}</div>' if show_badge else ""
     return (f'<tr><td style="padding-bottom:18px;">'
-            f'<div style="margin-bottom:8px;">{_badge(s.emoji + " " + s.section, color)}</div>'
+            f'{badge}'
             f'<div style="font-family:{HEADLINE_FONT};font-size:17px;font-weight:700;color:{INK};line-height:1.35;">'
             f'{esc(s.title)}</div>'
             f'{summary}{_story_meta(s, now)}'
@@ -263,7 +264,10 @@ def render_brief(pulse: Pulse, news: NewsResult, today: dt.date = None, now: dt.
     for i, s in enumerate(news.stories):
         if i:
             stories_html += _divider()
-        stories_html += _story_block(s, now)
+        # Consecutive stories in the same section repeat the section badge
+        # right on top of itself -- skip it the second time in a row.
+        show_badge = i == 0 or news.stories[i - 1].section != s.section
+        stories_html += _story_block(s, now, show_badge)
     if not stories_html:
         stories_html = (f'<tr><td style="font-size:14px;color:{MUTED};">'
                         f'No other stories cleared the bar this issue.</td></tr>')

@@ -711,12 +711,26 @@ def write_jobs_page(jobs: list, path: str = JOBS_PAGE_PATH) -> None:
     the newsletter can only feature a handful per issue, and this is where
     the rest live. Grouped by bucket, newest first (jobs is already sorted
     that way by collect()); every title links straight to the employer's
-    own application page, exactly like the newsletter does."""
+    own application page, exactly like the newsletter does.
+
+    Visual language (colors, card, top accent bar, footer) is kept in sync
+    by hand with template.py's -- this module stays free of any import on
+    template.py so the scraper can run standalone."""
+    INK, MUTED, HAIRLINE, BG, CARD = "#14202B", "#475569", "#E3E8EC", "#F2F5F7", "#FFFFFF"
+    HEADLINE_FONT = "Georgia, 'Times New Roman', serif"
+    BODY_FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+
     buckets = ["Policy", "Communications", "Legal", "Consulting"]
     by_bucket: dict = {b: [] for b in buckets}
     for j in jobs:
         if j["bucket"] in by_bucket:
             by_bucket[j["bucket"]].append(j)
+
+    jump_links = " &nbsp;&middot;&nbsp; ".join(
+        f'<a href="#{b.lower()}" style="color:{_BUCKET_COLORS.get(b, "#0C7E87")};font-weight:600;text-decoration:none;">'
+        f'{html.escape(b)} <span style="color:{MUTED};font-weight:400;">({len(by_bucket[b])})</span></a>'
+        for b in buckets if by_bucket[b]
+    )
 
     sections = []
     for b in buckets:
@@ -725,21 +739,28 @@ def write_jobs_page(jobs: list, path: str = JOBS_PAGE_PATH) -> None:
             continue
         color = _BUCKET_COLORS.get(b, "#0C7E87")
         items = "".join(
-            '<li style="padding:10px 0;border-bottom:1px solid #E3E8EC;">'
+            f'<li style="padding:14px 0;border-bottom:1px solid {HAIRLINE};">'
             f'<a href="{html.escape(j["apply_url"])}" target="_blank" rel="noopener noreferrer" '
-            f'style="color:#14202B;text-decoration:none;font-weight:700;font-size:15px;">{html.escape(j["title"])}</a>'
-            f'<div style="font-size:13px;color:#475569;margin-top:2px;">{html.escape(j["company"])}'
+            f'style="color:{INK};text-decoration:none;font-weight:700;font-size:15px;">{html.escape(j["title"])}</a>'
+            + (f' <span style="background-color:#ECFDF5;color:#047857;font-size:10px;font-weight:800;'
+               f'letter-spacing:0.4px;text-transform:uppercase;padding:2px 6px;border-radius:4px;'
+               f'vertical-align:middle;">New</span>' if j.get("age_days", 99) <= 7 else "")
+            + f'<div style="font-size:13px;color:{MUTED};margin-top:3px;">{html.escape(j["company"])}'
             + (f' &middot; {html.escape(j["office_location"])}' if j.get("office_location") else "")
             + '</div></li>'
             for j in rows
         )
         sections.append(
-            f'<h2 style="font-size:16px;color:{color};margin:32px 0 8px;">{html.escape(b)} '
-            f'<span style="color:#475569;font-weight:400;font-size:13px;">({len(rows)})</span></h2>'
-            f'<ul style="list-style:none;padding:0;margin:0;">{items}</ul>'
+            f'<h2 id="{b.lower()}" style="font-size:15px;font-weight:800;color:{color};'
+            f'text-transform:uppercase;letter-spacing:0.4px;margin:36px 0 4px;'
+            f'border-left:4px solid {color};padding-left:10px;">{html.escape(b)} '
+            f'<span style="color:{MUTED};font-weight:400;text-transform:none;letter-spacing:0;font-size:13px;">'
+            f'({len(rows)})</span></h2>'
+            f'<ul style="list-style:none;padding:0;margin:0 0 0 14px;">{items}</ul>'
         )
 
     generated = datetime.now(timezone.utc).strftime("%B %d, %Y")
+    year = datetime.now(timezone.utc).year
     doc = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -747,17 +768,30 @@ def write_jobs_page(jobs: list, path: str = JOBS_PAGE_PATH) -> None:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Polly AI Brief — All Open Roles</title>
 <style>
-  body {{ font-family: -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
-         max-width: 640px; margin: 48px auto; padding: 0 20px; color: #14202B; background: #F2F5F7; }}
+  body {{ font-family: {BODY_FONT}; margin: 0; padding: 32px 16px; color: {INK}; background: {BG}; }}
   a:hover {{ text-decoration: underline !important; }}
+  .apb-card {{ max-width: 640px; margin: 0 auto; background: {CARD}; border-radius: 14px;
+               overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }}
+  .apb-pad {{ padding: 32px 36px 36px; }}
+  li a:hover {{ text-decoration: underline; }}
 </style>
 </head>
 <body>
-  <p style="margin:0 0 4px;"><a href="index.html" style="color:#475569;font-size:13px;text-decoration:none;">&larr; Polly AI Brief</a></p>
-  <h1 style="font-size:1.5rem;margin:8px 0 4px;">All open roles</h1>
-  <p style="color:#475569;font-size:13px;margin:0 0 8px;">{len(jobs):,} AI-relevant policy, communications, legal and consulting roles &middot; updated {generated}</p>
-  <p style="color:#475569;font-size:12px;">Every title links straight to the employer's own application page.</p>
-  {''.join(sections)}
+  <div class="apb-card">
+    <div style="height:6px;background:linear-gradient(90deg,#3357A8,#A8324A,#9F620E,#6B3FA0,#15803D,#0C7E87,#BE185D,#C2410C);"></div>
+    <div class="apb-pad">
+      <p style="margin:0 0 14px;"><a href="index.html" style="color:{MUTED};font-size:13px;text-decoration:none;">&larr; Polly AI Brief</a></p>
+      <div style="font-size:24px;font-weight:900;color:{INK};letter-spacing:-0.5px;font-family:{HEADLINE_FONT};">All open roles</div>
+      <p style="color:{MUTED};font-size:13px;margin:10px 0 2px;">{len(jobs):,} AI-relevant policy, communications, legal and consulting roles &middot; updated {generated}</p>
+      <p style="color:{MUTED};font-size:12px;margin:0 0 18px;">Every title links straight to the employer's own application page.</p>
+      <div style="font-size:13px;padding:12px 14px;background:{BG};border-radius:8px;">{jump_links}</div>
+      {''.join(sections)}
+      <div style="border-top:1px solid {HAIRLINE};margin-top:28px;padding-top:16px;text-align:center;">
+        <div style="font-size:11px;color:{MUTED};">Polly AI Brief &middot; AI + policy news and non-technical AI jobs, twice a week.</div>
+        <div style="font-size:11px;color:{MUTED};margin-top:6px;">&copy; {year} Polly AI Brief. All rights reserved.</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
 """
