@@ -1,0 +1,26 @@
+name: Send watchdog
+# If the external scheduler misses a send day, dispatch the send here.
+# Runs at 15:00 UTC (10-11 a.m. Eastern) on Tuesday and Friday.
+on:
+  schedule:
+    - cron: "0 15 * * 2,5"
+  workflow_dispatch:
+jobs:
+  rescue:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Dispatch if no send ran in the last 6 hours
+        run: |
+          since=$(date -u -d '6 hours ago' +%Y-%m-%dT%H:%M:%SZ)
+          ok=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow send-brief.yml \
+                 --created ">=$since" --json conclusion \
+                 --jq '[.[] | select(.conclusion != "failure" and .conclusion != "cancelled")] | length')
+          echo "Runs since $since: $ok"
+          if [ "$ok" = "0" ]; then
+            gh workflow run send-brief.yml --repo "$GITHUB_REPOSITORY" --ref "${GITHUB_REF_NAME}"
+          fi
