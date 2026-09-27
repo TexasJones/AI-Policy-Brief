@@ -90,13 +90,21 @@ def build_subject(lead) -> str:
     return config.SUBJECT_PREFIX + title
 
 
-def publish_to_pages(html_out: str, today: dt.date) -> str:
-    docs = ROOT / "docs" / "briefs"
-    docs.mkdir(parents=True, exist_ok=True)
-    name = f"{today.isoformat()}.html"
+def publish_to_pages(html_out: str, today: dt.date, preview: bool = False) -> str:
     # The unsubscribe placeholder only works inside the email; on the public
     # web copy it would be a dead link.
     web = html_out.replace('href="{{ unsubscribe }}"', 'href="#"').replace(">Unsubscribe<", ">Unsubscribe (link in the email)<")
+    if preview:
+        # Preview builds are never sent and never recorded as used, so they
+        # must not land on the same dated URL a real send would use -- that
+        # would overwrite the page a real issue's "View in browser" link
+        # points to. One fixed, always-overwritten file instead; it's never
+        # listed in the archive since write_index() only looks at docs/briefs.
+        (ROOT / "docs" / "preview.html").write_text(web, encoding="utf-8")
+        return f"{config.PAGES_BASE_URL}/preview.html"
+    docs = ROOT / "docs" / "briefs"
+    docs.mkdir(parents=True, exist_ok=True)
+    name = f"{today.isoformat()}.html"
     (docs / name).write_text(web, encoding="utf-8")
     write_index()
     return f"{config.PAGES_BASE_URL}/briefs/{name}"
@@ -196,6 +204,7 @@ def main() -> int:
     now = dt.datetime.now(ZoneInfo(config.SEND_TIMEZONE))
     today = now.date()
     mailing = os.environ.get("MAILING_ADDRESS", "")
+    is_preview = os.environ.get("PREVIEW", "").strip().lower() == "true"
 
     if args.sample:
         pulse, result = sample_data(now)
@@ -223,9 +232,16 @@ def main() -> int:
         # pushed -- the workflow skips that step on purpose so test issues
         # don't clutter the public archive. Linking to it anyway would just
         # be a 404 in the recipient's inbox, so leave the link out entirely
-        # for test sends, same as sample mode does.
+        # for test sends, same as sample mode does. A preview build does get
+        # published, but to a fixed docs/preview.html, never the dated URL a
+        # real send would use.
         is_test = bool(os.environ.get("TEST_TO", "").strip())
-        view_url = None if is_test else f"{config.PAGES_BASE_URL}/briefs/{today.isoformat()}.html"
+        if is_test:
+            view_url = None
+        elif is_preview:
+            view_url = f"{config.PAGES_BASE_URL}/preview.html"
+        else:
+            view_url = f"{config.PAGES_BASE_URL}/briefs/{today.isoformat()}.html"
 
     html_out = render_brief(pulse, result, today=today, now=now, view_url=view_url, mailing_address=mailing, upcoming=deadlines, sample=args.sample)
     Path(args.out).write_text(html_out, encoding="utf-8")
@@ -236,8 +252,12 @@ def main() -> int:
     print("Subject:", subject)
 
     if not args.sample:
-        print("Published to", publish_to_pages(html_out, today))
-        write_pending(now.astimezone(dt.timezone.utc), today, pulse, result)
+        print("Published to", publish_to_pages(html_out, today, preview=is_preview))
+        # Preview never sends and is never recorded (the Record step is
+        # skipped for it too), so there's nothing for pending_state.json to
+        # do -- writing it would just add a no-op commit every preview run.
+        if not is_preview:
+            write_pending(now.astimezone(dt.timezone.utc), today, pulse, result)
     return 0
 
 

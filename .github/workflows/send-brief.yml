@@ -49,6 +49,7 @@ jobs:
       contents: write
     env:
       TEST_TO: ${{ inputs.test_to }}
+      PREVIEW: ${{ inputs.preview }}
       BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
       BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
       BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
