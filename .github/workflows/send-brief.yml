@@ -1,5 +1,5 @@
 name: Send Polly AI Brief
-run-name: ${{ inputs.test_to != '' && 'Polly AI Brief (TEST)' || 'Polly AI Brief' }}
+run-name: ${{ inputs.test_to != '' && 'Polly AI Brief (TEST)' || (inputs.preview && 'Polly AI Brief (PREVIEW)' || 'Polly AI Brief') }}
 # Triggered by an external scheduler (workflow_dispatch) at 7:00 a.m. Eastern.
 # The gate below only lets Tuesday and Friday through, so the scheduler can
 # call this every day without sending on the wrong days.
@@ -14,6 +14,10 @@ on:
         description: "Run even if today is not Tuesday or Friday (Eastern)"
         type: boolean
         default: false
+      preview:
+        description: "Build with real live jobs/news and publish the web page for review, but do not email anyone and do not mark anything as used"
+        type: boolean
+        default: false
 concurrency:
   group: data-writes
   cancel-in-progress: false
@@ -25,11 +29,12 @@ jobs:
     env:
       TEST_TO: ${{ inputs.test_to }}
       ALLOW_OFF_DAY: ${{ inputs.allow_off_day }}
+      PREVIEW: ${{ inputs.preview }}
     steps:
       - id: g
         run: |
           dow=$(TZ=America/New_York date +%u)   # 1=Mon ... 7=Sun
-          if [ "$dow" = "2" ] || [ "$dow" = "5" ] || [ "$ALLOW_OFF_DAY" = "true" ] || [ -n "$TEST_TO" ]; then
+          if [ "$dow" = "2" ] || [ "$dow" = "5" ] || [ "$ALLOW_OFF_DAY" = "true" ] || [ -n "$TEST_TO" ] || [ "$PREVIEW" = "true" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "Not a send day (Eastern weekday $dow); skipping."
@@ -59,7 +64,7 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Skip if this issue was already sent
         id: chk
-        if: env.TEST_TO == ''
+        if: env.TEST_TO == '' && inputs.preview != true
         run: python -m ai_policy_brief.send --check
       - name: Refresh jobs (keeps the last committed feed if the scrape fails)
         if: steps.chk.outputs.sent != 'true'
@@ -81,7 +86,7 @@ jobs:
           done
           exit 1
       - name: Send via Brevo
-        if: steps.chk.outputs.sent != 'true'
+        if: steps.chk.outputs.sent != 'true' && inputs.preview != true
         run: |
           if [ -n "$TEST_TO" ]; then
             python -m ai_policy_brief.send --test-to "$TEST_TO"
@@ -94,11 +99,12 @@ jobs:
         # pushed, data/pending_state.json is still sitting in the repo (the
         # Publish step above commits it BEFORE the send). --commit-state is a
         # no-op when there is nothing pending, so running this unconditionally
-        # (whenever we're not in test mode) lets that leftover state get
-        # committed on the very next run, live or watchdog-triggered, instead
-        # of staying stuck forever behind a "we already sent, skip everything"
-        # gate.
-        if: env.TEST_TO == ''
+        # (whenever we're not in test or preview mode) lets that leftover
+        # state get committed on the very next run, live or
+        # watchdog-triggered, instead of staying stuck forever behind a "we
+        # already sent, skip everything" gate. Preview mode never emailed
+        # anyone, so nothing it built should be marked as delivered.
+        if: env.TEST_TO == '' && inputs.preview != true
         run: |
           python -m ai_policy_brief.generate --commit-state
           git config user.name "github-actions"

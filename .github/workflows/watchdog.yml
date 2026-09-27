@@ -19,7 +19,7 @@ jobs:
           since=$(date -u -d '6 hours ago' +%Y-%m-%dT%H:%M:%SZ)
           ok=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow send-brief.yml \
                  --created ">=$since" --json conclusion,displayTitle \
-                 --jq '[.[] | select(.conclusion != "failure" and .conclusion != "cancelled" and (.displayTitle | contains("TEST") | not))] | length')
+                 --jq '[.[] | select(.conclusion != "failure" and .conclusion != "cancelled" and (.displayTitle | contains("TEST") | not) and (.displayTitle | contains("PREVIEW") | not))] | length')
           echo "Runs since $since: $ok"
           if [ "$ok" = "0" ]; then
             gh workflow run send-brief.yml --repo "$GITHUB_REPOSITORY" --ref "${GITHUB_REF_NAME}"
