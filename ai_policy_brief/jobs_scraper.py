@@ -109,8 +109,13 @@ EMPLOYERS = [
     {"source": "workday", "slug": "accenture", "name": "Accenture", "kind": "gated", "us_only": True,
      "host": "accenture.wd103.myworkdayjobs.com", "tenant": "accenture", "site": "AccentureCareers",
      "queries": ["AI strategy", "responsible AI", "AI governance", "AI policy", "generative AI"]},
-    # ── General policy think tanks (AI signal required) ──
-    {"source": "greenhouse", "slug": "centerforamericanprogress", "name": "Center for American Progress", "kind": "gated"},
+    {"source": "workday", "slug": "rand", "name": "RAND Corporation", "kind": "gated",
+     "host": "rand.wd5.myworkdayjobs.com", "tenant": "rand", "site": "External_Career_Site",
+     "queries": ["AI policy", "artificial intelligence", "AI governance"]},
+    # Center for American Progress: not wired in. Its careers page is on
+    # its own site (americanprogress.org/about-us/jobs/), not a
+    # Greenhouse/Ashby/Lever board (confirmed 404 on the guessed slug) --
+    # no public JSON API found for it. Would need HTML scraping.
 ]
 
 KIND_LABELS = {
@@ -479,8 +484,7 @@ def raw_jobs_eightfold(employer: dict):
     for query in employer["queries"]:
         start, total = 0, None
         for _page in range(EIGHTFOLD_MAX_PAGES):
-            qs = urllib.parse.urlencode({"domain": employer["domain"], "query": query, "start": start,
-                                         "sort_by": "timestamp"})
+            qs = urllib.parse.urlencode({"domain": employer["domain"], "query": query, "start": start})
             data = json.loads(fetch_url(f"{base}/api/pcsx/search?{qs}"))
             payload = data.get("data") or {}
             positions = payload.get("positions", [])

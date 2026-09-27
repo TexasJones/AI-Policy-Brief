@@ -27,12 +27,16 @@ This repo is fully self-contained. It shares no code, data, workflows or secrets
     python -m ai_policy_brief.generate --sample
     python tests/test_news.py && python tests/test_jobs_scraper.py
 
-## Source status (as of the first build)
-Checked live from a browser-style fetch: The Hill technology feed and Tech Policy Press feed (both valid RSS); Google careers results (server-rendered HTML); Microsoft's Eightfold search API (returns JSON; field names read defensively); Federal Register API. PwC and Accenture use Workday's standard public search.
+## Source status
+Checked live: The Hill technology feed and Tech Policy Press feed (valid RSS); Google careers results (server-rendered HTML); Federal Register API. PwC, Accenture and RAND Corporation use Workday's standard public search (RAND's tenant/site confirmed live, its actual job count from this scraper not yet confirmed). Microsoft's Eightfold search previously used a `sort_by=timestamp` parameter that overrode relevance ranking, so a query for "AI policy" returned Microsoft's newest postings company-wide instead of AI-relevant ones — removed; not yet re-verified live after the fix.
 
-Not wired, and why: Axios and Politico feeds (the sites disallow automated fetching, so this repo does not fetch them directly; they are covered through Google News headlines), Meta careers (no public feed), Deloitte, KPMG, McKinsey and BCG careers (custom sites), congressional hearings (needs a congress.gov API key).
+Confirmed working correctly (not a bug): the "gated" AI-signal filter on PR-firm and think-tank postings. Checked live against Hill & Knowlton, FleishmanHillard, Ketchum and Golin's actual open roles — most firms simply have few or zero open roles right now, and the ones that exist (e.g. Golin's Singapore comms role, which mentions "AI" once in a mission statement) correctly don't pass the AI-relevance bar. This is the newsletter being selective, not a scraping failure — expect this list to grow and shrink week to week as real openings change.
 
-Candidates to verify and add later (feeds not yet tested): Brookings, CSET, CDT, The Verge policy, Transformer, Lawfare, NIST news, FTC press releases.
+Removed: Center for American Progress. Its Greenhouse slug 404s live; its real careers page is on its own site (americanprogress.org/about-us/jobs/), which has no public JSON API this scraper found. Would need HTML scraping to add back.
+
+Not wired, and why: Axios and Politico feeds (the sites disallow automated fetching, so this repo does not fetch them directly; they are covered through Google News headlines), Meta careers (no public feed found), Deloitte, KPMG, McKinsey and BCG careers (custom sites, no public API found), Hugging Face, Mistral AI and Anduril (no confirmed Greenhouse/Ashby/Lever board — may use a different ATS or ID), congressional hearings (needs a congress.gov API key).
+
+Candidates to verify and add later: ITIF (uses Freshteam, a smaller ATS not yet supported), Brookings, CSET, CDT, The Verge policy, Transformer, Lawfare, NIST news, FTC press releases.
 
 ## Design notes
 - `docs/mockup.html` is a sample issue with fictional content and a SAMPLE banner.
