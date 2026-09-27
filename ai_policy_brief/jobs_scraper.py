@@ -740,7 +740,7 @@ def write_jobs_page(jobs: list, path: str = JOBS_PAGE_PATH) -> None:
     Visual language (colors, card, top accent bar, footer) is kept in sync
     by hand with template.py's -- this module stays free of any import on
     template.py so the scraper can run standalone."""
-    INK, MUTED, HAIRLINE, BG, CARD = "#14202B", "#475569", "#E3E8EC", "#F2F5F7", "#FFFFFF"
+    INK, MUTED, HAIRLINE, BG, CARD, ACCENT = "#14202B", "#475569", "#E3E8EC", "#F2F5F7", "#FFFFFF", "#0C7E87"
     HEADLINE_FONT = "Georgia, 'Times New Roman', serif"
     BODY_FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 
@@ -750,11 +750,33 @@ def write_jobs_page(jobs: list, path: str = JOBS_PAGE_PATH) -> None:
         if j["bucket"] in by_bucket:
             by_bucket[j["bucket"]].append(j)
 
+    us_count = sum(1 for j in jobs if (j.get("region") or "US") == "US")
+
     jump_links = " &nbsp;&middot;&nbsp; ".join(
         f'<a href="#{b.lower()}" style="color:{_BUCKET_COLORS.get(b, "#0C7E87")};font-weight:600;text-decoration:none;">'
         f'{html.escape(b)} <span style="color:{MUTED};font-weight:400;">({len(by_bucket[b])})</span></a>'
         for b in buckets if by_bucket[b]
     )
+
+    def _job_card(j: dict, color: str) -> str:
+        initial = html.escape((j["company"][:1] or "?").upper())
+        meta = " &middot; ".join(html.escape(x) for x in (j["company"], j.get("office_location", "")) if x)
+        new_badge = (' <span style="background-color:#ECFDF5;color:#047857;font-size:10px;font-weight:800;'
+                     'letter-spacing:0.4px;text-transform:uppercase;padding:2px 6px;border-radius:4px;'
+                     'vertical-align:middle;">New</span>') if j.get("age_days", 99) <= 7 else ""
+        return (
+            f'<tr><td style="padding-bottom:10px;"><div style="background-color:{BG};border-radius:8px;padding:12px 14px;">'
+            f'<table role="presentation" cellpadding="0" cellspacing="0" width="100%"><tr>'
+            f'<td width="40" valign="middle" align="center" style="width:40px;height:40px;border:1px solid {HAIRLINE};'
+            f'border-radius:8px;background-color:{CARD};font-family:{HEADLINE_FONT};font-weight:800;font-size:15px;'
+            f'color:{color};">{initial}</td>'
+            f'<td style="padding-left:12px;" valign="middle">'
+            f'<a href="{html.escape(j["apply_url"])}" target="_blank" rel="noopener noreferrer" '
+            f'style="color:{INK};text-decoration:none;font-size:14px;font-weight:700;">{html.escape(j["title"])}</a>'
+            f'{new_badge}'
+            f'<div style="font-size:12px;color:{MUTED};margin-top:2px;">{meta}</div>'
+            f'</td></tr></table></div></td></tr>'
+        )
 
     sections = []
     for b in buckets:
@@ -762,25 +784,14 @@ def write_jobs_page(jobs: list, path: str = JOBS_PAGE_PATH) -> None:
         if not rows:
             continue
         color = _BUCKET_COLORS.get(b, "#0C7E87")
-        items = "".join(
-            f'<li style="padding:14px 0;border-bottom:1px solid {HAIRLINE};">'
-            f'<a href="{html.escape(j["apply_url"])}" target="_blank" rel="noopener noreferrer" '
-            f'style="color:{INK};text-decoration:none;font-weight:700;font-size:15px;">{html.escape(j["title"])}</a>'
-            + (f' <span style="background-color:#ECFDF5;color:#047857;font-size:10px;font-weight:800;'
-               f'letter-spacing:0.4px;text-transform:uppercase;padding:2px 6px;border-radius:4px;'
-               f'vertical-align:middle;">New</span>' if j.get("age_days", 99) <= 7 else "")
-            + f'<div style="font-size:13px;color:{MUTED};margin-top:3px;">{html.escape(j["company"])}'
-            + (f' &middot; {html.escape(j["office_location"])}' if j.get("office_location") else "")
-            + '</div></li>'
-            for j in rows
-        )
+        items = "".join(_job_card(j, color) for j in rows)
         sections.append(
             f'<h2 id="{b.lower()}" style="font-size:15px;font-weight:800;color:{color};'
-            f'text-transform:uppercase;letter-spacing:0.4px;margin:36px 0 4px;'
+            f'text-transform:uppercase;letter-spacing:0.4px;margin:36px 0 10px;'
             f'border-left:4px solid {color};padding-left:10px;">{html.escape(b)} '
             f'<span style="color:{MUTED};font-weight:400;text-transform:none;letter-spacing:0;font-size:13px;">'
             f'({len(rows)})</span></h2>'
-            f'<ul style="list-style:none;padding:0;margin:0 0 0 14px;">{items}</ul>'
+            f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0">{items}</table>'
         )
 
     generated = datetime.now(timezone.utc).strftime("%B %d, %Y")
@@ -808,7 +819,21 @@ def write_jobs_page(jobs: list, path: str = JOBS_PAGE_PATH) -> None:
       <div style="font-size:24px;font-weight:900;color:{INK};letter-spacing:-0.5px;font-family:{HEADLINE_FONT};">All open roles</div>
       <p style="color:{MUTED};font-size:13px;margin:10px 0 2px;">{len(jobs):,} AI-relevant policy, communications, legal and consulting roles &middot; updated {generated}</p>
       <p style="color:{MUTED};font-size:12px;margin:0 0 18px;">Every title links straight to the employer's own application page.</p>
-      <div style="font-size:13px;padding:12px 14px;background:{BG};border-radius:8px;">{jump_links}</div>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td width="50%" style="padding-right:6px;vertical-align:top;">
+          <div style="background-color:{INK};border-radius:10px;padding:16px;text-align:center;">
+            <div style="font-size:28px;font-weight:900;line-height:1;color:{CARD};">{len(jobs):,}</div>
+            <div style="font-size:11px;font-weight:800;text-transform:uppercase;margin-top:6px;letter-spacing:0.8px;color:{CARD};">Open roles</div>
+          </div>
+        </td>
+        <td width="50%" style="padding-left:6px;vertical-align:top;">
+          <div style="background-color:{ACCENT};border-radius:10px;padding:16px;text-align:center;">
+            <div style="font-size:28px;font-weight:900;line-height:1;color:{CARD};">{us_count:,}</div>
+            <div style="font-size:11px;font-weight:800;text-transform:uppercase;margin-top:6px;letter-spacing:0.8px;color:{CARD};">US-eligible</div>
+          </div>
+        </td>
+      </tr></table>
+      <div style="font-size:13px;padding:12px 14px;background:{BG};border-radius:8px;margin-top:14px;">{jump_links}</div>
       {''.join(sections)}
       <div style="border-top:1px solid {HAIRLINE};margin-top:28px;padding-top:16px;text-align:center;">
         <div style="font-size:11px;color:{MUTED};">Polly AI Brief &middot; AI + policy news and non-technical AI jobs, twice a week.</div>
