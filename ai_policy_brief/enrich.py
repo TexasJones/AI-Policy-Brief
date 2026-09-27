@@ -91,6 +91,42 @@ def enrich(stories: list[Story], session=None) -> dict:
     return stats
 
 
+def write_intro(lead: Optional[Story], stories: list[Story], pulse_total: int, pulse_new: int,
+                model: Optional[str] = None) -> Optional[str]:
+    """One conversational sentence (<=25 words) introducing the issue, grounded
+    strictly in the lead story's headline, the section names of the other
+    stories, and the jobs-pulse counts -- never invented facts. Returns None
+    (never a placeholder string) if there's no API key or the call fails, so
+    a missing intro just means the newsletter opens straight on the lead
+    story, exactly as it did before this existed."""
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    if not key or lead is None:
+        return None
+    import requests
+    model = model or os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001")
+    sections = ", ".join(sorted({s.section for s in stories})) or "none"
+    prompt = (
+        "Write one conversational, upbeat sentence (max 25 words) to open a policy newsletter, "
+        "the kind a friendly human editor would write, not a headline mashup. "
+        "Use ONLY the facts given below -- no invented names, numbers, or events. "
+        "You may mention the lead story and, if natural, the number of open jobs.\n\n"
+        f"Lead story headline: {lead.title}\n"
+        f"Other sections covered this issue: {sections}\n"
+        f"Open jobs in this issue: {pulse_total} ({pulse_new} new since last issue)\n\n"
+        "Reply with ONLY the sentence, no quotation marks.")
+    try:
+        r = requests.post("https://api.anthropic.com/v1/messages", timeout=40,
+                          headers={"x-api-key": key, "anthropic-version": "2023-06-01",
+                                   "content-type": "application/json"},
+                          data=json.dumps({"model": model, "max_tokens": 80,
+                                           "messages": [{"role": "user", "content": prompt}]}))
+        text = r.json()["content"][0]["text"].strip().strip('"')
+        return text or None
+    except Exception as exc:
+        log.info("write_intro failed: %s", exc)
+        return None
+
+
 def why_it_matters(stories: list[Story], model: Optional[str] = None) -> int:
     """One sentence per story that has a summary, grounded strictly in it."""
     key = os.environ.get("ANTHROPIC_API_KEY")

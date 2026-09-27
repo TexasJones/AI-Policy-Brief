@@ -214,6 +214,9 @@ def main() -> int:
         pulse, result = sample_data(now)
         deadlines = sample_deadlines(today)
         view_url = None
+        # Fixed illustrative intro so the design is visible in a preview even
+        # without an ANTHROPIC_API_KEY -- a live issue gets a fresh one below.
+        intro = "Courts, the Pentagon, and Anthropic were in the news together this week — and there's a solid batch of new policy and legal roles worth a look."
     else:
         print("Reading jobs feed...")
         pulse = jobs.get_pulse()
@@ -225,6 +228,8 @@ def main() -> int:
         result = news.get_news(now=now.astimezone(dt.timezone.utc))
         picked = ([result.lead] if result.lead else []) + result.stories
         print("Enrichment:", enrich.enrich(picked), "| why-it-matters:", enrich.why_it_matters(picked))
+        intro = enrich.write_intro(result.lead, result.stories, pulse.total, pulse.new_since_last)
+        print("Intro:", intro or "(none -- no ANTHROPIC_API_KEY or call failed)")
         deadlines = upcoming_mod.get_deadlines(today)
         print("Open comment periods:", len(deadlines))
         print(f"Window {result.window_hours}h, {result.candidates} raw items")
@@ -247,7 +252,7 @@ def main() -> int:
         else:
             view_url = f"{config.PAGES_BASE_URL}/briefs/{today.isoformat()}.html"
 
-    html_out = render_brief(pulse, result, today=today, now=now, view_url=view_url, mailing_address=mailing, upcoming=deadlines, sample=args.sample)
+    html_out = render_brief(pulse, result, today=today, now=now, view_url=view_url, mailing_address=mailing, upcoming=deadlines, sample=args.sample, intro=intro)
     Path(args.out).write_text(html_out, encoding="utf-8")
     print("Wrote", args.out)
 

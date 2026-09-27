@@ -279,7 +279,8 @@ def _share_link() -> str:
 
 
 def render_brief(pulse: Pulse, news: NewsResult, today: dt.date = None, now: dt.datetime = None,
-                 view_url: str = None, mailing_address: str = "", upcoming=None, sample: bool = False) -> str:
+                 view_url: str = None, mailing_address: str = "", upcoming=None, sample: bool = False,
+                 intro: Optional[str] = None) -> str:
     now = now or dt.datetime.now(dt.timezone.utc)
     today = today or now.date()
 
@@ -340,6 +341,8 @@ def render_brief(pulse: Pulse, news: NewsResult, today: dt.date = None, now: dt.
         '</tr></table>',
         f'<div style="font-size:12px;color:{MUTED};margin-top:10px;font-weight:600;">{esc(_date_label(today))}</div>',
         f'<div style="font-size:12px;color:{MUTED};margin-top:4px;">{esc(_read_time(news))}</div>',
+        (f'<div style="font-family:{HEADLINE_FONT};font-style:italic;font-size:15px;color:{INK};'
+         f'line-height:1.5;margin-top:14px;">{esc(intro)}</div>') if intro else "",
         view, subscribe, '</td></tr>',
         _lead_block(news.lead, now) if news.lead else "",
         _divider(),
