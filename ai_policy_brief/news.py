@@ -98,6 +98,19 @@ RESEARCH_QUERIES = [
 ]
 RESEARCH_SITE_QUERY = '(AI OR "artificial intelligence") (study OR report OR survey OR partnership OR collaboration)'
 
+# The two RESEARCH_QUERIES above carry no site: restriction (they exist to catch
+# partnerships/studies covered BY a news outlet, not just self-announced), so
+# a random blog or SEO content farm could otherwise be cited as a source.
+# Anything from an unrestricted query must resolve to a domain on this list, or
+# to one of OUTLETS/RESEARCH_SOURCES' own domains, to be kept.
+REPUTABLE_RESEARCH_DOMAINS = {
+    "reuters.com", "apnews.com", "axios.com", "politico.com", "wsj.com",
+    "washingtonpost.com", "nytimes.com", "thehill.com", "techpolicy.press",
+    "lawfaremedia.org", "bloomberg.com", "ft.com", "wired.com", "theverge.com",
+    "protocol.com", "insidehighered.com", "chronicle.com", "highereddive.com",
+    "consultancy.uk", "prweek.com", "prnewsonline.com",
+}
+
 RESEARCH_RE = re.compile(
     r"\bstud(?:y|ies)\b|survey|\breport\b|researchers?|research\b|white ?paper|\bindex\b|"
     r"partner(?:s|ship|ing)?\b|collaborat|alliance|\bjoint\b|\bcenter\b|\binstitute\b|"
@@ -266,15 +279,24 @@ def _split_outlet(title: str, fallback: str):
     return title, fallback
 
 
+def _domain_ok(href: str) -> bool:
+    if not href:
+        return False
+    known = {d for _n, d, *_r in OUTLETS} | {d for _n, d in RESEARCH_SOURCES} | REPUTABLE_RESEARCH_DOMAINS
+    return any(d in href for d in known)
+
+
 def collect_research(fetch: Callable, days: int, status: dict) -> list[Story]:
     """Partnerships, studies and reports from universities, consulting firms and
-    think tanks. Unrestricted queries catch coverage anywhere; site-restricted
-    ones catch the institutions' own announcements."""
+    think tanks. Unrestricted queries catch coverage anywhere, but are then
+    limited to a known-reputable domain list (see REPUTABLE_RESEARCH_DOMAINS);
+    site-restricted queries catch the institutions' own announcements and
+    trust the site: restriction itself."""
     stories = []
-    jobs_ = [(f"research:query{i + 1}", "", f'{q} when:{days}d') for i, q in enumerate(RESEARCH_QUERIES)]
-    jobs_ += [(f"research:{name}", domain, f"{RESEARCH_SITE_QUERY} site:{domain} when:{days}d")
-              for name, domain in RESEARCH_SOURCES]
-    for key, domain, q in jobs_:
+    restricted = [(f"research:{name}", domain, f"{RESEARCH_SITE_QUERY} site:{domain} when:{days}d")
+                  for name, domain in RESEARCH_SOURCES]
+    unrestricted = [(f"research:query{i + 1}", "", f'{q} when:{days}d') for i, q in enumerate(RESEARCH_QUERIES)]
+    for key, domain, q in restricted + unrestricted:
         url = "https://news.google.com/rss/search?" + urlencode(
             {"q": q, "hl": "en-US", "gl": "US", "ceid": "US:en"})
         text = fetch(url)
@@ -286,10 +308,12 @@ def collect_research(fetch: Callable, days: int, status: dict) -> list[Story]:
                 title, outlet = _split_outlet(raw_title, fallback)
                 src = e.get("source") or {}
                 href = (src.get("href") or "") if isinstance(src, dict) else ""
-                if domain and href and domain not in href:
-                    continue
                 if domain:
+                    if href and domain not in href:
+                        continue
                     outlet = fallback
+                elif not _domain_ok(href):
+                    continue  # unrestricted query: require a known-reputable domain
                 link = e.get("link") or ""
                 if not title or not link:
                     continue

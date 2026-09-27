@@ -54,11 +54,16 @@ RESEARCH_FIXTURES = {
 }
 
 
+SEO_FARM_ITEMS = [
+    ("Top 10 AI Tools: New Study Ranks Best Chatbots 2026 - ContentMillBlog", 10, "https://n.google/r4", "https://contentmillblog.example"),
+]
+
+
 def fake_fetch(url):
     if "site%3Akpmg.com" in url:
         return feed(RESEARCH_FIXTURES["kpmg.com"])
     if "new+study" in url:
-        return feed(RESEARCH_FIXTURES["query2"])
+        return feed(RESEARCH_FIXTURES["query2"] + SEO_FARM_ITEMS)
     for domain, items in FIXTURES.items():
         if f"site%3A{domain}" in url:
             return feed(items)
@@ -89,6 +94,8 @@ def main():
     assert any("KPMG" in s.title and s.outlet == "KPMG" for s in research), "KPMG/UT partnership missing"
     assert any("skills gap" in s.title for s in research), "study missing"
     assert not any("chatbot app" in s.title for s in by_title.values()), "off-topic research item leaked"
+    assert not any("ContentMillBlog" in s.outlet or "Top 10 AI Tools" in s.title for s in by_title.values()), \
+        "unrestricted research query let through a non-reputable domain"
 
     # cross-issue memory: same stories are dropped next time
     recent = [{"date": "2026-09-26", "tokens": sorted(news.tokens(t))} for t in titles]

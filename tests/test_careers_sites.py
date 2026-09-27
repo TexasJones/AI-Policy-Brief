@@ -38,6 +38,40 @@ def main():
     assert [j["title"] for j in jobs] == ["Director, AI Public Policy"]
     assert jobs[0]["apply_url"] == "https://apply.careers.microsoft.com/careers/job/1970393556988251"
 
+    # Workday: two pages of results are both fetched, offset advances, and the
+    # job id is pulled from the posting's own _R###### suffix rather than the
+    # tenant-configured bulletFields (which are not guaranteed unique).
+    pages = [
+        {"total": 3, "jobPostings": [
+            {"title": "AI Policy Manager A", "externalPath": "/job/x/A_R100", "locationsText": "NY", "postedOn": "Posted Today", "bulletFields": ["dup"]},
+            {"title": "AI Policy Manager B", "externalPath": "/job/x/B_R200", "locationsText": "NY", "postedOn": "Posted Today", "bulletFields": ["dup"]}]},
+        {"total": 3, "jobPostings": [
+            {"title": "AI Policy Manager C", "externalPath": "/job/x/C_R300", "locationsText": "NY", "postedOn": "Posted Today", "bulletFields": ["dup"]}]},
+    ]
+    calls = []
+    def paged_post(u, p, **k):
+        calls.append(p["offset"])
+        return pages[p["offset"] // 2]
+    a.post_json = paged_post
+    real_page_size = a.WORKDAY_PAGE_SIZE
+    a.WORKDAY_PAGE_SIZE = 2  # match the fixture's page size so the "short page" stop condition fires correctly
+    try:
+        ids = {j["job_id"].rsplit("-", 1)[-1] for j in a.collect([dict(employer("workday"), queries=["q"], us_only=False)])}
+    finally:
+        a.WORKDAY_PAGE_SIZE = real_page_size
+    assert ids == {"R100", "R200", "R300"}, ids   # not collapsed by the shared "dup" bulletFields
+    assert calls == [0, 2], calls  # stopped after a short (final) page, no third call
+
+    # Google: pagination continues while a page returns results, stops on an empty page
+    def paged_google(u, **k):
+        n = int(u.split("page=")[1].split("&")[0])
+        if n > 2:
+            return "<html></html>"
+        return f'<a href="/about/careers/applications/jobs/results/{n}00-ai-policy-role-{n}?q=x">x</a>'
+    a.fetch_url = paged_google
+    jobs = a.collect([dict(employer("google"), queries=["q"])])
+    assert {j["title"] for j in jobs} == {"AI Policy Role 1", "AI Policy Role 2"}, jobs
+
     # one broken source must not stop the others
     def boom(u, **k): raise RuntimeError("down")
     a.fetch_url = boom

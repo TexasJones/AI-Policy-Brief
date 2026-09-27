@@ -423,51 +423,90 @@ def _workday_posted(text: str) -> str:
     return str(date.today())
 
 
+WORKDAY_PAGE_SIZE = 20
+WORKDAY_MAX_PAGES = 10  # hard cap so a bad response can't loop forever
+
+# Workday's own posting id, e.g. "...Manager_R123" -> "R123". Preferred over
+# bulletFields, whose contents are tenant-configured and not guaranteed to be
+# a stable unique id -- two different postings colliding on it would silently
+# drop one of them (collect() dedupes by job_id).
+_WORKDAY_REQ_ID = re.compile(r"_((?:R|REQ)[-\w]*\d[-\w]*)$", re.IGNORECASE)
+
+
+def _workday_job_id(path: str, bullets: list) -> str:
+    m = _WORKDAY_REQ_ID.search(path or "")
+    if m:
+        return m.group(1)
+    if bullets:
+        return str(bullets[0])
+    return path
+
+
 def raw_jobs_workday(employer: dict):
     base = f"https://{employer['host']}"
     api = f"{base}/wday/cxs/{employer['tenant']}/{employer['site']}/jobs"
     for query in employer["queries"]:
-        data = post_json(api, {"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": query})
-        for j in data.get("jobPostings", []):
-            path = j.get("externalPath", "")
-            bullets = j.get("bulletFields") or []
-            raw_id = str(bullets[0]) if bullets else path.rsplit("_", 1)[-1]
-            yield {
-                "raw_id": raw_id,
-                "title": j.get("title", ""),
-                "location": j.get("locationsText", "") or "",
-                "apply_url": f"{base}/en-US/{employer['site']}{path}" if path else "",
-                "description": "",
-                "posted": _workday_posted(j.get("postedOn", "")),
-                "departments": [],
-            }
+        offset, total = 0, None
+        for _page in range(WORKDAY_MAX_PAGES):
+            data = post_json(api, {"appliedFacets": {}, "limit": WORKDAY_PAGE_SIZE, "offset": offset,
+                                   "searchText": query})
+            postings = data.get("jobPostings", [])
+            if total is None:
+                total = data.get("total")
+            for j in postings:
+                path = j.get("externalPath", "")
+                yield {
+                    "raw_id": _workday_job_id(path, j.get("bulletFields") or []),
+                    "title": j.get("title", ""),
+                    "location": j.get("locationsText", "") or "",
+                    "apply_url": f"{base}/en-US/{employer['site']}{path}" if path else "",
+                    "description": "",
+                    "posted": _workday_posted(j.get("postedOn", "")),
+                    "departments": [],
+                }
+            offset += WORKDAY_PAGE_SIZE
+            if len(postings) < WORKDAY_PAGE_SIZE or (isinstance(total, int) and offset >= total):
+                break
         time.sleep(0.3)
+
+
+EIGHTFOLD_PAGE_SIZE = 10
+EIGHTFOLD_MAX_PAGES = 10
 
 
 def raw_jobs_eightfold(employer: dict):
     base = f"https://{employer['host']}"
     for query in employer["queries"]:
-        qs = urllib.parse.urlencode({"domain": employer["domain"], "query": query, "start": 0,
-                                     "sort_by": "timestamp"})
-        data = json.loads(fetch_url(f"{base}/api/pcsx/search?{qs}"))
-        for j in (data.get("data") or {}).get("positions", []):
-            pid = str(j.get("id", ""))
-            locs = j.get("locations") or j.get("standardizedLocations") or j.get("location") or ""
-            if isinstance(locs, list):
-                locs = "; ".join(str(x) for x in locs[:2])
-            ts = j.get("postedTs") or j.get("creationTs") or j.get("postedDate") or ""
-            posted = ""
-            if isinstance(ts, (int, float)) or str(ts).isdigit():
-                posted = datetime.fromtimestamp(int(ts), tz=timezone.utc).strftime("%Y-%m-%d")
-            yield {
-                "raw_id": pid,
-                "title": j.get("name") or j.get("title") or "",
-                "location": str(locs),
-                "apply_url": f"{base}{j.get('positionUrl') or '/careers/job/' + pid}" if pid else "",
-                "description": "",
-                "posted": posted,
-                "departments": [],
-            }
+        start, total = 0, None
+        for _page in range(EIGHTFOLD_MAX_PAGES):
+            qs = urllib.parse.urlencode({"domain": employer["domain"], "query": query, "start": start,
+                                         "sort_by": "timestamp"})
+            data = json.loads(fetch_url(f"{base}/api/pcsx/search?{qs}"))
+            payload = data.get("data") or {}
+            positions = payload.get("positions", [])
+            if total is None:
+                total = payload.get("count")
+            for j in positions:
+                pid = str(j.get("id", ""))
+                locs = j.get("locations") or j.get("standardizedLocations") or j.get("location") or ""
+                if isinstance(locs, list):
+                    locs = "; ".join(str(x) for x in locs[:2])
+                ts = j.get("postedTs") or j.get("creationTs") or j.get("postedDate") or ""
+                posted = ""
+                if isinstance(ts, (int, float)) or str(ts).isdigit():
+                    posted = datetime.fromtimestamp(int(ts), tz=timezone.utc).strftime("%Y-%m-%d")
+                yield {
+                    "raw_id": pid,
+                    "title": j.get("name") or j.get("title") or "",
+                    "location": str(locs),
+                    "apply_url": f"{base}{j.get('positionUrl') or '/careers/job/' + pid}" if pid else "",
+                    "description": "",
+                    "posted": posted,
+                    "departments": [],
+                }
+            start += len(positions) or EIGHTFOLD_PAGE_SIZE
+            if len(positions) < EIGHTFOLD_PAGE_SIZE or (isinstance(total, int) and start >= total):
+                break
         time.sleep(0.3)
 
 
@@ -491,26 +530,35 @@ def _title_from_slug(slug: str) -> str:
     return " ".join(out)
 
 
+GOOGLE_PAGE_SIZE = 20   # Google's results page shows 20 per page
+GOOGLE_MAX_PAGES = 10
+
+
 def raw_jobs_google(employer: dict):
     seen = set()
     for query in employer["queries"]:
-        qs = urllib.parse.urlencode({"q": query})
-        page = fetch_url(f"https://www.google.com/about/careers/applications/jobs/results?{qs}")
-        for m in GOOGLE_JOB_LINK.finditer(page):
-            path, job_id, slug = m.groups()
-            if job_id in seen:
-                continue
-            seen.add(job_id)
-            yield {
-                "raw_id": job_id,
-                "title": _title_from_slug(slug),
-                "location": "",
-                "apply_url": f"https://www.google.com{path}",
-                "description": "",
-                "posted": "",
-                "departments": [],
-            }
-        time.sleep(0.5)
+        for page_num in range(GOOGLE_MAX_PAGES):
+            qs = urllib.parse.urlencode({"q": query, "page": page_num + 1})
+            page = fetch_url(f"https://www.google.com/about/careers/applications/jobs/results?{qs}")
+            found_this_page = 0
+            for m in GOOGLE_JOB_LINK.finditer(page):
+                path, job_id, slug = m.groups()
+                found_this_page += 1
+                if job_id in seen:
+                    continue
+                seen.add(job_id)
+                yield {
+                    "raw_id": job_id,
+                    "title": _title_from_slug(slug),
+                    "location": "",
+                    "apply_url": f"https://www.google.com{path}",
+                    "description": "",
+                    "posted": "",
+                    "departments": [],
+                }
+            time.sleep(0.5)
+            if found_this_page == 0:
+                break
 
 
 RAW_FETCHERS = {
