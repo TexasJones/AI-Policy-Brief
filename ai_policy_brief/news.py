@@ -1,10 +1,10 @@
 """AI + policy news for the newsletter.
 
 Sources: Axios, Politico, WSJ, Washington Post, NYT, Reuters, AP, The Hill,
-Tech Policy Press and Lawfare. Each outlet is searched through a Google News
-RSS query restricted to that outlet's domain (site: operator), which works
-for paywalled outlets without touching their content. Two outlets also
-have direct RSS feeds, read as a bonus when they are up.
+Tech Policy Press, Lawfare and Semafor. Each outlet is searched through a
+Google News RSS query restricted to that outlet's domain (site: operator),
+which works for paywalled outlets without touching their content. Two
+outlets also have direct RSS feeds, read as a bonus when they are up.
 
 Paywalled outlets (WSJ, Washington Post, NYT) get headline + link only.
 The story is credited to the outlet; nothing from behind the paywall is
@@ -53,6 +53,7 @@ OUTLETS = [
     ("The Hill", "thehill.com", 0.8, False),
     ("Tech Policy Press", "techpolicy.press", 0.8, False),
     ("Lawfare", "lawfaremedia.org", 0.8, False),
+    ("Semafor", "semafor.com", 0.9, False),
 ]
 
 # Direct feeds: (outlet display name, url). Best effort; failures are logged
@@ -108,7 +109,7 @@ RESEARCH_SITE_QUERY = '(AI OR "artificial intelligence") (study OR report OR sur
 REPUTABLE_RESEARCH_DOMAINS = {
     "reuters.com", "apnews.com", "axios.com", "politico.com", "wsj.com",
     "washingtonpost.com", "nytimes.com", "thehill.com", "techpolicy.press",
-    "lawfaremedia.org", "bloomberg.com", "ft.com", "wired.com", "theverge.com",
+    "lawfaremedia.org", "semafor.com", "bloomberg.com", "ft.com", "wired.com", "theverge.com",
     "protocol.com", "insidehighered.com", "chronicle.com", "highereddive.com",
     "consultancy.uk", "prweek.com", "prnewsonline.com",
 }
