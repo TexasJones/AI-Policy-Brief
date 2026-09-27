@@ -98,7 +98,55 @@ def publish_to_pages(html_out: str, today: dt.date) -> str:
     # web copy it would be a dead link.
     web = html_out.replace('href="{{ unsubscribe }}"', 'href="#"').replace(">Unsubscribe<", ">Unsubscribe (link in the email)<")
     (docs / name).write_text(web, encoding="utf-8")
+    write_index()
     return f"{config.PAGES_BASE_URL}/briefs/{name}"
+
+
+def write_index() -> None:
+    """Regenerate docs/index.html so the Pages site root isn't a 404. Lists
+    every published issue, newest first. Safe to call any time; harmless if
+    docs/briefs has nothing in it yet."""
+    docs = ROOT / "docs"
+    briefs_dir = docs / "briefs"
+    briefs_dir.mkdir(parents=True, exist_ok=True)
+    dates = sorted(
+        (p.stem for p in briefs_dir.glob("*.html") if p.stem[:1].isdigit()),
+        reverse=True,
+    )
+    if dates:
+        rows = "\n".join(
+            f'        <li><a href="briefs/{d}.html">{d}</a></li>' for d in dates
+        )
+        list_html = f"      <ul>\n{rows}\n      </ul>"
+    else:
+        list_html = (
+            '      <p>No issues have gone out yet. '
+            'Here\'s a <a href="mockup.html">sample issue</a> in the meantime.</p>'
+        )
+    html = f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{config.BRAND_NAME} — Archive</title>
+<style>
+  body {{ font-family: -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
+         max-width: 640px; margin: 48px auto; padding: 0 20px; color: #1a1a1a; }}
+  h1 {{ font-size: 1.4rem; }}
+  ul {{ list-style: none; padding: 0; }}
+  li {{ padding: 10px 0; border-bottom: 1px solid #eee; }}
+  a {{ color: #1a56db; text-decoration: none; }}
+  a:hover {{ text-decoration: underline; }}
+</style>
+</head>
+<body>
+  <h1>{config.BRAND_NAME}</h1>
+  <p>AI + policy news and non-technical AI jobs, twice a week.</p>
+{list_html}
+</body>
+</html>
+"""
+    (docs / "index.html").write_text(html, encoding="utf-8")
 
 
 def write_pending(now, today, pulse, result) -> None:
