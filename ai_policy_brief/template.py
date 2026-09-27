@@ -131,18 +131,23 @@ def _why(s: Story) -> str:
 
 
 def _story_block(s: Story, now: dt.datetime, show_badge: bool = True) -> str:
+    """Card-style story row, matching the visual language of the job cards
+    below it (light gray box, rounded corners) instead of a bare list item
+    separated only by a hairline divider -- the plain-list version left a
+    lot of open white space between stories with nothing to anchor the eye."""
     color = SECTION_COLORS.get(s.section, ACCENT)
     summary = (f'<div style="font-size:14px;color:{MUTED};line-height:1.55;margin:6px 0 4px;">'
                f'{_bold_lead_in(s.summary)}</div>') if s.summary else ""
     summary += _why(s)
     badge = f'<div style="margin-bottom:8px;">{_badge(s.emoji + " " + s.section, color)}</div>' if show_badge else ""
-    return (f'<tr><td style="padding-bottom:18px;">'
+    return (f'<tr><td style="padding-bottom:10px;">'
+            f'<div style="background-color:{BG};border-radius:10px;padding:14px 16px;">'
             f'{badge}'
             f'<div style="font-family:{HEADLINE_FONT};font-size:17px;font-weight:700;color:{INK};line-height:1.35;">'
             f'{esc(s.title)}</div>'
             f'{summary}{_story_meta(s, now)}'
             f'{_link(s.url, f"Read at {esc(s.outlet)} &rarr;", color)}'
-            f'</td></tr>')
+            f'</div></td></tr>')
 
 
 def _lead_block(s: Story, now: dt.datetime) -> str:
@@ -280,10 +285,10 @@ def render_brief(pulse: Pulse, news: NewsResult, today: dt.date = None, now: dt.
 
     stories_html = ""
     for i, s in enumerate(news.stories):
-        if i:
-            stories_html += _divider()
         # Consecutive stories in the same section repeat the section badge
-        # right on top of itself -- skip it the second time in a row.
+        # right on top of itself -- skip it the second time in a row. Each
+        # story is now its own card (see _story_block), so no divider is
+        # needed between them the way the old bare-list layout needed one.
         show_badge = i == 0 or news.stories[i - 1].section != s.section
         stories_html += _story_block(s, now, show_badge)
     if not stories_html:
