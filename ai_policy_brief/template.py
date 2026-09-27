@@ -282,6 +282,8 @@ def render_brief(pulse: Pulse, news: NewsResult, today: dt.date = None, now: dt.
               f'style="color:{MUTED};">{esc(config.FOOTER_LINK_TEXT)}</a></div>'
               ) if config.FOOTER_LINK_URL and config.FOOTER_LINK_TEXT else ""
     address = f'<div style="font-size:11px;color:{MUTED};margin-top:6px;">{esc(mailing_address)}</div>' if mailing_address else ""
+    copyright_line = (f'<div style="font-size:11px;color:{MUTED};margin-top:6px;">'
+                       f'&copy; {today.year} {esc(config.BRAND_NAME)}. All rights reserved.</div>')
 
     ribbon = (f'<tr><td style="background-color:#FEF3C7;color:#92400E;text-align:center;font-size:11px;'
               f'font-weight:800;letter-spacing:0.8px;text-transform:uppercase;padding:8px 12px;">'
@@ -316,7 +318,7 @@ def render_brief(pulse: Pulse, news: NewsResult, today: dt.date = None, now: dt.
         f'<tr><td class="apb-pad" style="padding:16px 40px 36px 40px"><div style="border-top:1px solid {HAIRLINE};'
         f'padding-top:18px;text-align:center">'
         f'<div style="font-size:11px;color:{MUTED};">Headlines link to the original reporting. Paywalled outlets are marked.</div>'
-        f'{credit}{address}'
+        f'{credit}{address}{copyright_line}'
         f'<div style="font-size:11px;color:{MUTED};margin-top:8px;"><a href="{{{{ unsubscribe }}}}" style="color:{MUTED};">Unsubscribe</a></div>'
         f'</div></td></tr>',
         '</table></td></tr></table></body></html>',
