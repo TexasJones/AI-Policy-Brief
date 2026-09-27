@@ -29,6 +29,7 @@ SECTION_COLORS = {
     "Global": "#15803D",
     "Industry & Labs": "#0C7E87",
     "Research & Partnerships": "#BE185D",
+    "Startups & Funding": "#C2410C",
 }
 BUCKET_COLORS = {
     "Policy": "#3357A8",

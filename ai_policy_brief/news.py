@@ -75,9 +75,11 @@ SECTIONS = [
     ("Global", "\U0001F30D"),
     ("Industry & Labs", "\U0001F916"),
     ("Research & Partnerships", "\U0001F393"),
+    ("Startups & Funding", "\U0001F680"),
 ]
 
 RESEARCH_SECTION = "Research & Partnerships"
+LAUNCH_SECTION = "Startups & Funding"
 
 # Research lane: universities, consulting/Big Four firms, think tanks.
 # (display name, domain). Each is searched with a site: restricted query.
@@ -115,6 +117,34 @@ RESEARCH_RE = re.compile(
     r"\bstud(?:y|ies)\b|survey|\breport\b|researchers?|research\b|white ?paper|\bindex\b|"
     r"partner(?:s|ship|ing)?\b|collaborat|alliance|\bjoint\b|\bcenter\b|\binstitute\b|"
     r"universit|business school|\blab\b|consortium|launch(?:es)? (?:new )?(?:program|initiative|center)", re.I)
+
+# Startups & funding lane: new AI company launches, funding rounds, stealth
+# exits. Same shape as the research lane above: a handful of outlets that
+# actually cover startup funding (none of OUTLETS above focus on this),
+# searched both site-restricted (the outlet's own coverage) and, for two
+# unrestricted queries, filtered down to a reputable-domain allowlist so a
+# content farm can't get cited as a source.
+LAUNCH_SOURCES = [
+    ("TechCrunch", "techcrunch.com"), ("VentureBeat", "venturebeat.com"),
+    ("Fortune", "fortune.com"), ("Forbes", "forbes.com"),
+    ("The Information", "theinformation.com"), ("Business Insider", "businessinsider.com"),
+]
+LAUNCH_QUERIES = [
+    '("AI" OR "artificial intelligence") startup (launches OR unveils OR debuts OR "emerges from stealth")',
+    '("AI" OR "artificial intelligence") startup (raises OR "seed round" OR "Series A" OR "Series B" OR funding OR valuation)',
+]
+LAUNCH_SITE_QUERY = '(AI OR "artificial intelligence") (startup OR launches OR raises OR funding OR "seed round" OR stealth)'
+REPUTABLE_LAUNCH_DOMAINS = {
+    "reuters.com", "apnews.com", "axios.com", "bloomberg.com", "ft.com",
+    "wired.com", "theverge.com", "crunchbase.com", "techcrunch.com",
+    "venturebeat.com", "fortune.com", "forbes.com", "theinformation.com",
+    "businessinsider.com",
+}
+
+LAUNCH_RE = re.compile(
+    r"\blaunch(?:es|ed|ing)?\b|unveils?|debuts?|raises? \$|\bseed\b|"
+    r"series [a-e]\b|\bstealth\b|\bfound(?:ed|er[s]?)\b|\bstartups?\b|"
+    r"valuation|funding round|backed by|spins? ?out|spun ?out", re.I)
 
 AI_RE = re.compile(
     r"\bAI\b|artificial intelligence|chatbot|generative|large language|\bLLMs?\b|"
@@ -282,7 +312,8 @@ def _split_outlet(title: str, fallback: str):
 def _domain_ok(href: str) -> bool:
     if not href:
         return False
-    known = {d for _n, d, *_r in OUTLETS} | {d for _n, d in RESEARCH_SOURCES} | REPUTABLE_RESEARCH_DOMAINS
+    known = ({d for _n, d, *_r in OUTLETS} | {d for _n, d in RESEARCH_SOURCES} | REPUTABLE_RESEARCH_DOMAINS
+              | {d for _n, d in LAUNCH_SOURCES} | REPUTABLE_LAUNCH_DOMAINS)
     return any(d in href for d in known)
 
 
@@ -325,6 +356,43 @@ def collect_research(fetch: Callable, days: int, status: dict) -> list[Story]:
     return stories
 
 
+def collect_launches(fetch: Callable, days: int, status: dict) -> list[Story]:
+    """New AI company launches and funding rounds, from outlets that actually
+    cover that beat (none of OUTLETS above do). Same restricted/unrestricted
+    shape as collect_research."""
+    stories = []
+    restricted = [(f"launch:{name}", domain, f"{LAUNCH_SITE_QUERY} site:{domain} when:{days}d")
+                  for name, domain in LAUNCH_SOURCES]
+    unrestricted = [(f"launch:query{i + 1}", "", f'{q} when:{days}d') for i, q in enumerate(LAUNCH_QUERIES)]
+    for key, domain, q in restricted + unrestricted:
+        url = "https://news.google.com/rss/search?" + urlencode(
+            {"q": q, "hl": "en-US", "gl": "US", "ceid": "US:en"})
+        text = fetch(url)
+        got = 0
+        if text:
+            fallback = key.split(":", 1)[1] if domain else ""
+            for e in _parse(text):
+                raw_title = (e.get("title") or "").strip()
+                title, outlet = _split_outlet(raw_title, fallback)
+                src = e.get("source") or {}
+                href = (src.get("href") or "") if isinstance(src, dict) else ""
+                if domain:
+                    if href and domain not in href:
+                        continue
+                    outlet = fallback
+                elif not _domain_ok(href):
+                    continue  # unrestricted query: require a known-reputable domain
+                link = e.get("link") or ""
+                if not title or not link:
+                    continue
+                stories.append(Story(title=title, outlet=outlet or "Source", url=link,
+                                     published=_entry_time(e), weight=0.9, lane="launches",
+                                     paywalled=any(d in href for d in ("wsj.com", "nytimes.com", "washingtonpost.com", "theinformation.com"))))
+                got += 1
+        status[key] = got
+    return stories
+
+
 def collect_direct(fetch: Callable, status: dict) -> list[Story]:
     stories = []
     for name, url in DIRECT_FEEDS:
@@ -353,6 +421,8 @@ def is_relevant(s: Story) -> bool:
     blob = f"{s.title} {s.summary}"
     if s.lane == "research":
         return bool(AI_RE.search(blob) and RESEARCH_RE.search(blob))
+    if s.lane == "launches":
+        return bool(AI_RE.search(blob) and LAUNCH_RE.search(blob))
     return bool(AI_RE.search(blob) and POLICY_RE.search(blob))
 
 
@@ -365,6 +435,8 @@ def is_opinion(s: Story) -> bool:
 def classify(s: Story) -> str:
     if s.lane == "research":
         return RESEARCH_SECTION
+    if s.lane == "launches":
+        return LAUNCH_SECTION
     blob = f"{s.title} {s.summary}"
     for name, pattern in SECTION_PATTERNS:
         if pattern.search(blob):
@@ -489,7 +561,7 @@ def get_news(now: dt.datetime = None, fetch: Callable = None, recent: list = Non
 
     days = max(1, -(-hours // 24))
     raw = (collect_google(fetch, now, hours, status) + collect_direct(fetch, status)
-           + collect_research(fetch, days, status))
+           + collect_research(fetch, days, status) + collect_launches(fetch, days, status))
     cutoff = now - dt.timedelta(hours=hours)
 
     fresh = []

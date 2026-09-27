@@ -59,11 +59,26 @@ SEO_FARM_ITEMS = [
 ]
 
 
+LAUNCH_FIXTURES = {
+    "techcrunch.com": [
+        ("AI safety auditing startup launches with $40M seed round - TechCrunch", 15, "https://n.google/l1", "https://techcrunch.com"),
+    ],
+    "query2": [
+        ("AI infrastructure startup raises $120M Series B - VentureBeat", 8, "https://n.google/l2", "https://venturebeat.com"),
+        ("Company shares quarterly earnings report - BizWire", 5, "https://n.google/l3", "https://bizwire.example"),
+    ],
+}
+
+
 def fake_fetch(url):
     if "site%3Akpmg.com" in url:
         return feed(RESEARCH_FIXTURES["kpmg.com"])
     if "new+study" in url:
         return feed(RESEARCH_FIXTURES["query2"] + SEO_FARM_ITEMS)
+    if "site%3Atechcrunch.com" in url:
+        return feed(LAUNCH_FIXTURES["techcrunch.com"])
+    if "raises" in url:
+        return feed(LAUNCH_FIXTURES["query2"])
     for domain, items in FIXTURES.items():
         if f"site%3A{domain}" in url:
             return feed(items)
@@ -96,6 +111,11 @@ def main():
     assert not any("chatbot app" in s.title for s in by_title.values()), "off-topic research item leaked"
     assert not any("ContentMillBlog" in s.outlet or "Top 10 AI Tools" in s.title for s in by_title.values()), \
         "unrestricted research query let through a non-reputable domain"
+
+    launches = [s for s in by_title.values() if s.section == news.LAUNCH_SECTION]
+    assert any("seed round" in s.title and s.outlet == "TechCrunch" for s in launches), "TechCrunch launch missing"
+    assert any("Series B" in s.title for s in launches), "funding round missing"
+    assert not any("earnings report" in s.title for s in by_title.values()), "off-topic launch item leaked"
 
     # cross-issue memory: same stories are dropped next time
     recent = [{"date": "2026-09-26", "tokens": sorted(news.tokens(t))} for t in titles]

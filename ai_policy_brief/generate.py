@@ -57,6 +57,9 @@ def sample_data(now: dt.datetime):
            why="Corporate governance practice is becoming a policy input."),
         st("New survey: most federal agencies lack a dedicated AI policy lead", "Brookings", "Research & Partnerships", 44,
            summary="Fewer than a third of surveyed agencies report a named official responsible for AI policy."),
+        st("AI safety auditing startup launches with $40M seed round", "TechCrunch", "Startups & Funding", 18,
+           summary="The company plans to sell third-party model evaluations to enterprises facing new state disclosure rules.",
+           why="A market for independent AI audits is forming ahead of state compliance deadlines."),
     ]
     j = lambda i, t, c, b, loc, age, reg="US": jobs.Job(f"s{i}", t, c, b, f"https://example.com/job/{i}", loc, reg, age)
     listing = [

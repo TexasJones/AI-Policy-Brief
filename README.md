@@ -5,9 +5,9 @@ Twice-weekly newsletter (Tuesday and Friday, 7 a.m. Eastern): AI + policy news f
 This repo is fully self-contained. It shares no code, data, workflows or secrets with any other newsletter.
 
 ## Layout
-- `ai_policy_brief/jobs_scraper.py` reads employer job boards (Greenhouse, Ashby, Lever) and writes `data/ai-feed.xml`, history and a weekly pulse.
+- `ai_policy_brief/jobs_scraper.py` reads employer job boards (Greenhouse, Ashby, Lever) and writes `data/ai-feed.xml`, history, a weekly pulse, and `docs/jobs.html` — a static page listing every open role with a direct apply link, since only a handful are featured per issue.
 - `ai_policy_brief/jobs.py` picks featured jobs and the hiring pulse from that feed.
-- `ai_policy_brief/news.py` gathers, filters, groups and ranks stories (Axios, Politico, WSJ, Washington Post, NYT, Reuters, AP, The Hill, Tech Policy Press, Lawfare) plus a Research & Partnerships lane (KPMG, Deloitte, PwC, EY, McKinsey, BCG, Accenture, UT Austin, Stanford HAI, MIT, Harvard, CSET, Brookings, RAND, CSIS, Pew). Paywalled outlets: headline and link only.
+- `ai_policy_brief/news.py` gathers, filters, groups and ranks stories (Axios, Politico, WSJ, Washington Post, NYT, Reuters, AP, The Hill, Tech Policy Press, Lawfare) plus a Research & Partnerships lane (KPMG, Deloitte, PwC, EY, McKinsey, BCG, Accenture, UT Austin, Stanford HAI, MIT, Harvard, CSET, Brookings, RAND, CSIS, Pew) and a Startups & Funding lane (TechCrunch, VentureBeat, Fortune, Forbes, The Information, Business Insider) covering new AI company launches and funding rounds. Paywalled outlets: headline and link only.
 - `ai_policy_brief/template.py` renders the email. `generate.py` builds an issue. `send.py` sends via Brevo.
 - `config.py` holds names, cadence, window and selection limits.
 
