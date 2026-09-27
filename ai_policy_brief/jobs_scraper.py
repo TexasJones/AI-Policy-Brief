@@ -112,6 +112,25 @@ EMPLOYERS = [
     {"source": "workday", "slug": "rand", "name": "RAND Corporation", "kind": "gated",
      "host": "rand.wd5.myworkdayjobs.com", "tenant": "rand", "site": "External_Career_Site",
      "queries": ["AI policy", "artificial intelligence", "AI governance"]},
+    # ── Finance / private equity / venture capital (AI signal required) ──
+    # Firms with real Government Relations / Corporate Affairs / Legal teams
+    # where an AI-specific role can appear (confirmed real postings exist,
+    # e.g. Blackstone's own "Government Relations - Analyst" listing, and
+    # a "Corporate Responsibility - Associate, AI Policy, Global Government
+    # Relations" role at BlackRock -- though BlackRock itself uses Talentbrew,
+    # not a source this scraper supports yet, so it is not wired in).
+    {"source": "workday", "slug": "blackstone", "name": "Blackstone", "kind": "gated", "us_only": True,
+     "host": "blackstone.wd1.myworkdayjobs.com", "tenant": "blackstone", "site": "Blackstone_Careers",
+     "queries": ["AI policy", "artificial intelligence", "responsible AI", "government relations AI"]},
+    {"source": "workday", "slug": "carlyle", "name": "Carlyle", "kind": "gated", "us_only": True,
+     "host": "carlyle.wd1.myworkdayjobs.com", "tenant": "carlyle", "site": "Carlyle",
+     "queries": ["AI policy", "artificial intelligence", "responsible AI", "government relations AI"]},
+    # Venture capital: mostly investment-team roles (out of the Policy/
+    # Communications/Legal/Consulting scope by title alone), kept anyway --
+    # the bucket classifier and AI-signal gate below naturally filter to
+    # whatever legal/comms/policy roles do come up.
+    {"source": "greenhouse", "slug": "bessemerventurepartners", "name": "Bessemer Venture Partners", "kind": "gated"},
+    {"source": "greenhouse", "slug": "generalcatalyst", "name": "General Catalyst", "kind": "gated"},
     # Center for American Progress: not wired in. Its careers page is on
     # its own site (americanprogress.org/about-us/jobs/), not a
     # Greenhouse/Ashby/Lever board (confirmed 404 on the guessed slug) --
