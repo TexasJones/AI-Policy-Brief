@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-09-29T12:33:33Z" count="220">
+<jobs generated="2026-09-29T12:55:40Z" count="224">
   <job>
     <job_id>workday-rand-R3640</job_id>
     <title>AI Policy Research Resident</title>
@@ -22,6 +22,20 @@
     <bucket>Legal</bucket>
     <apply_url>https://rand.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Washington-DC-DC-Metro-Area/Associate-General-Counsel--AI--Biosecurity----Emerging-Technologies-_R3624</apply_url>
     <office_location>2 Locations</office_location>
+    <region>US</region>
+    <date_posted>2026-09-29</date_posted>
+    <age_days>0</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>workday-accenture-R00352787</job_id>
+    <title>Strategy Manager for Technology &amp; AI-Native Companies</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/New-York-One-Manhattan-West-Corp/Strategy-Manager-for-Technology---AI-Native-Companies_R00352787</apply_url>
+    <office_location/>
     <region>US</region>
     <date_posted>2026-09-29</date_posted>
     <age_days>0</age_days>
@@ -811,6 +825,20 @@
     <age_days>8</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic's Legal team is looking for an experienced litigator to join our Litigation and Regulatory team. You'll manage a broad docket of litigation…</description>
+  </job>
+  <job>
+    <job_id>eightfold-microsoft-1970393557001381</job_id>
+    <title>Signals Strategy Lead, Cloud &amp; AI Platforms</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557001381</apply_url>
+    <office_location>United States, Washington, Redmond; United States, New York, New York</office_location>
+    <region>US</region>
+    <date_posted>2026-09-21</date_posted>
+    <age_days>8</age_days>
+    <source>eightfold</source>
+    <description/>
   </job>
   <job>
     <job_id>eightfold-microsoft-1970393556944053</job_id>
@@ -2199,6 +2227,20 @@
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $11B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
   <job>
+    <job_id>eightfold-microsoft-1970393556950492</job_id>
+    <title>Senior Consultant - (Dotnet Full stack + AI)</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556950492</apply_url>
+    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
+    <region>International</region>
+    <date_posted>2026-08-18</date_posted>
+    <age_days>42</age_days>
+    <source>eightfold</source>
+    <description/>
+  </job>
+  <job>
     <job_id>ashby-perplexity-b4e14a27-4aa7-4913-91e8-ca88e6310e80</job_id>
     <title>Litigation Paralegal</title>
     <company>Perplexity</company>
@@ -2967,6 +3009,20 @@
     <age_days>153</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $11B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
+  </job>
+  <job>
+    <job_id>eightfold-microsoft-1970393556856700</job_id>
+    <title>Microsoft Frontier Company - Senior AI Business Consultant</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556856700</apply_url>
+    <office_location>Japan, Tokyo-to, Tokyo</office_location>
+    <region>International</region>
+    <date_posted>2026-04-07</date_posted>
+    <age_days>175</age_days>
+    <source>eightfold</source>
+    <description/>
   </job>
   <job>
     <job_id>ashby-perplexity-2be717cb-ad3e-4052-a464-79b107a70406</job_id>
