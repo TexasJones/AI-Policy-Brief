@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-09-29T12:55:40Z" count="224">
+<jobs generated="2026-09-29T15:21:10Z" count="216">
   <job>
     <job_id>workday-rand-R3640</job_id>
     <title>AI Policy Research Resident</title>
@@ -29,12 +29,12 @@
     <description/>
   </job>
   <job>
-    <job_id>workday-accenture-R00352787</job_id>
-    <title>Strategy Manager for Technology &amp; AI-Native Companies</title>
+    <job_id>workday-accenture-R00303816</job_id>
+    <title>S&amp;C Global Network - AI - Data Strategy – Consultant</title>
     <company>Accenture</company>
     <employer_type>Public affairs / policy</employer_type>
     <bucket>Consulting</bucket>
-    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/New-York-One-Manhattan-West-Corp/Strategy-Manager-for-Technology---AI-Native-Companies_R00352787</apply_url>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Bengaluru-BDC7C/S-C-Global-Network---AI---Data-Strategy---Consultant_R00303816</apply_url>
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-29</date_posted>
@@ -1317,20 +1317,6 @@
     <description>About the Team OpenAI’s mission is to ensure that general-purpose artificial intelligence benefits all of humanity. We believe that achieving our goal requires effective engagement with public policy stakeholders and the broader community impacted by AI. Accordingly, our Global Affairs team builds authentic, collaborative relationships with public officials and the broader AI policymaking community to inform and support our shared work in these domains. We ensure that insights from policymakers inform our work and – in collaboration with our colleagues and external stakeholders – seek to…</description>
   </job>
   <job>
-    <job_id>workday-accenture-R00334289</job_id>
-    <title>Junior Consultant AI Strategy – Strategy &amp; Consulting</title>
-    <company>Accenture</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Amsterdam/Junior-Consultant-AI-Strategy---Strategy---Consulting_R00334289</apply_url>
-    <office_location/>
-    <region>US</region>
-    <date_posted>2026-09-03</date_posted>
-    <age_days>26</age_days>
-    <source>workday</source>
-    <description/>
-  </job>
-  <job>
     <job_id>lever-futureof-life-25d767f7-5de2-4409-ba37-b8c492598f22</job_id>
     <title>Special Projects Manager (Communications Team)</title>
     <company>Future of Life Institute</company>
@@ -2297,20 +2283,6 @@
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $11B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
   <job>
-    <job_id>ashby-elevenlabs-063115f6-3780-4920-97dd-c99489b6cfc2</job_id>
-    <title>Deployment Strategist - France - Global Expansion</title>
-    <company>ElevenLabs</company>
-    <employer_type>AI organization</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://jobs.ashbyhq.com/elevenlabs/063115f6-3780-4920-97dd-c99489b6cfc2</apply_url>
-    <office_location>France</office_location>
-    <region>International</region>
-    <date_posted>2026-08-17</date_posted>
-    <age_days>43</age_days>
-    <source>ashby</source>
-    <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $11B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
-  </job>
-  <job>
     <job_id>ashby-openai-978a22a5-0f0f-4da7-811e-a4b2b2fbe659</job_id>
     <title>Product Policy Research and Advisory Partnerships</title>
     <company>OpenAI</company>
@@ -2393,20 +2365,6 @@
     <age_days>49</age_days>
     <source>eightfold</source>
     <description/>
-  </job>
-  <job>
-    <job_id>ashby-elevenlabs-faf6f3a3-c215-4f25-aaee-5111dddde3c9</job_id>
-    <title>Paralegal, Entity Management &amp; Corporate Governance</title>
-    <company>ElevenLabs</company>
-    <employer_type>AI organization</employer_type>
-    <bucket>Legal</bucket>
-    <apply_url>https://jobs.ashbyhq.com/elevenlabs/faf6f3a3-c215-4f25-aaee-5111dddde3c9</apply_url>
-    <office_location>United States</office_location>
-    <region>US</region>
-    <date_posted>2026-08-10</date_posted>
-    <age_days>50</age_days>
-    <source>ashby</source>
-    <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $11B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
   <job>
     <job_id>ashby-elevenlabs-e66bf8b7-45a0-4cbf-bc37-43d20a388ff8</job_id>
@@ -2703,20 +2661,6 @@
     <description>About the Team OpenAI's mission is to ensure that general-purpose artificial intelligence benefits all of humanity. Our Communications team includes External Communications, Internal Communications, and other strategic communications functions. The team's role is to clearly and authentically explain our technology, values, and approach to safely building powerful AI. About the Role We are seeking an exceptional communications professional to lead communications support for OpenAI's partnerships with federal, state, and local governments and our broader public-sector enterprise work. This…</description>
   </job>
   <job>
-    <job_id>ashby-openai-19e39227-f105-48fa-85d2-59814d4537ed</job_id>
-    <title>Senior Lifecycle Strategist</title>
-    <company>OpenAI</company>
-    <employer_type>AI organization</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://jobs.ashbyhq.com/openai/19e39227-f105-48fa-85d2-59814d4537ed</apply_url>
-    <office_location>San Francisco</office_location>
-    <region>US</region>
-    <date_posted>2026-07-24</date_posted>
-    <age_days>67</age_days>
-    <source>ashby</source>
-    <description>About the Team The B2B Marketing team is responsible for helping businesses understand, adopt, and get value from OpenAI’s products. B2B marketing is a major and growing priority for OpenAI as we scale our work with companies, developers, and institutions around the world. About the Role Within B2B Marketing, Demand Generation builds the integrated, full-funnel engine that connects audience insights, content, field and digital experiences, paid media, lifecycle, and sales follow-through to qualified pipeline. We partner closely with Sales, Partnerships, Product Marketing, Communications,…</description>
-  </job>
-  <job>
     <job_id>ashby-perplexity-fb1815de-07d9-4933-8746-979dbcb00870</job_id>
     <title>AI Strategist, Legal</title>
     <company>Perplexity</company>
@@ -2785,20 +2729,6 @@
     <age_days>70</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s mission is to ensure that general-purpose artificial intelligence benefits all of humanity. Our Communications team includes External Communications, Internal Communications, and other strategic communications functions. This team’s ethos is to support OpenAI's mission and goals by clearly and authentically explaining our technology, values, and approach to safely building powerful AI. About the Role We’re looking for a senior communications leader to shape how OpenAI communicates about its emerging ads and monetization business. This person will define the global…</description>
-  </job>
-  <job>
-    <job_id>ashby-elevenlabs-b85d7749-5b12-4f3c-87e9-61a477da77aa</job_id>
-    <title>Deployment Strategist - Italy</title>
-    <company>ElevenLabs</company>
-    <employer_type>AI organization</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://jobs.ashbyhq.com/elevenlabs/b85d7749-5b12-4f3c-87e9-61a477da77aa</apply_url>
-    <office_location>Italy</office_location>
-    <region>International</region>
-    <date_posted>2026-07-20</date_posted>
-    <age_days>71</age_days>
-    <source>ashby</source>
-    <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $11B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
   <job>
     <job_id>ashby-elevenlabs-6b84bd1f-05cb-4b54-b0db-ff64c84217ae</job_id>
@@ -2941,20 +2871,6 @@
     <description>&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;About Omidyar Network (ON):&lt;/span&gt;&lt;/strong&gt;&lt;span data-ccp-props=&quot;{&amp;quot;134233117&amp;quot;:false,&amp;quot;134233118&amp;quot;:false,&amp;quot;201341983&amp;quot;:0,&amp;quot;335559738&amp;quot;:240,&amp;quot;335559739&amp;quot;:240,&amp;quot;335559740&amp;quot;:278}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Omidyar Network is a philanthropic organization whose mission is to bend the arc of the digital revolution toward shared power, prosperity, and possibility. Digital technology is a powerful and ubiquitous force that, harnessed wisely, makes wondrous things happen. We believe in working…</description>
   </job>
   <job>
-    <job_id>ashby-elevenlabs-ca7bd675-9bef-4459-ad12-cd423184d856</job_id>
-    <title>Deployment Strategist - Netherlands</title>
-    <company>ElevenLabs</company>
-    <employer_type>AI organization</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://jobs.ashbyhq.com/elevenlabs/ca7bd675-9bef-4459-ad12-cd423184d856</apply_url>
-    <office_location>Netherlands</office_location>
-    <region>International</region>
-    <date_posted>2026-06-09</date_posted>
-    <age_days>112</age_days>
-    <source>ashby</source>
-    <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $11B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
-  </job>
-  <job>
     <job_id>ashby-elevenlabs-ff152bcd-af7d-408d-88a1-883e03502c4c</job_id>
     <title>Commercial Counsel - Partnerships</title>
     <company>ElevenLabs</company>
@@ -2965,20 +2881,6 @@
     <region>US</region>
     <date_posted>2026-05-26</date_posted>
     <age_days>126</age_days>
-    <source>ashby</source>
-    <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $11B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
-  </job>
-  <job>
-    <job_id>ashby-elevenlabs-f0cccf77-a255-4620-9639-2f1cc5f9c0ab</job_id>
-    <title>Deployment Strategist - Poland</title>
-    <company>ElevenLabs</company>
-    <employer_type>AI organization</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://jobs.ashbyhq.com/elevenlabs/f0cccf77-a255-4620-9639-2f1cc5f9c0ab</apply_url>
-    <office_location>Poland</office_location>
-    <region>International</region>
-    <date_posted>2026-05-06</date_posted>
-    <age_days>146</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $11B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -3065,20 +2967,6 @@
     <age_days>203</age_days>
     <source>lever</source>
     <description>The Future of Life Institute (FLI) is looking to expand our US policy team to help with our policy work and US government engagement to promote the safe governance of AI through a bipartisan lens. As we are always looking for strong talent for the US policy team, we are hiring new team members on a rolling basis. The US Policy Team Members will report directly to the Head of US Policy. Who we are FLI educates and engages lawmakers, key stakeholders, and the general public about transformative technologies and their implications. We advocate for policies and approaches that mitigate…</description>
-  </job>
-  <job>
-    <job_id>ashby-elevenlabs-6848ece5-1ce5-4ab4-9dd6-0704cd0f8ecd</job_id>
-    <title>Deployment Strategist - Spain</title>
-    <company>ElevenLabs</company>
-    <employer_type>AI organization</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://jobs.ashbyhq.com/elevenlabs/6848ece5-1ce5-4ab4-9dd6-0704cd0f8ecd</apply_url>
-    <office_location>Spain</office_location>
-    <region>International</region>
-    <date_posted>2026-03-04</date_posted>
-    <age_days>209</age_days>
-    <source>ashby</source>
-    <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $11B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
   <job>
     <job_id>ashby-perplexity-2df92d4a-48eb-422f-af9c-4a963fd6135c</job_id>
