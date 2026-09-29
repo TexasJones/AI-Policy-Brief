@@ -56,20 +56,19 @@
     "new_last_7_days": 58
   },
   "2026-09-29": {
-    "total": 216,
+    "total": 192,
     "by_bucket": {
       "Policy": 44,
-      "Legal": 51,
-      "Consulting": 88,
+      "Legal": 52,
+      "Consulting": 63,
       "Communications": 33
     },
     "by_company": {
       "RAND Corporation": 2,
-      "Accenture": 53,
-      "Microsoft": 14,
-      "xAI": 6,
+      "Accenture": 42,
       "Anthropic": 43,
-      "OpenAI": 36,
+      "OpenAI": 37,
+      "xAI": 6,
       "Cohere": 9,
       "ElevenLabs": 21,
       "Scale AI": 13,
@@ -78,9 +77,9 @@
       "Omidyar Network": 1
     },
     "by_region": {
-      "US": 171,
-      "International": 45
+      "US": 160,
+      "International": 32
     },
-    "new_last_7_days": 56
+    "new_last_7_days": 60
   }
 }
