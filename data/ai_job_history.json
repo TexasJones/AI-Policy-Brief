@@ -148,6 +148,7 @@
     "by_company": {
       "RAND Corporation": 2,
       "Microsoft": 4,
+      "ElevenLabs": 20,
       "PwC": 4,
       "Accenture": 55,
       "xAI": 7,
@@ -155,7 +156,6 @@
       "Anthropic": 44,
       "OpenAI": 34,
       "Cohere": 10,
-      "ElevenLabs": 20,
       "Perplexity": 13,
       "Future of Life Institute": 4,
       "Omidyar Network": 1
@@ -164,6 +164,6 @@
       "US": 177,
       "International": 36
     },
-    "new_last_7_days": 70
+    "new_last_7_days": 71
   }
 }

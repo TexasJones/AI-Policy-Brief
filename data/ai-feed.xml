@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-10-02T15:18:56Z" count="213">
+<jobs generated="2026-10-02T19:42:22Z" count="213">
   <job>
     <job_id>workday-rand-R3640</job_id>
     <title>AI Policy Research Resident</title>
@@ -41,6 +41,20 @@
     <age_days>0</age_days>
     <source>eightfold</source>
     <description/>
+  </job>
+  <job>
+    <job_id>ashby-elevenlabs-8cf16203-4039-4bcb-828d-a3d3d6bab4a1</job_id>
+    <title>Commercial Counsel - US</title>
+    <company>ElevenLabs</company>
+    <employer_type>AI organization</employer_type>
+    <bucket>Legal</bucket>
+    <apply_url>https://jobs.ashbyhq.com/elevenlabs/8cf16203-4039-4bcb-828d-a3d3d6bab4a1</apply_url>
+    <office_location>United States</office_location>
+    <region>US</region>
+    <date_posted>2026-10-02</date_posted>
+    <age_days>0</age_days>
+    <source>ashby</source>
+    <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
   <job>
     <job_id>workday-pwc-743724WD</job_id>
@@ -2221,20 +2235,6 @@
     <apply_url>https://jobs.ashbyhq.com/elevenlabs/8d25dd85-5b50-4dfa-b410-273b1ddd437c</apply_url>
     <office_location>Singapore</office_location>
     <region>International</region>
-    <date_posted>2026-08-27</date_posted>
-    <age_days>36</age_days>
-    <source>ashby</source>
-    <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
-  </job>
-  <job>
-    <job_id>ashby-elevenlabs-3b87fadd-0da6-4cc6-aaef-5d84726ac35a</job_id>
-    <title>Corporate Counsel</title>
-    <company>ElevenLabs</company>
-    <employer_type>AI organization</employer_type>
-    <bucket>Legal</bucket>
-    <apply_url>https://jobs.ashbyhq.com/elevenlabs/3b87fadd-0da6-4cc6-aaef-5d84726ac35a</apply_url>
-    <office_location>United States</office_location>
-    <region>US</region>
     <date_posted>2026-08-27</date_posted>
     <age_days>36</age_days>
     <source>ashby</source>
