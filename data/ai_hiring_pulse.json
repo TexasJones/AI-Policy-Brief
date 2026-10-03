@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-02",
-  "total_jobs": 213,
-  "new_last_7_days": 71,
+  "date": "2026-10-03",
+  "total_jobs": 212,
+  "new_last_7_days": 56,
   "by_bucket": {
-    "Policy": 47,
     "Legal": 49,
+    "Policy": 47,
     "Consulting": 83,
-    "Communications": 34
+    "Communications": 33
   },
   "has_comparison": false
 }

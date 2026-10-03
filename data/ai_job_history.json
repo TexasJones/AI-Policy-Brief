@@ -165,5 +165,34 @@
       "International": 36
     },
     "new_last_7_days": 71
+  },
+  "2026-10-03": {
+    "total": 212,
+    "by_bucket": {
+      "Legal": 49,
+      "Policy": 47,
+      "Consulting": 83,
+      "Communications": 33
+    },
+    "by_company": {
+      "RAND Corporation": 1,
+      "Anthropic": 44,
+      "Microsoft": 4,
+      "Perplexity": 14,
+      "ElevenLabs": 20,
+      "PwC": 4,
+      "Accenture": 55,
+      "xAI": 7,
+      "Scale AI": 15,
+      "OpenAI": 34,
+      "Cohere": 10,
+      "Omidyar Network": 1,
+      "Future of Life Institute": 3
+    },
+    "by_region": {
+      "US": 176,
+      "International": 36
+    },
+    "new_last_7_days": 56
   }
 }
