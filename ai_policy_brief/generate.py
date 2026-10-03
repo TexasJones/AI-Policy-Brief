@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import logging
 import os
 import sys
 from pathlib import Path
@@ -195,6 +196,13 @@ def commit_state() -> int:
 
 
 def main() -> int:
+    # Without this, every module's `log.info` (enrich.py's per-story decode
+    # failures, among others) is silently dropped by Python's default
+    # WARNING root level -- the GitHub Action's log would show only the
+    # printed summary counts, with no detail on *why* e.g. "resolved": 0
+    # happened. That silence is exactly how the Google News redirect bug
+    # went unnoticed for as long as it did.
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
     parser = argparse.ArgumentParser()
     parser.add_argument("--sample", action="store_true")
     parser.add_argument("--commit-state", action="store_true")

@@ -7,7 +7,8 @@ outlets are reachable). That redirect is no longer a plain HTTP 3xx -- the
 real URL is embedded in a signed payload that only resolves through
 Google's internal batchexecute endpoint, which `googlenewsdecoder`
 replicates. `resolve_google_news` decodes every story's link to the real
-publisher URL, in one batched request, BEFORE anything else below runs:
+publisher URL -- one GET per story to fetch its signature/timestamp, then a
+single shared POST to decode them all -- BEFORE anything else below runs:
 without it, every fetch in `enrich()` just gets the Google interstitial
 back, `BAD_HOSTS` correctly rejects it, and no story -- paywalled or not --
 ever gets a summary. Resolution runs for paywalled stories too (so "Read
@@ -78,8 +79,9 @@ def allowed(url: str) -> bool:
 
 def resolve_google_news(stories: list[Story], decode=None) -> int:
     """Decode every story's Google News redirect link to the real publisher
-    URL, in one batched request. Runs for paywalled stories too -- this only
-    resolves the URL, it never fetches or reads the paywalled page itself.
+    URL (one GET per story, then a single shared decode POST). Runs for
+    paywalled stories too -- this only resolves the URL, it never fetches
+    or reads the paywalled page itself.
 
     `decode` is injectable for tests; it defaults to `gnewsdecoder` and is
     called with a list of URLs, returning a list of
