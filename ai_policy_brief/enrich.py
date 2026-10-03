@@ -1,10 +1,22 @@
 """Adds a one-line summary to stories that have none by reading the page's own
 description metadata (og:description), the same thing a link preview shows.
 
-Rules: never for paywalled outlets; skips a page if the site's robots.txt
-disallows it; any failure just leaves the story as headline-only. When the
-Google News link resolves to the publisher's page, the story is re-pointed
-at that direct URL.
+Every story's URL comes in pointing at a Google News redirect page
+(news.py sources outlets through Google News "site:" search so paywalled
+outlets are reachable). That redirect is no longer a plain HTTP 3xx -- the
+real URL is embedded in a signed payload that only resolves through
+Google's internal batchexecute endpoint, which `googlenewsdecoder`
+replicates. `resolve_google_news` decodes every story's link to the real
+publisher URL, in one batched request, BEFORE anything else below runs:
+without it, every fetch in `enrich()` just gets the Google interstitial
+back, `BAD_HOSTS` correctly rejects it, and no story -- paywalled or not --
+ever gets a summary. Resolution runs for paywalled stories too (so "Read
+at The Wall Street Journal" actually opens wsj.com instead of a Google
+redirect); only the description fetch below skips them.
+
+Rules: never fetch a paywalled outlet's page for a summary; skip a page if
+the site's robots.txt disallows it; any failure (decode or fetch) just
+leaves the story as headline-only, exactly as before this existed.
 
 Optional: with ANTHROPIC_API_KEY set, `why_it_matters` adds one grounded
 sentence, written only from the fetched description.
@@ -64,10 +76,55 @@ def allowed(url: str) -> bool:
     return True if rp is None else rp.can_fetch(UA, url)
 
 
-def enrich(stories: list[Story], session=None) -> dict:
+def resolve_google_news(stories: list[Story], decode=None) -> int:
+    """Decode every story's Google News redirect link to the real publisher
+    URL, in one batched request. Runs for paywalled stories too -- this only
+    resolves the URL, it never fetches or reads the paywalled page itself.
+
+    `decode` is injectable for tests; it defaults to `gnewsdecoder` and is
+    called with a list of URLs, returning a list of
+    `{"success": bool, "decoded_url": str}`-shaped dicts in the same order
+    (matching googlenewsdecoder's own return shape). Any failure -- import,
+    network, a changed Google response format -- just leaves the affected
+    stories pointed at their original Google News link, same as if this
+    function didn't run at all.
+    """
+    targets = [s for s in stories if urlparse(s.url).netloc == "news.google.com"]
+    if not targets:
+        return 0
+    if decode is None:
+        try:
+            from googlenewsdecoder import gnewsdecoder
+        except Exception as exc:
+            log.info("googlenewsdecoder unavailable: %s", exc)
+            return 0
+        decode = gnewsdecoder
+    try:
+        results = decode([s.url for s in targets])
+        if isinstance(results, dict):  # a single URL in, dict back -- normalize
+            results = [results]
+    except Exception as exc:
+        log.info("gnewsdecoder batch failed for %d stories: %s", len(targets), exc)
+        return 0
+    resolved = 0
+    for s, result in zip(targets, results):
+        if isinstance(result, dict) and result.get("success") and result.get("decoded_url"):
+            s.url = result["decoded_url"]
+            resolved += 1
+        else:
+            log.info("gnewsdecoder could not resolve %s: %s", s.url,
+                     result.get("message") if isinstance(result, dict) else result)
+    return resolved
+
+
+def enrich(stories: list[Story], session=None, decode=None) -> dict:
+    """`decode` is forwarded to `resolve_google_news` -- see its docstring.
+    Only ever set by tests; a live run leaves it as None so the real
+    `gnewsdecoder` is used."""
     import requests
     session = session or requests.Session()
-    stats = {"tried": 0, "summaries": 0, "direct_links": 0}
+    stats = {"resolved": 0, "tried": 0, "summaries": 0, "direct_links": 0}
+    stats["resolved"] = resolve_google_news(stories, decode=decode)
     for s in stories:
         if s.paywalled or s.summary:
             continue

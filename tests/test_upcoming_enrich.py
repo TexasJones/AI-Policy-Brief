@@ -31,17 +31,51 @@ def main():
         def __init__(s, url, text, code=200): s.url, s.text, s.status_code = url, text, code
     class Sess:
         def get(s, url, **k):
+            # A real fetch of a resolved URL returns that outlet's own page.
+            # If enrich() ever regresses to fetching the raw Google News
+            # link directly (the original bug: that link doesn't do a plain
+            # HTTP redirect), this stub would have no entry for it and KeyError,
+            # failing the test loudly instead of silently passing like the
+            # old stub -- which always returned the axios page regardless of
+            # input URL and so never would have caught the real bug.
             if "blocked" in url: return R("https://news.google.com/consent", "x")
-            return R("https://www.axios.com/2026/09/28/story", page)
+            pages = {"https://www.axios.com/2026/09/28/story": page}
+            return R(url, pages[url])
     enrich.allowed = lambda url: True
     a = news.Story("t", "Axios", "https://news.google.com/rss/articles/abc", None)
     b = news.Story("t", "WSJ", "https://news.google.com/rss/articles/def", None, paywalled=True)
     c = news.Story("t", "Axios", "https://blocked", None)
-    stats = enrich.enrich([a, b, c], session=Sess())
-    assert a.summary and a.url.startswith("https://www.axios.com/"), (a.summary, a.url)
-    assert not b.summary and b.url.endswith("def"), "paywalled outlet must not be fetched"
-    assert not c.summary and c.url == "https://blocked"
-    assert stats["summaries"] == 1 and stats["direct_links"] == 1, stats
+    # Stands in for gnewsdecoder: resolves the two Google News links to real
+    # publisher URLs in one batched call, exactly like the real thing but
+    # with no network. This is the fix for the bug where every story's link
+    # stayed on news.google.com, enrich()'s own BAD_HOSTS check then rejected
+    # it, and no story (paywalled or not) ever got a summary.
+    mapping = {"https://news.google.com/rss/articles/abc": "https://www.axios.com/2026/09/28/story",
+               "https://news.google.com/rss/articles/def": "https://www.wsj.com/articles/chip-export-limits"}
+    def fake_decode(urls):
+        return [{"success": True, "decoded_url": mapping[u]} if u in mapping
+                else {"success": False, "message": "no mapping"} for u in urls]
+    stats = enrich.enrich([a, b, c], session=Sess(), decode=fake_decode)
+    assert stats["resolved"] == 2, stats
+    assert a.summary and a.url == "https://www.axios.com/2026/09/28/story", (a.summary, a.url)
+    assert not b.summary and b.url == "https://www.wsj.com/articles/chip-export-limits", \
+        "paywalled outlet's link must still resolve to the real page, just never fetched for a summary"
+    assert not c.summary and c.url == "https://blocked", "non-Google link must pass through untouched"
+    assert stats["summaries"] == 1 and stats["tried"] == 2, stats
+
+    # A decode failure (Google changed its format, network down, whatever)
+    # must leave stories exactly as if resolution had never run -- never
+    # raise, never partially rewrite a URL.
+    class StillGoogleSess:
+        # Decode failed, so the fetch below hits the raw Google News link --
+        # same as production's real BAD_HOSTS rejection, with no real network.
+        def get(s, url, **k): return R("https://news.google.com/rss/articles/xyz", "x")
+    d = news.Story("t", "Axios", "https://news.google.com/rss/articles/xyz", None)
+    broken_stats = enrich.enrich([d], session=StillGoogleSess(),
+                                 decode=lambda urls: (_ for _ in ()).throw(RuntimeError("boom")))
+    assert broken_stats["resolved"] == 0 and not d.summary \
+        and d.url == "https://news.google.com/rss/articles/xyz", broken_stats
+
     os.environ.pop("ANTHROPIC_API_KEY", None)
     assert enrich.why_it_matters([a]) == 0
 
