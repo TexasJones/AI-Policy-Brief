@@ -76,6 +76,17 @@ def main():
     assert broken_stats["resolved"] == 0 and not d.summary \
         and d.url == "https://news.google.com/rss/articles/xyz", broken_stats
 
+    # A result list that doesn't match the input length can't be trusted to
+    # line up positionally -- must bail out rather than risk zip() pairing a
+    # story with someone else's decoded URL.
+    e = news.Story("t", "Axios", "https://news.google.com/rss/articles/one", None)
+    f = news.Story("t", "Axios", "https://news.google.com/rss/articles/two", None)
+    short_stats = enrich.enrich([e, f], session=StillGoogleSess(),
+                                decode=lambda urls: [{"success": True, "decoded_url": "https://x/only-one"}])
+    assert short_stats["resolved"] == 0, short_stats
+    assert e.url == "https://news.google.com/rss/articles/one", e.url
+    assert f.url == "https://news.google.com/rss/articles/two", f.url
+
     os.environ.pop("ANTHROPIC_API_KEY", None)
     assert enrich.why_it_matters([a]) == 0
 

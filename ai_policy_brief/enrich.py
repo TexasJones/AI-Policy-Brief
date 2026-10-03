@@ -103,8 +103,17 @@ def resolve_google_news(stories: list[Story], decode=None) -> int:
         results = decode([s.url for s in targets])
         if isinstance(results, dict):  # a single URL in, dict back -- normalize
             results = [results]
+        results = list(results)
     except Exception as exc:
         log.info("gnewsdecoder batch failed for %d stories: %s", len(targets), exc)
+        return 0
+    if len(results) != len(targets):
+        # A mismatched length means the response can't be trusted to line up
+        # positionally with `targets` -- zip() would silently pair each story
+        # with the wrong result rather than error, so bail out instead of
+        # risking a story's URL getting overwritten with someone else's
+        # decoded link.
+        log.info("gnewsdecoder returned %d results for %d URLs -- skipping", len(results), len(targets))
         return 0
     resolved = 0
     for s, result in zip(targets, results):
