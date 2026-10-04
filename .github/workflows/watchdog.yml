@@ -1,9 +1,9 @@
 name: Send watchdog
 # If the external scheduler misses a send day, dispatch the send here.
-# Runs at 15:00 UTC (10-11 a.m. Eastern) on Tuesday and Friday.
+# Runs at 15:00 UTC (10-11 a.m. Eastern) on Friday and Saturday.
 on:
   schedule:
-    - cron: "0 15 * * 2,5"
+    - cron: "0 15 * * 5,6"
   workflow_dispatch:
 jobs:
   rescue:

@@ -1,8 +1,9 @@
 name: Send Polly AI Brief
 run-name: ${{ (inputs.test_to != '' && inputs.preview) && 'Polly AI Brief (TEST + preview also checked)' || (inputs.test_to != '' && 'Polly AI Brief (TEST)') || (inputs.preview && 'Polly AI Brief (PREVIEW)') || 'Polly AI Brief' }}
 # Triggered by an external scheduler (workflow_dispatch) at 7:00 a.m. Eastern.
-# The gate below only lets Tuesday and Friday through, so the scheduler can
-# call this every day without sending on the wrong days.
+# The gate below only lets Friday and Saturday through (The Polly Brief, a
+# separate repo, covers Mon-Thu), so the scheduler can call this every day
+# without sending on the wrong days.
 on:
   workflow_dispatch:
     inputs:
@@ -11,7 +12,7 @@ on:
         required: false
         default: ""
       allow_off_day:
-        description: "Run even if today is not Tuesday or Friday (Eastern)"
+        description: "Run even if today is not Friday or Saturday (Eastern)"
         type: boolean
         default: false
       preview:
@@ -34,7 +35,7 @@ jobs:
       - id: g
         run: |
           dow=$(TZ=America/New_York date +%u)   # 1=Mon ... 7=Sun
-          if [ "$dow" = "2" ] || [ "$dow" = "5" ] || [ "$ALLOW_OFF_DAY" = "true" ] || [ -n "$TEST_TO" ] || [ "$PREVIEW" = "true" ]; then
+          if [ "$dow" = "5" ] || [ "$dow" = "6" ] || [ "$ALLOW_OFF_DAY" = "true" ] || [ -n "$TEST_TO" ] || [ "$PREVIEW" = "true" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "Not a send day (Eastern weekday $dow); skipping."
