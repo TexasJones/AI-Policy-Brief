@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-10-03T14:09:27Z" count="212">
+<jobs generated="2026-10-04T14:36:19Z" count="214">
   <job>
     <job_id>workday-rand-R3624</job_id>
     <title>Associate General Counsel, AI, Biosecurity, &amp; Emerging Technologies</title>
@@ -9,8 +9,50 @@
     <apply_url>https://rand.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Washington-DC-DC-Metro-Area/Associate-General-Counsel--AI--Biosecurity----Emerging-Technologies-_R3624</apply_url>
     <office_location>2 Locations</office_location>
     <region>US</region>
-    <date_posted>2026-10-03</date_posted>
+    <date_posted>2026-10-04</date_posted>
     <age_days>0</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>ashby-elevenlabs-e66bf8b7-45a0-4cbf-bc37-43d20a388ff8</job_id>
+    <title>Deployment Strategist - Sweden</title>
+    <company>ElevenLabs</company>
+    <employer_type>AI organization</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://jobs.ashbyhq.com/elevenlabs/e66bf8b7-45a0-4cbf-bc37-43d20a388ff8</apply_url>
+    <office_location>Sweden</office_location>
+    <region>International</region>
+    <date_posted>2026-10-04</date_posted>
+    <age_days>0</age_days>
+    <source>ashby</source>
+    <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
+  </job>
+  <job>
+    <job_id>ashby-elevenlabs-b85d7749-5b12-4f3c-87e9-61a477da77aa</job_id>
+    <title>Deployment Strategist - Italy</title>
+    <company>ElevenLabs</company>
+    <employer_type>AI organization</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://jobs.ashbyhq.com/elevenlabs/b85d7749-5b12-4f3c-87e9-61a477da77aa</apply_url>
+    <office_location>Italy</office_location>
+    <region>International</region>
+    <date_posted>2026-10-04</date_posted>
+    <age_days>0</age_days>
+    <source>ashby</source>
+    <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
+  </job>
+  <job>
+    <job_id>workday-accenture-R00361496</job_id>
+    <title>Enterprise AI Value Strategy Consultant / Manager / Senior Manager</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/New-York-One-Manhattan-West-Corp/Enterprise-AI-Value-Strategy-Consultant---Manager---Senior-Manager_R00361496</apply_url>
+    <office_location/>
+    <region>US</region>
+    <date_posted>2026-10-03</date_posted>
+    <age_days>1</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -24,7 +66,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-10-02</date_posted>
-    <age_days>1</age_days>
+    <age_days>2</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic's Safeguards organization builds the policies, evaluations, and detection and enforcement systems that define and hold the limits on how…</description>
   </job>
@@ -38,7 +80,7 @@
     <office_location>Netherlands, Multiple Locations, Multiple Locations</office_location>
     <region>International</region>
     <date_posted>2026-10-02</date_posted>
-    <age_days>1</age_days>
+    <age_days>2</age_days>
     <source>eightfold</source>
     <description/>
   </job>
@@ -52,7 +94,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-10-02</date_posted>
-    <age_days>1</age_days>
+    <age_days>2</age_days>
     <source>ashby</source>
     <description>Perplexity is seeking a Director of Events to own our events worldwide: the ones we host, the stages we speak on, and the ones we sponsor. You will set the strategy, run production, manage the budget, and build the team. If you have produced a flagship and a dinner in the same week, know what a good sponsorship deal looks like, and want to build an events function from the ground up, this role is for you. Responsibilities Own events. Hosted, speaking, sponsored. Strategy, budget, production, results. Set the calendar. Decide which events we run, which we speak at, and which we skip. Produce…</description>
   </job>
@@ -66,7 +108,7 @@
     <office_location>United States</office_location>
     <region>US</region>
     <date_posted>2026-10-02</date_posted>
-    <age_days>1</age_days>
+    <age_days>2</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -80,7 +122,7 @@
     <office_location>12 Locations</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -94,7 +136,7 @@
     <office_location>12 Locations</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -108,7 +150,7 @@
     <office_location>12 Locations</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -122,7 +164,7 @@
     <office_location>12 Locations</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -136,7 +178,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -150,7 +192,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -164,7 +206,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -178,7 +220,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -192,7 +234,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -206,7 +248,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -220,7 +262,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -234,7 +276,7 @@
     <office_location>London, England, United Kingdom</office_location>
     <region>International</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;SpaceXAI’s mission is to create AI systems that can accurately understand the universe and aid humanity in its pursuit of knowledge.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;Our team is small, highly motivated, and focused on engineering excellence. This organization is for individuals who appreciate challenging themselves and thrive on curiosity. &lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;We operate with a flat organizational structure. All employees are…</description>
   </job>
@@ -248,7 +290,7 @@
     <office_location>Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;Scale is building AI for the world’s most important decisions. From the front lines of homeland security to the core of global enterprise, we provide the data engine and agentic infrastructure that powers the next generation of American and allied interests.&lt;/p&gt; &lt;p&gt;As a Deployment Strategist supporting DHS and DOJ, you will be responsible for bridging the gap between cutting-edge AI research and mission-critical production. You will lead the charge in deploying Agentic AI, autonomous reasoning systems, into the heart of homeland security and law enforcement workflows, ensuring that some of…</description>
   </job>
@@ -262,7 +304,7 @@
     <office_location>San Francisco, CA; New York, NY</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;Scale's mission is to develop reliable AI systems for the world's most important decisions. We provide the high-quality data that powers the world's AI models, and we help enterprises and governments build, deploy, and oversee AI applications that create real impact.&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;As Communications Manager, Corporate and Product, you will help shape how Scale shows up when it comes to our work building enterprise AI, spanning company narrative, product launches, partner communications, media presence, and executive visibility. This role is centered on translating complex enterprise…</description>
   </job>
@@ -276,7 +318,7 @@
     <office_location>San Francisco, CA; New York, NY</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;Scale AI's Advisory practice is the most forward-leaning bet in our go-to-market motion. We're not waiting for clients to hand us a scope — we get in front of the decision, shape the right AI problems before a build begins, and make Scale the obvious partner for what comes next.&lt;/p&gt; &lt;p&gt;Advisory is the structured answer to the question enterprises are already asking us: &lt;em&gt;&quot;What should we build, and where do we start?&quot;&lt;/em&gt; It's a discovery and scoping phase that runs before delivery — designed to land bigger contracts, drive more predictable execution, and accelerate expansion. By 2027,…</description>
   </job>
@@ -290,7 +332,7 @@
     <office_location>San Francisco, CA; New York, NY</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;Scale AI's Advisory practice is the most forward-leaning bet in our go-to-market motion. We're not waiting for clients to hand us a scope — we get in front of the decision, shape the right AI problems before a build begins, and make Scale the obvious partner for what comes next.&lt;/p&gt; &lt;p&gt;Advisory is the structured answer to the question enterprises are already asking us: &lt;em&gt;&quot;What should we build, and where do we start?&quot;&lt;/em&gt; It's a discovery and scoping phase that runs before delivery — designed to land bigger contracts, drive more predictable execution, and accelerate expansion. By 2027,…</description>
   </job>
@@ -304,7 +346,7 @@
     <office_location>Los Angeles, CA</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;Scale is building AI for the world's most important decisions. From the front lines of national defense to the core of global enterprise, we provide the data engine and agentic infrastructure that powers the next generation of American and allied interests.&lt;/p&gt; &lt;p&gt;As a Deployment Strategist supporting Space Systems Command (SSC), you will bridge the gap between cutting-edge AI research and mission-critical production in the space domain. You will lead the charge in deploying Agentic AI — autonomous, reasoning systems — into space operations workflows, from space domain awareness to ground…</description>
   </job>
@@ -318,7 +360,7 @@
     <office_location>London, UK</office_location>
     <region>International</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;Scale AI sits at the intersection of frontier AI, enterprise software, and national security. We safeguard high-value assets: proprietary AI data and infrastructure, a global contributor ecosystem, and sensitive enterprise and government customer data.&lt;/p&gt; &lt;p&gt;As our International Head of Security, you will own and unify Scale’s security strategy across our non-US affairs: Global Public Sector and non-US Enterprise deals. You will drive the execution, customer engagements and compliance with frameworks such as GDPR, ISO27001, UK Cyber Essentials Plus, the EU AI Act, NIS2 and…</description>
   </job>
@@ -332,7 +374,7 @@
     <office_location>Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;Scale is building AI for the world's most consequential decisions. In the Intelligence Community, that means deploying Agentic AI into the workflows that power overhead intelligence, geospatial analysis, and imagery exploitation — the systems that give the United States and its allies an irreplaceable strategic edge.&lt;/p&gt; &lt;p&gt;As the Defense Deployment Strategist for NRO and NGA, you are Scale's point of presence at the intersection of AI and national intelligence. You will lead the end-to-end effort to land, deploy, and scale Agentic AI capabilities inside two of the most technically…</description>
   </job>
@@ -346,7 +388,7 @@
     <office_location>San Francisco, CA; New York, NY; Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p data-start=&quot;141&quot; data-end=&quot;195&quot;&gt;&lt;strong&gt;National Security Hackathon Attendees – Stay Connected with Scale AI&lt;/strong&gt;&lt;/p&gt; &lt;p data-start=&quot;197&quot; data-end=&quot;305&quot;&gt;&lt;strong&gt;This posting is for candidates who attended National Security Hackathon and connected with a member of the Scale AI team.&lt;/strong&gt;&lt;/p&gt; &lt;p data-start=&quot;307&quot; data-end=&quot;534&quot;&gt;It was great meeting you at the Hackathon! Whether we spoke at our booth or on the floor, we always enjoy connecting with people who are passionate about advancing AI and machine learning.&lt;/p&gt; &lt;p data-start=&quot;536&quot; data-end=&quot;851&quot;&gt;At Scale AI, our mission is to…</description>
   </job>
@@ -360,7 +402,7 @@
     <office_location>San Francisco, CA; New York, NY</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;Frontier AI labs decide what direction their models need to take before the actual training starts. As a Senior Frontier Data Strategist on Scale's Generative AI team, you'll be a trusted voice in those decisions. You'll partner with research leads and senior stakeholders at the world's leading AI labs to shape the data strategy behind their next generation of models, then design the human-data programs to deliver it.&lt;/p&gt; &lt;p&gt;You'll sit where frontier research meets Scale's product roadmap, and you'll be expected to move both. With customers, you'll own senior, technically grounded…</description>
   </job>
@@ -374,7 +416,7 @@
     <office_location>San Francisco, CA; New York, NY</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;Frontier AI labs decide what direction their models need to take before the actual training starts. As a Frontier Data Strategist on Scale's Generative AI team, you'll play a significant part in those conversations. You'll work directly with researchers at the world's leading AI labs to work out what data the next evolution of their models will need, then design the human-data programs to deliver it.&lt;/p&gt; &lt;p&gt;You'll sit where frontier research meets Scale's product roadmap. With customers, you'll build deep, technical relationships with researchers, learn where their work is heading, and…</description>
   </job>
@@ -388,7 +430,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;Come join our legal team to work on the most exciting legal, policy, and operational issues at the leading edge of AI. We're seeking strong product lawyers with specialized expertise in intellectual property law. As product counsel, you will advise on all legal aspects of product development, launch, and operations - including regulatory compliance, user terms, and risk management - while bringing deep expertise in your specialized legal area.&lt;/p&gt; &lt;p&gt;The ideal candidate will have deep subject matter expertise in intellectual property law, a technology background, and a demonstrable history…</description>
   </job>
@@ -402,7 +444,7 @@
     <office_location>United Kingdom</office_location>
     <region>International</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p data-start=&quot;78&quot; data-end=&quot;300&quot;&gt;&lt;strong&gt;PLEASE NOTE:&lt;/strong&gt; This is a fully remote, 1099 independent contractor opportunity with an estimated duration of six months and the potential for extension. To be eligible, candidates must be authorized to work in the country they reside in.&lt;/p&gt; &lt;h3&gt;&lt;strong&gt;About the Program&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;The&lt;strong&gt; Human Frontier Collective (HFC) Fellowship&lt;/strong&gt; brings together top researchers and domain experts to collaborate on high-impact work that are shaping the future of AI. As an HFC Fellow, you’ll apply your academic and professional expertise to…</description>
   </job>
@@ -416,7 +458,7 @@
     <office_location>Doha, Qatar </office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;Scale’s rapidly growing Global Public Sector team is focused on using AI to address critical challenges facing the public sector around the world. Our core work consists of:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;Building custom AI applications that will impact millions of citizens and government employees&lt;/li&gt; &lt;li&gt;Generating high-quality training data for custom LLMs&lt;/li&gt; &lt;li&gt;Upskilling and AI advisory services to spread the impact of AI&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;As a Strategist, you’ll be responsible for growing the Global Public Sector business unit and partnering with technical stakeholders to identify and win major…</description>
   </job>
@@ -430,7 +472,7 @@
     <office_location>United States</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;&lt;strong&gt;PLEASE NOTE:&amp;nbsp;&lt;/strong&gt;This is a fully remote, 1099 independent contractor opportunity with an estimated duration of six months and the potential for extension. To be eligible, candidates must be authorized to work in the United States; visa sponsorship is not available for this role.&lt;/p&gt; &lt;h3&gt;&lt;strong&gt;About the Program&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;The&lt;strong&gt; Human Frontier Collective (HFC) Fellowship&lt;/strong&gt; brings together top researchers and domain experts to collaborate on high-impact work that are shaping the future of AI. As an HFC Fellow, you’ll apply your academic and professional…</description>
   </job>
@@ -444,7 +486,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;As a member of our Frontier Tech Consultant team, you will play a critical role in advancing cutting-edge AI innovations by conducting high-impact experiments and ensuring seamless execution at the highest quality standards. Your work will directly contribute to Scale AI’s growth, shaping the future of artificial intelligence.&lt;/p&gt; &lt;p&gt;In this role, you will be working on various types of projects, including but not limited to: research experiments, dataset generation, data quality improvements, and in-depth technical analysis. You will tackle complex, technical and operational challenges…</description>
   </job>
@@ -458,7 +500,7 @@
     <office_location>Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic is hiring a Political Programs Lead to build and run the programs through which Anthropic, its political action committees, and its employees…</description>
   </job>
@@ -472,7 +514,7 @@
     <office_location>Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s mission is to ensure that general-purpose artificial intelligence benefits all of humanity. We believe that achieving our goal requires effective engagement with public policy stakeholders and the broader community impacted by AI. Accordingly, our Global Affairs team builds authentic, collaborative relationships with public officials and the broader AI policymaking community to inform and support our shared work in these domains. We ensure that insights from policymakers inform our work and - in collaboration with our colleagues and external stakeholders - seek to…</description>
   </job>
@@ -486,7 +528,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-10-01</date_posted>
-    <age_days>2</age_days>
+    <age_days>3</age_days>
     <source>ashby</source>
     <description>Who are we? Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems. We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that. We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a…</description>
   </job>
@@ -500,7 +542,7 @@
     <office_location> Palo Alto, CA; Austin, TX; New York, NY; Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-09-30</date_posted>
-    <age_days>3</age_days>
+    <age_days>4</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;SpaceXAI’s mission is to create AI systems that can accurately understand the universe and aid humanity in its pursuit of knowledge.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;Our team is small, highly motivated, and focused on engineering excellence. This organization is for individuals who appreciate challenging themselves and thrive on curiosity. &lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;We operate with a flat organizational structure. All employees are…</description>
   </job>
@@ -514,7 +556,7 @@
     <office_location> Palo Alto, CA; Austin, TX; Los Angeles, CA; New York, NY</office_location>
     <region>US</region>
     <date_posted>2026-09-30</date_posted>
-    <age_days>3</age_days>
+    <age_days>4</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;SpaceXAI’s mission is to create AI systems that can accurately understand the universe and aid humanity in its pursuit of knowledge.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;Our team is small, highly motivated, and focused on engineering excellence. This organization is for individuals who appreciate challenging themselves and thrive on curiosity. &lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;We operate with a flat organizational structure. All employees are…</description>
   </job>
@@ -528,7 +570,7 @@
     <office_location>Memphis, TN</office_location>
     <region>US</region>
     <date_posted>2026-09-30</date_posted>
-    <age_days>3</age_days>
+    <age_days>4</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;SpaceXAI’s mission is to create AI systems that can accurately understand the universe and aid humanity in its pursuit of knowledge.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;Our team is small, highly motivated, and focused on engineering excellence. This organization is for individuals who appreciate challenging themselves and thrive on curiosity. &lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;We operate with a flat organizational structure. All employees are…</description>
   </job>
@@ -542,7 +584,7 @@
     <office_location> Palo Alto, CA; Austin, TX; Seattle, WA</office_location>
     <region>US</region>
     <date_posted>2026-09-30</date_posted>
-    <age_days>3</age_days>
+    <age_days>4</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;SpaceXAI’s mission is to create AI systems that can accurately understand the universe and aid humanity in its pursuit of knowledge.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;Our team is small, highly motivated, and focused on engineering excellence. This organization is for individuals who appreciate challenging themselves and thrive on curiosity. &lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;We operate with a flat organizational structure. All employees are…</description>
   </job>
@@ -556,7 +598,7 @@
     <office_location> Palo Alto, CA; Austin, TX; Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-09-30</date_posted>
-    <age_days>3</age_days>
+    <age_days>4</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;SpaceXAI’s mission is to create AI systems that can accurately understand the universe and aid humanity in its pursuit of knowledge.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;Our team is small, highly motivated, and focused on engineering excellence. This organization is for individuals who appreciate challenging themselves and thrive on curiosity. &lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;We operate with a flat organizational structure. All employees are…</description>
   </job>
@@ -570,7 +612,7 @@
     <office_location> Palo Alto, CA</office_location>
     <region>US</region>
     <date_posted>2026-09-30</date_posted>
-    <age_days>3</age_days>
+    <age_days>4</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;SpaceXAI’s mission is to create AI systems that can accurately understand the universe and aid humanity in its pursuit of knowledge.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;Our team is small, highly motivated, and focused on engineering excellence. This organization is for individuals who appreciate challenging themselves and thrive on curiosity. &lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;We operate with a flat organizational structure. All employees are…</description>
   </job>
@@ -584,7 +626,7 @@
     <office_location>London, UK; Ontario, CAN; Remote-Friendly, United States; San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-09-30</date_posted>
-    <age_days>3</age_days>
+    <age_days>4</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h1&gt;&lt;strong&gt;Anthropic Fellows Program overview&lt;/strong&gt;&lt;/h1&gt; &lt;p&gt;The Anthropic Fellows Program is designed to foster AI research and engineering talent. We provide funding and mentorship to…</description>
   </job>
@@ -598,7 +640,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-29</date_posted>
-    <age_days>4</age_days>
+    <age_days>5</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -612,7 +654,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-29</date_posted>
-    <age_days>4</age_days>
+    <age_days>5</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -626,7 +668,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-09-29</date_posted>
-    <age_days>4</age_days>
+    <age_days>5</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We are seeking an experienced public opinion researcher to build and expand Anthropic's in-house polling and research function. This role will be…</description>
   </job>
@@ -640,7 +682,7 @@
     <office_location>San Francisco, CA | Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-09-29</date_posted>
-    <age_days>4</age_days>
+    <age_days>5</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;We're hiring a strategist to join the Policy Campaigns team within Anthropic's Public Policy team. The Policy Campaigns team turns the company's policy priorities into…</description>
   </job>
@@ -654,7 +696,7 @@
     <office_location>San Francisco, CA | New York City, NY</office_location>
     <region>US</region>
     <date_posted>2026-09-29</date_posted>
-    <age_days>4</age_days>
+    <age_days>5</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic is seeking a Privacy Counsel to join our Legal team. You'll counsel on complex privacy issues and build the processes and programs that…</description>
   </job>
@@ -668,7 +710,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-09-29</date_posted>
-    <age_days>4</age_days>
+    <age_days>5</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic's Legal team is looking for an experienced litigator to join our Litigation and Regulatory team. You'll manage a broad docket of litigation…</description>
   </job>
@@ -682,7 +724,7 @@
     <office_location>New York City, NY</office_location>
     <region>US</region>
     <date_posted>2026-09-29</date_posted>
-    <age_days>4</age_days>
+    <age_days>5</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;AI has the power to dramatically accelerate the pace of scientific discovery and the development of healthcare interventions. We're hiring Anthropic’s first dedicated…</description>
   </job>
@@ -696,7 +738,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-29</date_posted>
-    <age_days>4</age_days>
+    <age_days>5</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI's Legal team plays a crucial role in furthering OpenAI's mission by tackling innovative, fundamental legal issues in AI. If you're passionate about doing significant and unique work as a technology lawyer, this team is for you. The team comprises professionals from diverse fields, including technology, AI, privacy, IP, corporate, employment, tax law, regulatory, and litigation. About the Role As a member of our Product Counsel team, you will advise on a broad range of issues arising from hardware products and technologies, with a focus on software that power them. You’ll…</description>
   </job>
@@ -710,7 +752,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-29</date_posted>
-    <age_days>4</age_days>
+    <age_days>5</age_days>
     <source>ashby</source>
     <description>About the Team Safety Systems manages the complete lifecycle of safety efforts for OpenAI’s frontier models, ensuring our models are deployed responsibly and have a positive impact on society. Our work spans diverse research and engineering initiatives—from system-level safeguards and model training to evaluation and red-teaming—all aimed at mitigating misuse, misalignment, and maintaining our high bar for safety. We lead OpenAI's commitment to developing and deploying safe Artificial General Intelligence (AGI), fostering a culture of trust, responsibility, and transparency. Our goal is to…</description>
   </job>
@@ -724,7 +766,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-28</date_posted>
-    <age_days>5</age_days>
+    <age_days>6</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -738,7 +780,7 @@
     <office_location>Remote-Friendly, United States</office_location>
     <region>US</region>
     <date_posted>2026-09-28</date_posted>
-    <age_days>5</age_days>
+    <age_days>6</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We are looking for a State and Local Affairs Lead to engage with state and local governments in the Western United States, advancing AI policy,…</description>
   </job>
@@ -752,7 +794,7 @@
     <office_location>Remote-Friendly, United States</office_location>
     <region>US</region>
     <date_posted>2026-09-28</date_posted>
-    <age_days>5</age_days>
+    <age_days>6</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We are looking for a State and Local Affairs Lead to lead Anthropic's engagement with state and local governments across the Midwestern United States,…</description>
   </job>
@@ -766,7 +808,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-28</date_posted>
-    <age_days>5</age_days>
+    <age_days>6</age_days>
     <source>ashby</source>
     <description>About the Team The Business Marketing team helps organizations understand, adopt, and get value from OpenAI’s products. We work across product marketing, content, creative, and web to connect what our technology can do with the needs of the people and businesses using it. About the Role We’re looking for a Senior Web Experience Strategist to shape the customer journey across openai.com . You’ll help audiences ranging from individual developers to large enterprises discover what’s possible, find relevant information, and take the right next step. You’ll think through the full experience: how…</description>
   </job>
@@ -780,7 +822,7 @@
     <office_location>Singapore</office_location>
     <region>International</region>
     <date_posted>2026-09-28</date_posted>
-    <age_days>5</age_days>
+    <age_days>6</age_days>
     <source>ashby</source>
     <description>Who are we? Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems. We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that. We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a…</description>
   </job>
@@ -794,7 +836,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -808,7 +850,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -822,7 +864,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -836,7 +878,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -850,7 +892,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -864,7 +906,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -878,7 +920,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -892,7 +934,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -906,7 +948,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -920,7 +962,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -934,7 +976,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -948,7 +990,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;Hardware is becoming critical to how AI gets built, and the legal questions are as new as the technology. We're hiring a Commercial Counsel, Hardware to help Anthropic's…</description>
   </job>
@@ -962,7 +1004,7 @@
     <office_location>San Francisco, CA | New York City, NY | Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic's Integrity &amp;amp; Compliance function is building the systems that let us scale responsibly as our products reach more people, more…</description>
   </job>
@@ -976,7 +1018,7 @@
     <office_location>Sydney, Australia</office_location>
     <region>International</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the Role&lt;/h2&gt; &lt;p&gt;Anthropic's People Legal team is looking for a Lead Employment Counsel to build the legal foundation for our growing workforce across Asia-Pacific. You'll partner…</description>
   </job>
@@ -990,7 +1032,7 @@
     <office_location>San Francisco, CA | New York City, NY</office_location>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;As a member of the Research Legal team, you'll advise on legal topics across the full lifecycle of building and studying frontier AI models: data…</description>
   </job>
@@ -1004,7 +1046,7 @@
     <office_location>San Francisco, CA | New York City, NY | Seattle, WA</office_location>
     <region>US</region>
     <date_posted>2026-09-25</date_posted>
-    <age_days>8</age_days>
+    <age_days>9</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We are seeking an experienced Corporate Counsel, M&amp;amp;A to join our corporate legal team. As Anthropic continues to scale, we need an M&amp;amp;A attorney…</description>
   </job>
@@ -1018,7 +1060,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-24</date_posted>
-    <age_days>9</age_days>
+    <age_days>10</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -1032,7 +1074,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-24</date_posted>
-    <age_days>9</age_days>
+    <age_days>10</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -1046,7 +1088,7 @@
     <office_location>Seoul, South Korea</office_location>
     <region>International</region>
     <date_posted>2026-09-24</date_posted>
-    <age_days>9</age_days>
+    <age_days>10</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;We are looking for an experienced Seoul-based Public Policy expert to lead Anthropic’s policy engagement in South Korea. In this role, you will advance practical AI…</description>
   </job>
@@ -1060,7 +1102,7 @@
     <office_location>San Francisco, CA | New York City, NY | Seattle, WA</office_location>
     <region>US</region>
     <date_posted>2026-09-24</date_posted>
-    <age_days>9</age_days>
+    <age_days>10</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2 class=&quot;heading&quot;&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We're looking for a Commercial Counsel, SPARC (Safety, Policy, and Research Contracts) to join our legal team at the forefront of…</description>
   </job>
@@ -1074,7 +1116,7 @@
     <office_location>Dublin, Ireland</office_location>
     <region>International</region>
     <date_posted>2026-09-24</date_posted>
-    <age_days>9</age_days>
+    <age_days>10</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s Communications team is responsible for helping people understand our technology, our mission, and the impact AI can have when deployed safely and responsibly. Across EMEA, we work closely with business, start-up, developer, product, marketing, global affairs, and policy teams to tell clear, credible stories about how OpenAI is helping organisations build, scale, and solve meaningful problems. The EMEA B2B Communications team is small, fast-moving, and highly cross-functional. We support some of OpenAI’s most important external audiences, including enterprises,…</description>
   </job>
@@ -1088,7 +1130,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-09-23</date_posted>
-    <age_days>10</age_days>
+    <age_days>11</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We're hiring a policy generalist to join the Strategic Advisory team within Anthropic's Public Policy team. You'll develop and maintain our policy…</description>
   </job>
@@ -1102,7 +1144,7 @@
     <office_location>San Francisco, CA | New York City, NY</office_location>
     <region>US</region>
     <date_posted>2026-09-23</date_posted>
-    <age_days>10</age_days>
+    <age_days>11</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;We are seeking an experienced and strategic transactional attorney to join the IP team within our growing legal department. In this role, you will be responsible for the…</description>
   </job>
@@ -1116,7 +1158,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-09-23</date_posted>
-    <age_days>10</age_days>
+    <age_days>11</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;We are seeking an experienced IP Counsel to help protect some of the world's fastest-growing technology brands. In this role, you will share ownership of Anthropic's…</description>
   </job>
@@ -1130,7 +1172,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-09-23</date_posted>
-    <age_days>10</age_days>
+    <age_days>11</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;We are seeking an experienced and strategic IP Counsel to join our growing legal team. In this role, you will provide comprehensive IP guidance across the organization,…</description>
   </job>
@@ -1144,7 +1186,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-09-23</date_posted>
-    <age_days>10</age_days>
+    <age_days>11</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2 class=&quot;heading&quot;&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We're looking for a Manager, Commercial Counsel, GTM to help lead our legal team at the forefront of shaping how cutting-edge AI…</description>
   </job>
@@ -1158,7 +1200,7 @@
     <office_location>San Francisco, CA | New York City, NY | Seattle, WA</office_location>
     <region>US</region>
     <date_posted>2026-09-23</date_posted>
-    <age_days>10</age_days>
+    <age_days>11</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We're looking for a Commercial Counsel, GTM to join our legal team at the forefront of shaping how cutting-edge AI technology reaches users,…</description>
   </job>
@@ -1172,7 +1214,7 @@
     <office_location>New York</office_location>
     <region>US</region>
     <date_posted>2026-09-23</date_posted>
-    <age_days>10</age_days>
+    <age_days>11</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -1186,7 +1228,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-22</date_posted>
-    <age_days>11</age_days>
+    <age_days>12</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -1200,7 +1242,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-22</date_posted>
-    <age_days>11</age_days>
+    <age_days>12</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -1214,7 +1256,7 @@
     <office_location>San Francisco, CA | New York City, NY</office_location>
     <region>US</region>
     <date_posted>2026-09-22</date_posted>
-    <age_days>11</age_days>
+    <age_days>12</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Join Anthropic's Commercial Legal team as a Technical AI implementation specialist, where you'll be responsible for leveraging Claude and other…</description>
   </job>
@@ -1228,7 +1270,7 @@
     <office_location>Brussels, Belgium</office_location>
     <region>International</region>
     <date_posted>2026-09-22</date_posted>
-    <age_days>11</age_days>
+    <age_days>12</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We are looking for an experienced EU Policy Analyst to build relationships with external stakeholders and develop policy positions within the EU…</description>
   </job>
@@ -1242,7 +1284,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-22</date_posted>
-    <age_days>11</age_days>
+    <age_days>12</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s mission is to ensure that general-purpose artificial intelligence benefits all of humanity. Our Communications team supports OpenAI’s mission and goals by clearly and authentically explaining our technology, values, and approach to safely building powerful AI. The Internal Communications team aims to create clarity, trust, and shared understanding that inspires our employees to do their best work. About the Role We are looking for an Internal Communications professional to support our Enterprise and &amp; Growth portfolio, specifically B2B, Revenue, Partnerships,…</description>
   </job>
@@ -1256,7 +1298,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-22</date_posted>
-    <age_days>11</age_days>
+    <age_days>12</age_days>
     <source>ashby</source>
     <description>About the Team At OpenAI, our User Operations team safeguards our products and users from legal risk, regulatory non-compliance, fraud, and abuse. The team operates at the intersection of operations, compliance, and user trust, embedded within the broader User Operations organization and collaborating cross-functionally with Legal, Governance Risk &amp; Compliance, Policy and Engineering. We support a global and diverse user base across OpenAI’s suite of product offerings, and developer tools by managing sensitive inbound tickets, regulatory obligations, and escalations. Every user-facing action…</description>
   </job>
@@ -1270,7 +1312,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-22</date_posted>
-    <age_days>11</age_days>
+    <age_days>12</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s mission is to ensure that AGI benefits all of humanity. Our Internal Communications team helps employees stay informed, connected, and engaged so they can focus on building and deploying safe and impactful AI. We partner across the company to explain what’s being built, why it matters, and how it connects to our strategy and mission. About the Role We’re looking for an internal communications professional to help employees understand the work happening across OpenAI’s research and product organizations. You’ll translate technical developments, product milestones, and…</description>
   </job>
@@ -1284,7 +1326,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-22</date_posted>
-    <age_days>11</age_days>
+    <age_days>12</age_days>
     <source>ashby</source>
     <description>About the role As a Pricing Strategist focused on GTM, you will help shape pricing strategy for B2B enterprise customers across our product portfolio. Working within Finance and partnering with GTM, Sales, and Product, you will focus on pricing analytics, price performance, and the effectiveness of credit programs while contributing to broader commercial strategy. In this role, you will Build regular pricing-performance reviews, analyze discounting and concessions, and turn findings into better pricing guidance. Develop commercial strategies and pricing programs for customer segments such as…</description>
   </job>
@@ -1298,7 +1340,7 @@
     <office_location>United Kingdom</office_location>
     <region>International</region>
     <date_posted>2026-09-22</date_posted>
-    <age_days>11</age_days>
+    <age_days>12</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -1312,7 +1354,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-21</date_posted>
-    <age_days>12</age_days>
+    <age_days>13</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -1326,7 +1368,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-21</date_posted>
-    <age_days>12</age_days>
+    <age_days>13</age_days>
     <source>ashby</source>
     <description>About the Role We’re looking for a senior individual contributor to lead GTM Strategy &amp; Operations for Security &amp; Safety, in close partnership with the Policy team. This role will help translate policy, security, and safety considerations into clear GTM strategies, operating models, launch plans, and scalable execution mechanisms. You’ll work across Product, Policy, Safety, Security, Legal, Data, Sales, Customer Success, Marketing, and Revenue Operations to understand customer and field needs, shape business recommendations, and support the successful adoption of security- and safety-critical…</description>
   </job>
@@ -1340,7 +1382,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-21</date_posted>
-    <age_days>12</age_days>
+    <age_days>13</age_days>
     <source>ashby</source>
     <description>About the Team The Product Policy team develops and implements policies that shape how OpenAI’s technology is built and used. We work with teams across the company to turn complex questions about AI’s benefits and risks into practical guidance for responsible research, product development, and deployment. About the Role As Product Policy Manager, Regulation, you will map external regulatory and legislative trends and synthesize them into concrete research, product, and policy requirements. You will connect deep expertise in regulation and public policy with a sophisticated understanding of AI…</description>
   </job>
@@ -1354,7 +1396,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-21</date_posted>
-    <age_days>12</age_days>
+    <age_days>13</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity. Our Communications team supports that mission by explaining our technology, our values, and how we safely build powerful AI. We help business leaders see what AI can make possible for their organizations, show how customers use OpenAI’s products, and explain how AI is changing the way people work. About the Role We are looking for a senior product communications leader to own OpenAI’s B2B product story across business, trade, and nontraditional media. You will lead B2B communications…</description>
   </job>
@@ -1368,7 +1410,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-19</date_posted>
-    <age_days>14</age_days>
+    <age_days>15</age_days>
     <source>ashby</source>
     <description>About the Team Safety Systems manages the complete lifecycle of safety efforts for OpenAI’s frontier models, ensuring our models are deployed responsibly and have a positive impact on society. Our work spans diverse research and engineering initiatives—from system-level safeguards and model training to evaluation and red-teaming—all aimed at mitigating misuse, misalignment, and maintaining our high bar for safety. We lead OpenAI's commitment to developing and deploying safe Artificial General Intelligence (AGI), fostering a culture of trust, responsibility, and transparency. Our goal is to…</description>
   </job>
@@ -1382,7 +1424,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-18</date_posted>
-    <age_days>15</age_days>
+    <age_days>16</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -1396,7 +1438,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-18</date_posted>
-    <age_days>15</age_days>
+    <age_days>16</age_days>
     <source>ashby</source>
     <description>Who are we? Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems. We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that. We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a…</description>
   </job>
@@ -1410,7 +1452,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-17</date_posted>
-    <age_days>16</age_days>
+    <age_days>17</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -1424,7 +1466,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-17</date_posted>
-    <age_days>16</age_days>
+    <age_days>17</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -1438,7 +1480,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-17</date_posted>
-    <age_days>16</age_days>
+    <age_days>17</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -1452,7 +1494,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-17</date_posted>
-    <age_days>16</age_days>
+    <age_days>17</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s Legal team plays a crucial role in advancing our mission by tackling innovative and fundamental legal issues in AI. The team includes professionals from diverse legal fields – technology, AI, infrastructure, privacy, IP, corporate, employment, tax, regulatory, and litigation – who collaborate closely with colleagues across the company. If you are passionate about being a technology lawyer working on cutting-edge challenges, you’ll thrive here. About the Role We are seeking an experienced commercial attorney to join our commercial legal team. Based in the US, you will…</description>
   </job>
@@ -1466,7 +1508,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-16</date_posted>
-    <age_days>17</age_days>
+    <age_days>18</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -1480,7 +1522,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-15</date_posted>
-    <age_days>18</age_days>
+    <age_days>19</age_days>
     <source>ashby</source>
     <description>About the Team Our Safety Systems team is at the forefront of OpenAI's mission to build and deploy safe AGI, driving our commitment to AI safety and fostering a culture of trust and transparency. Within Safety Systems, the Model Policy team works to ensure that increasingly capable models behave safely and reliably in real-world environments. We investigate emerging model failures, define the behavior models should exhibit instead, and develop the data, evaluations, monitoring, and safeguards needed to improve and validate that behavior. Our work connects alignment research with the practical…</description>
   </job>
@@ -1494,7 +1536,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-15</date_posted>
-    <age_days>18</age_days>
+    <age_days>19</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI's Legal team plays a crucial role in furthering OpenAI's mission by tackling innovative, fundamental legal issues in AI. If you're passionate about doing significant and unique work as a technology lawyer, this team is for you. The team comprises legal professionals from diverse fields, including technology, privacy, IP, corporate, cybersecurity, employment, tax, regulatory, and litigation. About the Role We’re growing our Litigation and Regulatory team and seek an experienced counsel to lead high-stakes regulatory investigations, enforcement matters, and related…</description>
   </job>
@@ -1508,7 +1550,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-14</date_posted>
-    <age_days>19</age_days>
+    <age_days>20</age_days>
     <source>ashby</source>
     <description>Perplexity is looking for a commercially minded attorney to join our Legal team. In this role, you’ll own the full commercial legal lifecycle. You will draft, negotiate, and close a wide range of agreements across partnerships, procurement, infrastructure, and licensing. You will build scalable legal infrastructure and enable the business to move quickly without unacceptable risk. You’ll work closely with teams across the business, including product, engineering, security, finance, and sales to close deals, strengthen our data security and compliance posture, and serve as a trusted advisor on…</description>
   </job>
@@ -1522,7 +1564,7 @@
     <office_location>São Paulo</office_location>
     <region>US</region>
     <date_posted>2026-09-12</date_posted>
-    <age_days>21</age_days>
+    <age_days>22</age_days>
     <source>ashby</source>
     <description>About the team OpenAI’s mission is to ensure that artificial general intelligence (AGI) benefits all of humanity. Achieving this goal requires more than cutting-edge research—it demands deep, ongoing engagement with the policymakers, communities, institutions, and partners shaping the future of AI. The communications team supports this mission by clearly and authentically explaining our technology, products, and approach, helping business leaders, customers, partners, developers, policymakers, and the public understand how AI can be developed and adopted responsibly. About the role We’re…</description>
   </job>
@@ -1536,7 +1578,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-12</date_posted>
-    <age_days>21</age_days>
+    <age_days>22</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s Communications team is building a new model for how communications teams work, combining strong strategic judgment and point of view, effective operating systems, and the growing capabilities of AI. We’re looking for a strategy and systems manager to help make that model real. As part of the Communications Strategy &amp; Systems team, you’ll translate priorities into action, lead high-impact initiatives from idea through execution, and design better ways for the team to work. You’ll take ownership of complex projects that need clear thinking, strong follow-through, and a…</description>
   </job>
@@ -1550,7 +1592,7 @@
     <office_location>San Francisco, CA | New York City, NY | Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-09-11</date_posted>
-    <age_days>22</age_days>
+    <age_days>23</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;Anthropic's Safeguards organization builds the policies, evaluations, and enforcement systems that define and hold the limits on how Claude can be used. In this role,…</description>
   </job>
@@ -1564,7 +1606,7 @@
     <office_location>Canada</office_location>
     <region>International</region>
     <date_posted>2026-09-11</date_posted>
-    <age_days>22</age_days>
+    <age_days>23</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -1578,7 +1620,7 @@
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-10</date_posted>
-    <age_days>23</age_days>
+    <age_days>24</age_days>
     <source>workday</source>
     <description/>
   </job>
@@ -1592,7 +1634,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-09</date_posted>
-    <age_days>24</age_days>
+    <age_days>25</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s Governance team helps shape how the company responsibly develops and deploys increasingly capable AI. We bring together technical evidence, policy, and operational perspectives to help the company address emerging risks, resolve difficult questions, and make well-supported decisions. Our work includes shaping and improving governance practices, supporting effective oversight, developing clear assessments and recommendations, and ensuring that decisions lead to action. We work closely with research, safety, security, legal, and product teams to identify gaps, reconcile…</description>
   </job>
@@ -1606,7 +1648,7 @@
     <office_location>Colombia</office_location>
     <region>International</region>
     <date_posted>2026-09-09</date_posted>
-    <age_days>24</age_days>
+    <age_days>25</age_days>
     <source>ashby</source>
     <description>About the role As a Deployment Strategist, you'll work as part of a driven and creative team of Forward Deployed Engineers, Go to Market professionals, Product Engineers and other Strategists to deploy ElevenAgents, our enterprise AI platform, against the challenging problems our customers face. Your mission is to synthesize disconnected streams of thought into a cohesive understanding of what the most important problem is, what the existing workflows are, what the product needs, what users are motivated by, and where the impact could be. No two days are the same, but as a Deployment…</description>
   </job>
@@ -1620,37 +1662,9 @@
     <office_location>San Francisco, CA | New York City, NY</office_location>
     <region>US</region>
     <date_posted>2026-09-08</date_posted>
-    <age_days>25</age_days>
+    <age_days>26</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;Anthropic is seeking an experienced Executive Communications Writer to support and scale the ways our leaders tell our story. In this role, you will work closely with…</description>
-  </job>
-  <job>
-    <job_id>workday-accenture-R00346286</job_id>
-    <title>Enterprise AI Value Strategist - Manager (all genders)</title>
-    <company>Accenture</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Berlin/Enterprise-AI-Value-Strategist---Manager_R00346286</apply_url>
-    <office_location/>
-    <region>US</region>
-    <date_posted>2026-09-04</date_posted>
-    <age_days>29</age_days>
-    <source>workday</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>greenhouse-anthropic-5414608008</job_id>
-    <title>Sanctions Compliance Lead</title>
-    <company>Anthropic</company>
-    <employer_type>AI organization</employer_type>
-    <bucket>Legal</bucket>
-    <apply_url>https://job-boards.greenhouse.io/anthropic/jobs/5414608008</apply_url>
-    <office_location>San Francisco, CA | New York City, NY | Washington, DC</office_location>
-    <region>US</region>
-    <date_posted>2026-09-04</date_posted>
-    <age_days>29</age_days>
-    <source>greenhouse</source>
-    <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic's Integrity &amp;amp; Compliance (I&amp;amp;C) function is building the systems that let us scale responsibly as our products reach more people, more…</description>
   </job>
   <job>
     <job_id>workday-accenture-R00349838</job_id>
@@ -1661,7 +1675,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Bengaluru/S-C-GN---TS-T--Enterprise-AI-Value-Strategy---Consultant_R00349838</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1675,7 +1689,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Bengaluru/S-C-GN---TS-T--Enterprise-AI-Value-Strategy---Consultant_R00349836</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1689,7 +1703,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Bengaluru/S-C-GN---TS-T--Enterprise-AI-Value-Strategy---Consultant_R00349833</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1703,7 +1717,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Bengaluru/S-C-GN---TS-T--Enterprise-AI-Value-Strategy---Consultant_R00349814</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1717,7 +1731,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Gurugram/S-C-GN---TS-T--Enterprise-AI-Value-Strategy---Consultant_R00349559</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1731,7 +1745,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Gurugram/S-C-GN---TS-T--Enterprise-AI-Value-Strategy---Consultant_R00349557-1</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1745,7 +1759,21 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Vienna/Enterprise-AI-Value-Strategy-Consultant_R00346298-1</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
+    <age_days>30</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>workday-accenture-R00346286</job_id>
+    <title>Enterprise AI Value Strategist - Manager (all genders)</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Berlin/Enterprise-AI-Value-Strategist---Manager_R00346286</apply_url>
+    <office_location/>
+    <region>US</region>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1759,7 +1787,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Dublin/Enterprise-AI-Value-Strategist---Manager_R00344234</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1773,7 +1801,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Dublin/Enterprise-AI-Value-Strategist---Consultant_R00344229</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1787,7 +1815,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Shanghai/Enterprise-AI-Value-Strategy-Manager_R00341093</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1801,7 +1829,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Sydney-International-House-3-Sussex-St/AI-Strategy-Manager_R00340654</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1815,7 +1843,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Gurugram/S-C-GN---TS-T---Digital-Foundations---AI-Op-Model---Governance---Senior-Manager_R00340146</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1829,7 +1857,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Gurugram/S-C-GN---TS-T---Digital-Foundations---AI-Op-Model---Governance---Consultant_R00340104-1</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1843,7 +1871,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Warsaw/Agentic-Data-Governance-Specialist--AI-Data-_R00337227</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1857,7 +1885,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Warsaw/Resources-Industry-Consultant-with-AI---ICH-Europe_R00319662</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1871,7 +1899,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Warsaw/The-Strategy---Consulting-Gen-AI-Agentic-Innovation-Consultant---SONG--GN-_R00310084</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1885,7 +1913,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Bengaluru/XMLNAME--ACN-S-CGN---Tech-Strategy---Advisory---Data-Strategy---Senior-Manager_R00289754</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1899,7 +1927,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Bengaluru/XMLNAME--ACN-S-CGN---Tech-Strategy---Advisory---Data-Strategy---Manager_R00289753</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1913,7 +1941,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Athens/EU-Public-Sector---Data-Consultant_R00289454</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1927,7 +1955,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Auckland/Accenture-NZ---Data---AI-Analysts-and-Consultants_R00263433</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1941,7 +1969,7 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Buenos-Aires/Consulting---Digital-Strategy_R00151294</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
@@ -1955,10 +1983,24 @@
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Canberra-Brindabella-Business-Park/Data---AI-Consultant_14328924</apply_url>
     <office_location/>
     <region>US</region>
-    <date_posted>2026-09-03</date_posted>
+    <date_posted>2026-09-04</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
     <description/>
+  </job>
+  <job>
+    <job_id>greenhouse-anthropic-5414608008</job_id>
+    <title>Sanctions Compliance Lead</title>
+    <company>Anthropic</company>
+    <employer_type>AI organization</employer_type>
+    <bucket>Legal</bucket>
+    <apply_url>https://job-boards.greenhouse.io/anthropic/jobs/5414608008</apply_url>
+    <office_location>San Francisco, CA | New York City, NY | Washington, DC</office_location>
+    <region>US</region>
+    <date_posted>2026-09-04</date_posted>
+    <age_days>30</age_days>
+    <source>greenhouse</source>
+    <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic's Integrity &amp;amp; Compliance (I&amp;amp;C) function is building the systems that let us scale responsibly as our products reach more people, more…</description>
   </job>
   <job>
     <job_id>ashby-cohere-bde93d36-4a41-4c8c-bd98-b4e44f9061e4</job_id>
@@ -1970,7 +2012,7 @@
     <office_location>Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-09-03</date_posted>
-    <age_days>30</age_days>
+    <age_days>31</age_days>
     <source>ashby</source>
     <description>Who are we? Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems. We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that. We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a…</description>
   </job>
@@ -1984,7 +2026,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-02</date_posted>
-    <age_days>31</age_days>
+    <age_days>32</age_days>
     <source>ashby</source>
     <description>Perplexity is revolutionizing how companies get work done. We are seeking a Virtual Events Manager to build the channel that shows people what our products can do and teaches them how to use them. You will develop a deep working knowledge of our products, turn that knowledge into compelling live experiences, and own the programs that convert audiences into active users and qualified pipeline. This role has two sides. You are a charismatic host and product storyteller who can command a virtual room, and you are the operator who keeps every event on the rails. You will find and prepare the…</description>
   </job>
@@ -1998,7 +2040,7 @@
     <office_location>United States</office_location>
     <region>US</region>
     <date_posted>2026-09-02</date_posted>
-    <age_days>31</age_days>
+    <age_days>32</age_days>
     <source>ashby</source>
     <description>Who are we? Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems. We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that. We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a…</description>
   </job>
@@ -2012,7 +2054,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-09-01</date_posted>
-    <age_days>32</age_days>
+    <age_days>33</age_days>
     <source>ashby</source>
     <description>Perplexity is AI for people who expect more. More accuracy. More agency. More signal, less noise. Our answer engine handles hundreds of millions of queries every month for people whose questions spark change and whose decisions bend the world toward progress. Our legal team works side by side with product and business teams. We help the company move quickly, make sound risk decisions, and build legal requirements into products and operations from the start. About the Opportunity We are looking for a practical, versatile attorney to join our Product, Privacy and Regulatory Legal team. You will…</description>
   </job>
@@ -2026,7 +2068,7 @@
     <office_location>San Francisco, CA | Seattle, WA</office_location>
     <region>US</region>
     <date_posted>2026-08-31</date_posted>
-    <age_days>33</age_days>
+    <age_days>34</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;Anthropic is seeking an Internal Communications Manager to serve as a dedicated communications partner to our Core Tech organization (the teams building and securing the…</description>
   </job>
@@ -2040,7 +2082,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-08-28</date_posted>
-    <age_days>36</age_days>
+    <age_days>37</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We are looking for a hands-on Legal Specialist (Law Enforcement) to join our Litigation, Regulatory &amp;amp; Policy team at Anthropic. In this role, you…</description>
   </job>
@@ -2054,7 +2096,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-08-28</date_posted>
-    <age_days>36</age_days>
+    <age_days>37</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic's Safeguards organization builds the policies, evaluations, and detection and enforcement systems that define and hold the limits on how…</description>
   </job>
@@ -2068,7 +2110,7 @@
     <office_location>Sydney, Australia | Remote-Friendly, Australia</office_location>
     <region>International</region>
     <date_posted>2026-08-28</date_posted>
-    <age_days>36</age_days>
+    <age_days>37</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;Anthropic is building AI systems that will shape the trajectory of one of the most consequential technologies in human history. That work requires physical…</description>
   </job>
@@ -2082,7 +2124,7 @@
     <office_location>Alberta, CAN | Remote-Friendly, Canada</office_location>
     <region>International</region>
     <date_posted>2026-08-28</date_posted>
-    <age_days>36</age_days>
+    <age_days>37</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;Anthropic is building AI systems that will shape the trajectory of one of the most consequential technologies in human history. That work requires physical…</description>
   </job>
@@ -2096,7 +2138,7 @@
     <office_location>London, UK</office_location>
     <region>International</region>
     <date_posted>2026-08-28</date_posted>
-    <age_days>36</age_days>
+    <age_days>37</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;As an Applied AI Strategist for EMEA, you will be Anthropic's senior strategic voice with EMEA’s most strategic customers. You'll engage C-suite executives and senior…</description>
   </job>
@@ -2110,7 +2152,7 @@
     <office_location>London, UK</office_location>
     <region>International</region>
     <date_posted>2026-08-28</date_posted>
-    <age_days>36</age_days>
+    <age_days>37</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2 class=&quot;heading&quot;&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic is seeking a Contracts Manager to join our team in London. Embedded within our in-region commercial and legal operations,…</description>
   </job>
@@ -2124,7 +2166,7 @@
     <office_location>Singapore</office_location>
     <region>International</region>
     <date_posted>2026-08-28</date_posted>
-    <age_days>36</age_days>
+    <age_days>37</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;As a Regional Research Economist at Anthropic, you will work to collaborate with governments, academia, industry, and civil society in your region to…</description>
   </job>
@@ -2138,7 +2180,7 @@
     <office_location>London, UK</office_location>
     <region>International</region>
     <date_posted>2026-08-28</date_posted>
-    <age_days>36</age_days>
+    <age_days>37</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the Role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;As a Regional Research Economist at Anthropic, you will work to collaborate with governments, academia, industry, and civil society in your region to…</description>
   </job>
@@ -2152,7 +2194,7 @@
     <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
     <region>International</region>
     <date_posted>2026-08-28</date_posted>
-    <age_days>36</age_days>
+    <age_days>37</age_days>
     <source>eightfold</source>
     <description/>
   </job>
@@ -2166,7 +2208,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-08-27</date_posted>
-    <age_days>37</age_days>
+    <age_days>38</age_days>
     <source>ashby</source>
     <description>Perplexity is revolutionizing search. We are seeking a Writer to join our team and work closely with Growth, Enterprise, Support, and Product. You will lead our content strategy, development, and copywriting. We want to create a brand that — if you want to build the foundation of content from 0 to 1, have a passion for AI, and love writing, this role is for you. Responsibilities Create exceptional and captivating content across Consumer and Enterprise use cases, including email copy, social media posts, in-product copy, support pages, FAQs, video scripts, case studies, white papers, outbound…</description>
   </job>
@@ -2180,7 +2222,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-08-27</date_posted>
-    <age_days>37</age_days>
+    <age_days>38</age_days>
     <source>ashby</source>
     <description>Perplexity AI is looking for a sharp, entrepreneurial litigation attorney to join our small legal team to help advance the business, protect the products we are building, and revolutionize the way people search and interact with the internet. This unique role offers significant responsibility, direct ownership of high stakes matters, and growth potential across an in-house practice group. This is a unique role within a rapidly growing AI technology company. You will play a key role in safeguarding Perplexity’s interests by managing litigation files and pre-litigation disputes related to our…</description>
   </job>
@@ -2194,7 +2236,7 @@
     <office_location>Washington D.C.</office_location>
     <region>US</region>
     <date_posted>2026-08-27</date_posted>
-    <age_days>37</age_days>
+    <age_days>38</age_days>
     <source>ashby</source>
     <description>ABOUT PERPLEXITY Perplexity is AI for people who expect more. More accuracy. More agency. More signal, less noise. Our answer engine handles hundreds of millions of queries every month for people whose questions spark change and whose decisions bend the world toward progress. As our footprint grows, so does the number of policymakers, agencies, and civil society leaders who want to understand what we are building and how we think. ABOUT THE ROLE We're hiring a Public Policy Associate in Washington, D.C. to sit at the center of Perplexity's engagement with Congress, the executive branch, trade…</description>
   </job>
@@ -2208,7 +2250,7 @@
     <office_location>São Paulo</office_location>
     <region>US</region>
     <date_posted>2026-08-27</date_posted>
-    <age_days>37</age_days>
+    <age_days>38</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s mission is to ensure that artificial general intelligence (AGI) benefits all of humanity. Achieving this goal requires more than cutting-edge research—it demands deep, ongoing engagement with the policymakers, communities, institutions, and partners shaping the future of AI. The Global Affairs team leads this engagement. We cultivate authentic, collaborative relationships with public officials, regulators, civil society, community stakeholders, and the broader AI policymaking community to ensure diverse perspectives inform our work. By bringing external insights into…</description>
   </job>
@@ -2222,7 +2264,7 @@
     <office_location>United States</office_location>
     <region>US</region>
     <date_posted>2026-08-27</date_posted>
-    <age_days>37</age_days>
+    <age_days>38</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -2236,7 +2278,7 @@
     <office_location>Singapore</office_location>
     <region>International</region>
     <date_posted>2026-08-27</date_posted>
-    <age_days>37</age_days>
+    <age_days>38</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -2250,7 +2292,7 @@
     <office_location>Ontario - Remote</office_location>
     <region>International</region>
     <date_posted>2026-08-26</date_posted>
-    <age_days>38</age_days>
+    <age_days>39</age_days>
     <source>ashby</source>
     <description>About the Team Critical Harm Operations sits within User Safety &amp; Risk Operations and builds enforcement systems for Frontier Risk and Material Harm that are accurate, fast, defensible, and built to scale. The Cyber vertical turns policy into reviewer standards, calibrated judgment, quality systems, escalation paths, and automation guardrails. About the Role We are looking for a senior cybersecurity practitioner and operations strategist to raise the quality, scalability, and technical rigor of our Cyber Operations. You will combine hands-on cyber judgment with systems-level operating design:…</description>
   </job>
@@ -2264,7 +2306,7 @@
     <office_location>Remote-Friendly (Travel-Required) | San Francisco, CA | Seattle, WA | New York City, NY</office_location>
     <region>US</region>
     <date_posted>2026-08-24</date_posted>
-    <age_days>40</age_days>
+    <age_days>41</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the Team&lt;/h2&gt; &lt;p&gt;As the Product Policy Manager for Product Risk, you will play a crucial role in setting and executing the Safeguards team’s approach to assessing product launches for…</description>
   </job>
@@ -2278,7 +2320,7 @@
     <office_location>Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-08-21</date_posted>
-    <age_days>43</age_days>
+    <age_days>44</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We're looking for a senior policy leader to own how Anthropic governs access to its most sensitive cyber-relevant model capabilities. You'll consolidate…</description>
   </job>
@@ -2292,7 +2334,7 @@
     <office_location>Austin, TX | Remote-Friendly, United States</office_location>
     <region>US</region>
     <date_posted>2026-08-21</date_posted>
-    <age_days>43</age_days>
+    <age_days>44</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;Anthropic is building AI systems that will shape the trajectory of one of the most consequential technologies in human history. That work requires physical…</description>
   </job>
@@ -2306,7 +2348,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-08-21</date_posted>
-    <age_days>43</age_days>
+    <age_days>44</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the Role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We are seeking a GSOC Response &amp;amp; Policy Program Specialist to define how Anthropic's Global Security Operations Center detects, responds to, and…</description>
   </job>
@@ -2320,7 +2362,7 @@
     <office_location>San Francisco, CA | Seattle, WA</office_location>
     <region>US</region>
     <date_posted>2026-08-21</date_posted>
-    <age_days>43</age_days>
+    <age_days>44</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic is seeking an exceptional Legal Program Manager to serve as the operational backbone of contracting for the Compute and Infrastructure team.…</description>
   </job>
@@ -2334,7 +2376,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-08-21</date_posted>
-    <age_days>43</age_days>
+    <age_days>44</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2 class=&quot;heading&quot;&gt;&lt;strong&gt;About the Role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;As a Transformative AI Research Economist at Anthropic, you will build macroeconomic models of AI that could be genuinely transformative…</description>
   </job>
@@ -2348,7 +2390,7 @@
     <office_location>San Francisco, CA</office_location>
     <region>US</region>
     <date_posted>2026-08-21</date_posted>
-    <age_days>43</age_days>
+    <age_days>44</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the Role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;As an Economist at Anthropic, you will work to measure and understand AI's effects on the global economy. You will make fundamental contributions to the…</description>
   </job>
@@ -2362,7 +2404,7 @@
     <office_location>Singapore</office_location>
     <region>International</region>
     <date_posted>2026-08-21</date_posted>
-    <age_days>43</age_days>
+    <age_days>44</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s Legal team plays a crucial role in advancing our mission by tackling innovative and fundamental legal issues in AI. The team includes professionals from diverse legal fields—technology, AI, infrastructure, privacy, IP, corporate, employment, tax, regulatory, and litigation—who collaborate closely with colleagues across the company. If you are passionate about being a technology lawyer working on cutting-edge challenges, you’ll thrive here. About the Role We are seeking an experienced commercial attorney to join our commercial legal team. You will help lead commercial…</description>
   </job>
@@ -2376,7 +2418,7 @@
     <office_location>India</office_location>
     <region>International</region>
     <date_posted>2026-08-20</date_posted>
-    <age_days>44</age_days>
+    <age_days>45</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -2390,7 +2432,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-08-17</date_posted>
-    <age_days>47</age_days>
+    <age_days>48</age_days>
     <source>ashby</source>
     <description>Summary of Role Perplexity AI is looking for a Principal Counsel, Corporate to serve as the company’s primary lawyer for corporate governance, equity, and financing matters. In this role, you’ll own the full corporate legal lifecycle, from board and stockholder governance and equity administration to financings, secondary transactions, and entity management as we scale globally. You’ll work closely with our Finance, Accounting, Tax and People teams, as well as with our executive team and investors. You’ll drive transactions from term sheet through closing, build the governance infrastructure…</description>
   </job>
@@ -2404,7 +2446,7 @@
     <office_location>US - Remote</office_location>
     <region>US</region>
     <date_posted>2026-08-17</date_posted>
-    <age_days>47</age_days>
+    <age_days>48</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI, in close collaboration with our capital partners, is embarking on a journey to build the world’s most advanced AI infrastructure ecosystem. The Industrial Compute team is central to this mission, setting the core infra strategy and implementing this vision. From site selection to the buildout process, this team sits at the intersection of commercial, technical, strategy, and operations, interacting with teams and executives inside and outside of OpenAI. About the Role The Community Engagement Lead will be the primary bridge between OpenAI and the communities in Ohio.…</description>
   </job>
@@ -2418,7 +2460,7 @@
     <office_location>UAE </office_location>
     <region>International</region>
     <date_posted>2026-08-17</date_posted>
-    <age_days>47</age_days>
+    <age_days>48</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -2432,7 +2474,7 @@
     <office_location>New York City</office_location>
     <region>US</region>
     <date_posted>2026-08-14</date_posted>
-    <age_days>50</age_days>
+    <age_days>51</age_days>
     <source>ashby</source>
     <description>About the Team The Product Policy team is responsible for the development, implementation, enforcement, and communication of the policies that govern use of OpenAI’s services, including ChatGPT, GPTs, the GPT Store, Codex, and the OpenAI API. About the Role We are looking for a Research and Advisory Partnerships Lead to build and manage the relationships, partnerships, and advisory structures that bring independent external expertise into our product and policy decisions. This role is based in San Francisco, CA. We use a hybrid work model of 3 days in the office per week and offer relocation…</description>
   </job>
@@ -2446,7 +2488,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-08-14</date_posted>
-    <age_days>50</age_days>
+    <age_days>51</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI's Legal team plays a crucial role in furthering OpenAI's mission by tackling innovative, fundamental legal issues in AI. If you're passionate about doing significant and unique work as a technology lawyer, this team is for you. The team comprises professionals from diverse fields, including technology, AI, privacy, IP, corporate, employment, tax law, regulatory, and litigation. About the Role As a member of our AI Product Counsel team, you will advise the teams building and deploying OpenAI’s business products, including ChatGPT Business, ChatGPT Enterprise, and our API…</description>
   </job>
@@ -2460,7 +2502,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-08-14</date_posted>
-    <age_days>50</age_days>
+    <age_days>51</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s Legal team plays a crucial role in advancing our mission by tackling innovative and fundamental legal issues in AI. The team includes professionals from diverse legal fields—technology, AI, infrastructure, privacy, IP, corporate, employment, tax, regulatory, and litigation—who collaborate closely with colleagues across the company. If you are passionate about being a technology lawyer working on cutting-edge challenges, you’ll thrive here. About the Role We’re seeking a senior lawyer to participate in commercial legal strategy and execution across OpenAI’s fast-growing…</description>
   </job>
@@ -2474,7 +2516,7 @@
     <office_location>Dubai</office_location>
     <region>International</region>
     <date_posted>2026-08-14</date_posted>
-    <age_days>50</age_days>
+    <age_days>51</age_days>
     <source>ashby</source>
     <description>Who are we? Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems. We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that. We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a…</description>
   </job>
@@ -2488,21 +2530,7 @@
     <office_location>Canada</office_location>
     <region>International</region>
     <date_posted>2026-08-12</date_posted>
-    <age_days>52</age_days>
-    <source>ashby</source>
-    <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
-  </job>
-  <job>
-    <job_id>ashby-elevenlabs-e66bf8b7-45a0-4cbf-bc37-43d20a388ff8</job_id>
-    <title>Deployment Strategist - Sweden</title>
-    <company>ElevenLabs</company>
-    <employer_type>AI organization</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://jobs.ashbyhq.com/elevenlabs/e66bf8b7-45a0-4cbf-bc37-43d20a388ff8</apply_url>
-    <office_location>Sweden</office_location>
-    <region>International</region>
-    <date_posted>2026-08-10</date_posted>
-    <age_days>54</age_days>
+    <age_days>53</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -2516,7 +2544,7 @@
     <office_location>Singapore</office_location>
     <region>International</region>
     <date_posted>2026-08-10</date_posted>
-    <age_days>54</age_days>
+    <age_days>55</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -2530,7 +2558,7 @@
     <office_location>India, Telangana, Hyderabad</office_location>
     <region>International</region>
     <date_posted>2026-08-07</date_posted>
-    <age_days>57</age_days>
+    <age_days>58</age_days>
     <source>eightfold</source>
     <description/>
   </job>
@@ -2544,7 +2572,7 @@
     <office_location>India, Telangana, Hyderabad</office_location>
     <region>International</region>
     <date_posted>2026-08-07</date_posted>
-    <age_days>57</age_days>
+    <age_days>58</age_days>
     <source>eightfold</source>
     <description/>
   </job>
@@ -2558,7 +2586,7 @@
     <office_location>Toronto</office_location>
     <region>International</region>
     <date_posted>2026-08-07</date_posted>
-    <age_days>57</age_days>
+    <age_days>58</age_days>
     <source>ashby</source>
     <description>Who are we? Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems. We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that. We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a…</description>
   </job>
@@ -2572,7 +2600,7 @@
     <office_location>Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-07-31</date_posted>
-    <age_days>64</age_days>
+    <age_days>65</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI's mission is to ensure that artificial general intelligence benefits all of humanity. The U.S. Policy and Partnerships team sits within Global Affairs and helps translate that mission into trusted, practical engagement with civil society, community leaders, researchers, and other external stakeholders across the United States. Our current operating model is built around disciplined, cross-functional campaigns: moving from abstract persuasion to local proof, pairing policy expertise with real-world use cases, and working with trusted validators who can help communities…</description>
   </job>
@@ -2586,7 +2614,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-07-30</date_posted>
-    <age_days>65</age_days>
+    <age_days>66</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s Legal team plays a crucial role in advancing our mission by tackling novel and consequential legal issues in AI. The commercial infrastructure legal team supports the systems and facilities that make advanced AI possible, including compute, first-party silicon, colocation, and first-party data center development. About the Role We’re seeking a senior commercial infrastructure lawyer to lead legal work across our rapidly growing data center development and colocation portfolio. You will advise on complex, high-value transactions involving new data center sites, power,…</description>
   </job>
@@ -2600,7 +2628,7 @@
     <office_location>United States</office_location>
     <region>US</region>
     <date_posted>2026-07-30</date_posted>
-    <age_days>65</age_days>
+    <age_days>66</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -2614,7 +2642,7 @@
     <office_location>Toronto</office_location>
     <region>International</region>
     <date_posted>2026-07-28</date_posted>
-    <age_days>67</age_days>
+    <age_days>68</age_days>
     <source>ashby</source>
     <description>Who are we? Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems. We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that. We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a…</description>
   </job>
@@ -2628,7 +2656,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-07-24</date_posted>
-    <age_days>71</age_days>
+    <age_days>72</age_days>
     <source>ashby</source>
     <description>About the Team The B2B Marketing team is responsible for helping businesses understand, adopt, and get value from OpenAI’s products. B2B marketing is a major and growing priority for OpenAI as we scale our work with companies, developers, and institutions around the world. About the Role Within B2B Marketing, Demand Generation builds the integrated, full-funnel engine that connects audience insights, content, field and digital experiences, paid media, lifecycle, and sales follow-through to qualified pipeline. We partner closely with Sales, Partnerships, Product Marketing, Communications,…</description>
   </job>
@@ -2642,7 +2670,7 @@
     <office_location>Washington, DC</office_location>
     <region>US</region>
     <date_posted>2026-07-24</date_posted>
-    <age_days>71</age_days>
+    <age_days>72</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI's mission is to ensure that general-purpose artificial intelligence benefits all of humanity. Our Communications team includes External Communications, Internal Communications, and other strategic communications functions. The team's role is to clearly and authentically explain our technology, values, and approach to safely building powerful AI. About the Role We are seeking an exceptional communications professional to lead communications support for OpenAI's partnerships with federal, state, and local governments and our broader public-sector enterprise work. This…</description>
   </job>
@@ -2656,7 +2684,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-07-23</date_posted>
-    <age_days>72</age_days>
+    <age_days>73</age_days>
     <source>ashby</source>
     <description>Perplexity is an AI-powered answer engine founded in December 2022 and growing rapidly as one of the world's leading AI platforms. Perplexity has raised over $1B in venture investment from some of the world's most visionary and successful leaders, including Elad Gil, Daniel Gross, Jeff Bezos, Accel, IVP, NEA, NVIDIA, Samsung, and many more. Our objective is to build accurate, trustworthy AI that powers decision-making for people and assistive AI wherever decisions are being made. Throughout human history, change and innovation have always been driven by curious people. Today, curious people…</description>
   </job>
@@ -2670,7 +2698,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-07-23</date_posted>
-    <age_days>72</age_days>
+    <age_days>73</age_days>
     <source>ashby</source>
     <description>About the Team The Pricing &amp; Monetization team is responsible for how our products create and capture value. We partner closely with Product, GTM, and Finance to design pricing models, packaging, and commercial strategies that support adoption, growth, and long-term scaling of the business. To thrive on this team, you need to be a proactive problem-solver who excels at bringing structure to ambiguous challenges. Our work demands strategic thinking, cross-functional collaboration, and precision in execution. Team members succeed when they are analytical, detail-oriented, skilled at balancing…</description>
   </job>
@@ -2684,7 +2712,7 @@
     <office_location>United States</office_location>
     <region>US</region>
     <date_posted>2026-07-23</date_posted>
-    <age_days>72</age_days>
+    <age_days>73</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -2698,7 +2726,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-07-21</date_posted>
-    <age_days>74</age_days>
+    <age_days>75</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s mission is to ensure that general-purpose artificial intelligence benefits all of humanity. Our Communications team includes External Communications, Internal Communications, and other strategic communications functions. This team’s ethos is to support OpenAI's mission and goals by clearly and authentically explaining our technology, values, and approach to safely building powerful AI. About the Role We’re looking for a senior communications leader to shape how OpenAI communicates about its emerging ads and monetization business. This person will define the global…</description>
   </job>
@@ -2712,7 +2740,7 @@
     <office_location>Sweden</office_location>
     <region>International</region>
     <date_posted>2026-07-20</date_posted>
-    <age_days>75</age_days>
+    <age_days>76</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -2726,7 +2754,7 @@
     <office_location>United Kingdom</office_location>
     <region>International</region>
     <date_posted>2026-07-15</date_posted>
-    <age_days>80</age_days>
+    <age_days>81</age_days>
     <source>ashby</source>
     <description>Who are we? Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems. We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that. We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a…</description>
   </job>
@@ -2740,7 +2768,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-07-08</date_posted>
-    <age_days>87</age_days>
+    <age_days>88</age_days>
     <source>ashby</source>
     <description>Perplexity is seeking a highly experienced Governance, Risk &amp; Compliance Analyst to join our world-class team. You will help shape our compliance and risk management program. If you are a self-motivated, organized professional with a passion for driving compliance and building customer trust, this is an exciting chance to join a fast-growing startup and help revolutionize the way people search and interact online. What You'll Do Implement and lead frameworks such as SOC2, ISO 27001 and HIPAA. Ensuring compliance with certification requirements Ensure and maintain compliance with GDPR, CCPA,…</description>
   </job>
@@ -2754,7 +2782,7 @@
     <office_location>United States</office_location>
     <region>US</region>
     <date_posted>2026-07-06</date_posted>
-    <age_days>89</age_days>
+    <age_days>90</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -2768,7 +2796,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-07-01</date_posted>
-    <age_days>94</age_days>
+    <age_days>95</age_days>
     <source>ashby</source>
     <description>Perplexity is seeking a Senior Editor to lead the quality and velocity of everything we publish. Our content spans a range of audiences, channels, and objectives. You will set the editorial bar for excellence and make every writer around you measurably better. If you treat a clunky sentence and a sprawling launch narrative as the same kind of craft, take pride in language without being precious about deadlines, and want to build a world-class editorial function from the ground up, this role is for you. Responsibilities Own editorial quality end to end. Reject mediocrity. Demand clarity.…</description>
   </job>
@@ -2782,7 +2810,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-07-01</date_posted>
-    <age_days>94</age_days>
+    <age_days>95</age_days>
     <source>ashby</source>
     <description>Perplexity is seeking an Internal Communications Manager to build that function from the ground up. You will own how information moves through Perplexity. You will be responsible for what Perplexity employees think, feel, know, and do. This is a 0→1 role with executive exposure from day one. If you believe internal comms is a strategic function and want to shape how an n(1) company talks to itself, this role is for you. Responsibilities Listen and learn across the company. Understand what’s happening, how, and why in order to make sound recommendations on what should be amplified or…</description>
   </job>
@@ -2796,7 +2824,7 @@
     <office_location>United States</office_location>
     <region>US</region>
     <date_posted>2026-06-26</date_posted>
-    <age_days>99</age_days>
+    <age_days>100</age_days>
     <source>ashby</source>
     <description>Who are we? Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems. We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that. We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a…</description>
   </job>
@@ -2810,7 +2838,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-06-22</date_posted>
-    <age_days>103</age_days>
+    <age_days>104</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s mission is to ensure that general-purpose artificial intelligence benefits all of humanity. Our Communications team’s ethos is to support OpenAI’s mission and goals by clearly and authentically explaining our technology, values, and approach to safely building powerful AI. About the Role OpenAI is seeking an experienced communications professional to join our Platform &amp; Research Communications team. This role will work closely with the Research Communications Lead and partner deeply with safety researchers, alignment researchers, and cross-functional teams to shape how…</description>
   </job>
@@ -2824,7 +2852,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-06-10</date_posted>
-    <age_days>115</age_days>
+    <age_days>116</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;About Omidyar Network (ON):&lt;/span&gt;&lt;/strong&gt;&lt;span data-ccp-props=&quot;{&amp;quot;134233117&amp;quot;:false,&amp;quot;134233118&amp;quot;:false,&amp;quot;201341983&amp;quot;:0,&amp;quot;335559738&amp;quot;:240,&amp;quot;335559739&amp;quot;:240,&amp;quot;335559740&amp;quot;:278}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Omidyar Network is a philanthropic organization whose mission is to bend the arc of the digital revolution toward shared power, prosperity, and possibility. Digital technology is a powerful and ubiquitous force that, harnessed wisely, makes wondrous things happen. We believe in working…</description>
   </job>
@@ -2838,7 +2866,7 @@
     <office_location>New York</office_location>
     <region>US</region>
     <date_posted>2026-05-26</date_posted>
-    <age_days>130</age_days>
+    <age_days>131</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -2852,7 +2880,7 @@
     <office_location>Singapore</office_location>
     <region>International</region>
     <date_posted>2026-05-04</date_posted>
-    <age_days>152</age_days>
+    <age_days>153</age_days>
     <source>ashby</source>
     <description>About the role As a Deployment Strategist, you'll work as part of a driven and creative team of Forward Deployed Engineers, Go to Market professionals, Product Engineers and other Strategists to deploy ElevenAgents, our enterprise AI platform, against the challenging problems our customers face. Your mission is to synthesize disconnected streams of thought into a cohesive understanding of what the most important problem is, what the existing workflows are, what the product needs, what users are motivated by, and where the impact could be. No two days are the same, but as a Deployment…</description>
   </job>
@@ -2866,7 +2894,7 @@
     <office_location>Brazil</office_location>
     <region>International</region>
     <date_posted>2026-04-29</date_posted>
-    <age_days>157</age_days>
+    <age_days>158</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -2880,7 +2908,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-03-17</date_posted>
-    <age_days>200</age_days>
+    <age_days>201</age_days>
     <source>ashby</source>
     <description>Perplexity is seeking a highly motivated and skilled Demand Generation Lead to join our GTM team. This is a high-impact, high-autonomy role. You’ll own Perplexity’s demand generation engine for our enterprise and business products, partnering closely with Sales, Product Marketing, and Revenue Operations to accelerate pipeline and revenue growth. If you’re the kind of marketer who builds their own tools, automates ruthlessly, and treats every campaign as an experiment—this role was written for you. RESPONSIBILITES Own Perplexity’s end-to-end demand generation strategy with direct…</description>
   </job>
@@ -2894,7 +2922,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-03-13</date_posted>
-    <age_days>204</age_days>
+    <age_days>205</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI's Legal team plays a crucial role in furthering OpenAI's mission by tackling innovative, fundamental legal issues in AI and supporting OpenAI’s growth. If you're passionate about doing significant and unique work, this team is for you. The team comprises professionals from diverse fields, including technology, AI, privacy, IP, corporate, employment, tax law, regulatory, and litigation. About the Role As a Senior Corporate Counsel, M&amp;A, you will support and lead mergers, acquisitions, joint ventures, investments, warrants, infrastructure financings and other corporate…</description>
   </job>
@@ -2908,7 +2936,7 @@
     <office_location>Washington DC</office_location>
     <region>US</region>
     <date_posted>2026-03-10</date_posted>
-    <age_days>207</age_days>
+    <age_days>208</age_days>
     <source>lever</source>
     <description>The Future of Life Institute (FLI) is looking to expand our US policy team to help with our policy work and US government engagement to promote the safe governance of AI through a bipartisan lens. As we are always looking for strong talent for the US policy team, we are hiring new team members on a rolling basis. The US Policy Team Members will report directly to the Head of US Policy. Who we are FLI educates and engages lawmakers, key stakeholders, and the general public about transformative technologies and their implications. We advocate for policies and approaches that mitigate…</description>
   </job>
@@ -2922,7 +2950,7 @@
     <office_location>San Francisco</office_location>
     <region>US</region>
     <date_posted>2026-01-15</date_posted>
-    <age_days>261</age_days>
+    <age_days>262</age_days>
     <source>ashby</source>
     <description>Perplexity is revolutionizing how companies get work done. We are seeking a Senior Manager, Executive Communications to join our team and serve as a strategic partner to our leadership. You will architect and amplify the voices of our executives to inspire our rapidly growing team. If you have a passion for shaping culture through communication, thrive in bridging the gap between leadership vision and employee engagement, and want to build a world-class communications function from 0 to 1, this role is for you. Responsibilities Create exceptional and strategic executive communications,…</description>
   </job>
@@ -2936,7 +2964,7 @@
     <office_location>United States</office_location>
     <region>US</region>
     <date_posted>2025-07-17</date_posted>
-    <age_days>443</age_days>
+    <age_days>444</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
@@ -2950,7 +2978,7 @@
     <office_location>Anywhere (Open Globally)</office_location>
     <region>US</region>
     <date_posted>2025-05-29</date_posted>
-    <age_days>492</age_days>
+    <age_days>493</age_days>
     <source>lever</source>
     <description>Position Overview CARMA seeks an innovative economist to join our Geostrategic Dynamics team, exploring how advanced AI systems will reshape global economic paradigms, incentive structures, and power dynamics. You'll develop models to analyze critical risks including labor obsolescence, economic instability, concentration of power, shocks to the financial system, and degraded living standards as AI capabilities accelerate. This research aims to anticipate and identify vulnerabilities in economic systems before they manifest as widespread harms. You'll join a collaborative, intellectually…</description>
   </job>
@@ -2964,7 +2992,7 @@
     <office_location>Anywhere (Open Globally)</office_location>
     <region>US</region>
     <date_posted>2025-05-28</date_posted>
-    <age_days>493</age_days>
+    <age_days>494</age_days>
     <source>lever</source>
     <description>Position Overview CARMA is seeking an exceptional combined Communications Director and Staff Director, in one person, to play a pivotal role in advancing our mission. This position combines both strategic leadership and hands-on execution of communications with high-level organizational support to ensure CARMA operates effectively while communicating its critical work with clarity and impact. As a focused organization addressing complex challenges in AI safety, CARMA maintains a lean team structure where team members take on complementary responsibilities. Understanding this space is an…</description>
   </job>

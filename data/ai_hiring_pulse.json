@@ -1,12 +1,42 @@
 {
-  "date": "2026-10-03",
-  "total_jobs": 212,
-  "new_last_7_days": 56,
+  "date": "2026-10-04",
+  "total_jobs": 214,
+  "new_last_7_days": 59,
   "by_bucket": {
     "Legal": 49,
+    "Consulting": 85,
     "Policy": 47,
-    "Consulting": 83,
     "Communications": 33
   },
-  "has_comparison": false
+  "has_comparison": true,
+  "total_change": 1,
+  "bucket_trends": [
+    {
+      "bucket": "Policy",
+      "current": 47,
+      "prior": 36,
+      "change": 11
+    },
+    {
+      "bucket": "Communications",
+      "current": 33,
+      "prior": 35,
+      "change": -2
+    },
+    {
+      "bucket": "Legal",
+      "current": 49,
+      "prior": 52,
+      "change": -3
+    },
+    {
+      "bucket": "Consulting",
+      "current": 85,
+      "prior": 90,
+      "change": -5
+    }
+  ],
+  "new_employers": [
+    "PwC"
+  ]
 }
