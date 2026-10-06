@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-10-06T15:41:31Z" count="225">
+<jobs generated="2026-10-06T19:57:05Z" count="229">
   <job>
     <job_id>workday-rand-R3624</job_id>
     <title>Associate General Counsel, AI, Biosecurity, &amp; Emerging Technologies</title>
@@ -8,6 +8,34 @@
     <bucket>Legal</bucket>
     <apply_url>https://rand.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Washington-DC-DC-Metro-Area/Associate-General-Counsel--AI--Biosecurity----Emerging-Technologies-_R3624</apply_url>
     <office_location>2 Locations</office_location>
+    <region>US</region>
+    <date_posted>2026-10-06</date_posted>
+    <age_days>0</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>workday-accenture-R00362423</job_id>
+    <title>Supply Chain and AI Domain Consultant</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/London/Supply-Chain-and-AI-Domain-Consultant-_R00362423</apply_url>
+    <office_location/>
+    <region>US</region>
+    <date_posted>2026-10-06</date_posted>
+    <age_days>0</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>workday-accenture-R00349104</job_id>
+    <title>Enterprise AI Value Strategy Consultant (all genders)</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Berlin/Enterprise-AI-Value-Strategy-Consultant--all-genders-_R00349104</apply_url>
+    <office_location/>
     <region>US</region>
     <date_posted>2026-10-06</date_posted>
     <age_days>0</age_days>
@@ -27,6 +55,34 @@
     <age_days>0</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;Scale's mission is to develop reliable AI systems for the world's most important decisions. We provide the high-quality data that powers the world's AI models, and we help enterprises and governments build, deploy, and oversee AI applications that create real impact.&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;As Communications Manager, Corporate and Product, you will help shape how Scale shows up when it comes to our work building enterprise AI, spanning company narrative, product launches, partner communications, media presence, and executive visibility. This role is centered on translating complex enterprise…</description>
+  </job>
+  <job>
+    <job_id>greenhouse-anthropic-5445316008</job_id>
+    <title>Communications Manager, Policy</title>
+    <company>Anthropic</company>
+    <employer_type>AI organization</employer_type>
+    <bucket>Communications</bucket>
+    <apply_url>https://job-boards.greenhouse.io/anthropic/jobs/5445316008</apply_url>
+    <office_location>San Francisco, CA | New York City, NY</office_location>
+    <region>US</region>
+    <date_posted>2026-10-06</date_posted>
+    <age_days>0</age_days>
+    <source>greenhouse</source>
+    <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;We're seeking an experienced Policy Communications Manager to help drive external communications for our security, governance, and responsible scaling programs, and…</description>
+  </job>
+  <job>
+    <job_id>eightfold-microsoft-1970393557023182</job_id>
+    <title>Cloud and AI Platform (CAIP) Channel Strategy Director</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557023182</apply_url>
+    <office_location>United States, Multiple Locations, Multiple Locations; United States, Washington, Redmond</office_location>
+    <region>US</region>
+    <date_posted>2026-10-06</date_posted>
+    <age_days>0</age_days>
+    <source>eightfold</source>
+    <description/>
   </job>
   <job>
     <job_id>eightfold-microsoft-1970393556950492</job_id>
@@ -1541,6 +1597,20 @@
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
   <job>
+    <job_id>eightfold-microsoft-1970393557001381</job_id>
+    <title>Signals Strategy Lead, Cloud &amp; AI Platforms</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557001381</apply_url>
+    <office_location>United States, Washington, Redmond; United States, New York, New York</office_location>
+    <region>US</region>
+    <date_posted>2026-09-21</date_posted>
+    <age_days>15</age_days>
+    <source>eightfold</source>
+    <description/>
+  </job>
+  <job>
     <job_id>ashby-openai-e5c39e03-6121-47be-8bd3-f6128557b38f</job_id>
     <title>GTM Strategy &amp; Operations, Policy</title>
     <company>OpenAI</company>
@@ -2065,20 +2135,6 @@
     <employer_type>Public affairs / policy</employer_type>
     <bucket>Consulting</bucket>
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Warsaw/The-Strategy---Consulting-Gen-AI-Agentic-Innovation-Consultant---SONG--GN-_R00310084</apply_url>
-    <office_location/>
-    <region>US</region>
-    <date_posted>2026-09-06</date_posted>
-    <age_days>30</age_days>
-    <source>workday</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>workday-accenture-R00292618</job_id>
-    <title>Strategy &amp; Consulting | AI &amp; Data Tech Strategy Consultant</title>
-    <company>Accenture</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Buenos-Aires/Strategy---Consulting---AI---Data-Tech-Strategy-Consultant_R00292618</apply_url>
     <office_location/>
     <region>US</region>
     <date_posted>2026-09-06</date_posted>
