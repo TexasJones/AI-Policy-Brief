@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-10-09T15:48:44Z" count="222">
+<jobs generated="2026-10-09T20:06:19Z" count="209">
   <job>
     <job_id>workday-rand-R3624</job_id>
     <title>Associate General Counsel, AI, Biosecurity, &amp; Emerging Technologies</title>
@@ -41,6 +41,34 @@
     <age_days>0</age_days>
     <source>workday</source>
     <description/>
+  </job>
+  <job>
+    <job_id>workday-accenture-R00331868</job_id>
+    <title>Enterprise AI Value Strategy Consultant</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Barcelona-La-Rotonda/Enterprise-AI-Value-Strategy-Consultant_R00331868</apply_url>
+    <office_location/>
+    <region>US</region>
+    <date_posted>2026-10-09</date_posted>
+    <age_days>0</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>greenhouse-scaleai-4715976005</job_id>
+    <title>AI Advisory Principal</title>
+    <company>Scale AI</company>
+    <employer_type>AI organization</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://job-boards.greenhouse.io/scaleai/jobs/4715976005</apply_url>
+    <office_location>San Francisco, CA; New York, NY</office_location>
+    <region>US</region>
+    <date_posted>2026-10-09</date_posted>
+    <age_days>0</age_days>
+    <source>greenhouse</source>
+    <description>&lt;p&gt;Scale AI's Advisory practice is the most forward-leaning bet in our go-to-market motion. We're not waiting for clients to hand us a scope — we get in front of the decision, shape the right AI problems before a build begins, and make Scale the obvious partner for what comes next.&lt;/p&gt; &lt;p&gt;Advisory is the structured answer to the question enterprises are already asking us: &lt;em&gt;&quot;What should we build, and where do we start?&quot;&lt;/em&gt; It's a discovery and scoping phase that runs before delivery — designed to land bigger contracts, drive more predictable execution, and accelerate expansion. By 2027,…</description>
   </job>
   <job>
     <job_id>greenhouse-anthropic-5275765008</job_id>
@@ -97,34 +125,6 @@
     <age_days>1</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We're looking for a Commercial Counsel, GTM to join our legal team at the forefront of shaping how cutting-edge AI technology reaches users,…</description>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393557026911</job_id>
-    <title>Cloud &amp; AI (CAIP) Channel Strategy Lead- Agent Builders</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557026911</apply_url>
-    <office_location>United States, Multiple Locations, Multiple Locations; United States, Washington, Redmond</office_location>
-    <region>US</region>
-    <date_posted>2026-10-08</date_posted>
-    <age_days>1</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556864894</job_id>
-    <title>Senior Consultant Data, AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556864894</apply_url>
-    <office_location>India, Multiple Locations, Multiple Locations</office_location>
-    <region>International</region>
-    <date_posted>2026-10-08</date_posted>
-    <age_days>1</age_days>
-    <source>eightfold</source>
-    <description/>
   </job>
   <job>
     <job_id>ashby-elevenlabs-f591a101-0ffe-44ba-8ff3-a913c86442b6</job_id>
@@ -195,20 +195,6 @@
     <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;p&gt;Scale is building AI for the world’s most important decisions. From the front lines of homeland security to the core of global enterprise, we provide the data engine and agentic infrastructure that powers the next generation of American and allied interests.&lt;/p&gt; &lt;p&gt;As a Deployment Strategist supporting DHS and DOJ, you will be responsible for bridging the gap between cutting-edge AI research and mission-critical production. You will lead the charge in deploying Agentic AI, autonomous reasoning systems, into the heart of homeland security and law enforcement workflows, ensuring that some of…</description>
-  </job>
-  <job>
-    <job_id>greenhouse-scaleai-4715976005</job_id>
-    <title>AI Advisory Principal</title>
-    <company>Scale AI</company>
-    <employer_type>AI organization</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://job-boards.greenhouse.io/scaleai/jobs/4715976005</apply_url>
-    <office_location>San Francisco, CA; New York, NY</office_location>
-    <region>US</region>
-    <date_posted>2026-10-06</date_posted>
-    <age_days>3</age_days>
-    <source>greenhouse</source>
-    <description>&lt;p&gt;Scale AI's Advisory practice is the most forward-leaning bet in our go-to-market motion. We're not waiting for clients to hand us a scope — we get in front of the decision, shape the right AI problems before a build begins, and make Scale the obvious partner for what comes next.&lt;/p&gt; &lt;p&gt;Advisory is the structured answer to the question enterprises are already asking us: &lt;em&gt;&quot;What should we build, and where do we start?&quot;&lt;/em&gt; It's a discovery and scoping phase that runs before delivery — designed to land bigger contracts, drive more predictable execution, and accelerate expansion. By 2027,…</description>
   </job>
   <job>
     <job_id>greenhouse-scaleai-4715970005</job_id>
@@ -407,48 +393,6 @@
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;Anthropic's legal team operates at the frontier of some of the most consequential legal and regulatory questions of our time — from landmark copyright matters to…</description>
   </job>
   <job>
-    <job_id>eightfold-microsoft-1970393557023182</job_id>
-    <title>Cloud and AI Platform (CAIP) Channel Strategy Director</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557023182</apply_url>
-    <office_location>United States, Multiple Locations, Multiple Locations; United States, Washington, Redmond</office_location>
-    <region>US</region>
-    <date_posted>2026-10-06</date_posted>
-    <age_days>3</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556950492</job_id>
-    <title>Senior Consultant - (Dotnet Full stack + AI)</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556950492</apply_url>
-    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
-    <region>International</region>
-    <date_posted>2026-10-06</date_posted>
-    <age_days>3</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556944053</job_id>
-    <title>Sr Consultant - Infra AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556944053</apply_url>
-    <office_location>India, Telangana, Hyderabad</office_location>
-    <region>International</region>
-    <date_posted>2026-10-06</date_posted>
-    <age_days>3</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
     <job_id>ashby-elevenlabs-f8b19a29-af85-4a5d-87ae-1ba0a1b6dd9b</job_id>
     <title>Adoption Strategist - Europe</title>
     <company>ElevenLabs</company>
@@ -502,34 +446,6 @@
     <date_posted>2026-10-05</date_posted>
     <age_days>4</age_days>
     <source>workday</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556946465</job_id>
-    <title>Senior Consultant - Cloud Infra &amp; AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556946465</apply_url>
-    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
-    <region>International</region>
-    <date_posted>2026-10-05</date_posted>
-    <age_days>4</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556944049</job_id>
-    <title>Principal Consultant Data AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556944049</apply_url>
-    <office_location>India, Multiple Locations, Multiple Locations</office_location>
-    <region>International</region>
-    <date_posted>2026-10-05</date_posted>
-    <age_days>4</age_days>
-    <source>eightfold</source>
     <description/>
   </job>
   <job>
@@ -869,20 +785,6 @@
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;SpaceXAI’s mission is to create AI systems that can accurately understand the universe and aid humanity in its pursuit of knowledge.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;Our team is small, highly motivated, and focused on engineering excellence. This organization is for individuals who appreciate challenging themselves and thrive on curiosity. &lt;/span&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;We operate with a flat organizational structure. All employees are…</description>
   </job>
   <job>
-    <job_id>greenhouse-anthropic-5440122008</job_id>
-    <title>Political Programs Lead</title>
-    <company>Anthropic</company>
-    <employer_type>AI organization</employer_type>
-    <bucket>Policy</bucket>
-    <apply_url>https://job-boards.greenhouse.io/anthropic/jobs/5440122008</apply_url>
-    <office_location>Washington, DC</office_location>
-    <region>US</region>
-    <date_posted>2026-10-01</date_posted>
-    <age_days>8</age_days>
-    <source>greenhouse</source>
-    <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic is hiring a Political Programs Lead to build and run the programs through which Anthropic, its political action committees, and its employees…</description>
-  </job>
-  <job>
     <job_id>ashby-openai-58b8ac53-8be9-4120-a9f6-a8811cb7f5a9</job_id>
     <title>US Congressional Lead</title>
     <company>OpenAI</company>
@@ -1063,20 +965,6 @@
     <age_days>10</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;AI has the power to dramatically accelerate the pace of scientific discovery and the development of healthcare interventions. We're hiring Anthropic’s first dedicated…</description>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556953336</job_id>
-    <title>Data &amp; AI Consultant</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556953336</apply_url>
-    <office_location>India, Karnataka, Bangalore; India, Maharashtra, Mumbai</office_location>
-    <region>International</region>
-    <date_posted>2026-09-29</date_posted>
-    <age_days>10</age_days>
-    <source>eightfold</source>
-    <description/>
   </job>
   <job>
     <job_id>ashby-openai-a58b83f6-2955-4d89-8c13-14372c89263a</job_id>
@@ -1609,20 +1497,6 @@
     <age_days>17</age_days>
     <source>ashby</source>
     <description>About the role As a Pricing Strategist focused on GTM, you will help shape pricing strategy for B2B enterprise customers across our product portfolio. Working within Finance and partnering with GTM, Sales, and Product, you will focus on pricing analytics, price performance, and the effectiveness of credit programs while contributing to broader commercial strategy. In this role, you will Build regular pricing-performance reviews, analyze discounting and concessions, and turn findings into better pricing guidance. Develop commercial strategies and pricing programs for customer segments such as…</description>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393557001381</job_id>
-    <title>Signals Strategy Lead, Cloud &amp; AI Platforms</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557001381</apply_url>
-    <office_location>United States, Washington, Redmond; United States, New York, New York</office_location>
-    <region>US</region>
-    <date_posted>2026-09-21</date_posted>
-    <age_days>18</age_days>
-    <source>eightfold</source>
-    <description/>
   </job>
   <job>
     <job_id>ashby-openai-e5c39e03-6121-47be-8bd3-f6128557b38f</job_id>
@@ -2227,20 +2101,6 @@
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;Anthropic is seeking an experienced Executive Communications Writer to support and scale the ways our leaders tell our story. In this role, you will work closely with…</description>
   </job>
   <job>
-    <job_id>eightfold-microsoft-1970393556657600</job_id>
-    <title>Principal Apps AI Consultant</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556657600</apply_url>
-    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
-    <region>International</region>
-    <date_posted>2026-09-08</date_posted>
-    <age_days>31</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
     <job_id>greenhouse-anthropic-5414608008</job_id>
     <title>Sanctions Compliance Lead</title>
     <company>Anthropic</company>
@@ -2435,20 +2295,6 @@
     <age_days>42</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the Role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;As a Regional Research Economist at Anthropic, you will work to collaborate with governments, academia, industry, and civil society in your region to…</description>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556864904</job_id>
-    <title>Senior Consultant Apps - (AI + Full stack )</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556864904</apply_url>
-    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
-    <region>International</region>
-    <date_posted>2026-08-28</date_posted>
-    <age_days>42</age_days>
-    <source>eightfold</source>
-    <description/>
   </job>
   <job>
     <job_id>ashby-perplexity-f05bd47b-bed8-4f00-9d9c-026c72578e82</job_id>
@@ -2745,20 +2591,6 @@
     <description/>
   </job>
   <job>
-    <job_id>eightfold-microsoft-1970393556950493</job_id>
-    <title>Principal Consultant - Dotnet Full stack &amp; AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556950493</apply_url>
-    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
-    <region>International</region>
-    <date_posted>2026-08-06</date_posted>
-    <age_days>64</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
     <job_id>ashby-openai-544af761-e37a-450c-884b-b96506c1b883</job_id>
     <title>US External Affairs Associate, Global Affairs</title>
     <company>OpenAI</company>
@@ -2799,20 +2631,6 @@
     <age_days>73</age_days>
     <source>ashby</source>
     <description>Who are we? Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems. We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that. We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a…</description>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556864900</job_id>
-    <title>Consultant Apps - (AI + Full stack)</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556864900</apply_url>
-    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
-    <region>International</region>
-    <date_posted>2026-07-25</date_posted>
-    <age_days>76</age_days>
-    <source>eightfold</source>
-    <description/>
   </job>
   <job>
     <job_id>ashby-openai-c5d3a06a-eb31-425d-94d3-1664070c31e4</job_id>
