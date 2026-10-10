@@ -370,10 +370,10 @@
     "new_last_7_days": 48
   },
   "2026-10-10": {
-    "total": 212,
+    "total": 222,
     "by_bucket": {
       "Legal": 53,
-      "Consulting": 86,
+      "Consulting": 96,
       "Policy": 42,
       "Communications": 31
     },
@@ -383,7 +383,7 @@
       "Scale AI": 14,
       "Anthropic": 44,
       "ElevenLabs": 21,
-      "Microsoft": 7,
+      "Microsoft": 17,
       "OpenAI": 33,
       "Perplexity": 13,
       "PwC": 4,
@@ -393,9 +393,9 @@
       "Future of Life Institute": 3
     },
     "by_region": {
-      "US": 177,
-      "International": 35
+      "US": 180,
+      "International": 42
     },
-    "new_last_7_days": 47
+    "new_last_7_days": 51
   }
 }
