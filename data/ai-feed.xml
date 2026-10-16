@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-10-16T12:33:36Z" count="222">
+<jobs generated="2026-10-16T13:45:29Z" count="219">
   <job>
     <job_id>workday-rand-R3656</job_id>
     <title>Lead for Counter-AI, Center for the Geopolitics of AGI</title>
@@ -897,20 +897,6 @@
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;Anthropic's legal team operates at the frontier of some of the most consequential legal and regulatory questions of our time — from landmark copyright matters to…</description>
   </job>
   <job>
-    <job_id>eightfold-microsoft-1970393556944053</job_id>
-    <title>Sr Consultant - Infra AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556944053</apply_url>
-    <office_location>India, Telangana, Hyderabad</office_location>
-    <region>International</region>
-    <date_posted>2026-10-06</date_posted>
-    <age_days>10</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
     <job_id>ashby-elevenlabs-f8b19a29-af85-4a5d-87ae-1ba0a1b6dd9b</job_id>
     <title>Adoption Strategist - Europe</title>
     <company>ElevenLabs</company>
@@ -964,34 +950,6 @@
     <date_posted>2026-10-05</date_posted>
     <age_days>11</age_days>
     <source>workday</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556946465</job_id>
-    <title>Senior Consultant - Cloud Infra &amp; AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556946465</apply_url>
-    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
-    <region>International</region>
-    <date_posted>2026-10-05</date_posted>
-    <age_days>11</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556944049</job_id>
-    <title>Principal Consultant Data AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556944049</apply_url>
-    <office_location>India, Multiple Locations, Multiple Locations</office_location>
-    <region>International</region>
-    <date_posted>2026-10-05</date_posted>
-    <age_days>11</age_days>
-    <source>eightfold</source>
     <description/>
   </job>
   <job>
