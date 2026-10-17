@@ -572,11 +572,11 @@
     "new_last_7_days": 56
   },
   "2026-10-17": {
-    "total": 225,
+    "total": 232,
     "by_bucket": {
       "Policy": 44,
       "Legal": 51,
-      "Consulting": 91,
+      "Consulting": 98,
       "Communications": 39
     },
     "by_company": {
@@ -590,13 +590,14 @@
       "xAI": 7,
       "Scale AI": 11,
       "Cohere": 8,
+      "Microsoft": 7,
       "PwC": 4,
       "Omidyar Network": 1,
       "Future of Life Institute": 3
     },
     "by_region": {
       "US": 196,
-      "International": 29
+      "International": 36
     },
     "new_last_7_days": 62
   }
