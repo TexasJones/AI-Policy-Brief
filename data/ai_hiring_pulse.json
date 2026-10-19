@@ -1,42 +1,43 @@
 {
-  "date": "2026-10-18",
-  "total_jobs": 240,
-  "new_last_7_days": 63,
+  "date": "2026-10-19",
+  "total_jobs": 236,
+  "new_last_7_days": 66,
   "by_bucket": {
-    "Policy": 44,
-    "Legal": 51,
-    "Consulting": 106,
-    "Communications": 39
+    "Policy": 43,
+    "Legal": 48,
+    "Consulting": 104,
+    "Communications": 41
   },
   "has_comparison": true,
-  "total_change": 29,
+  "total_change": 11,
   "bucket_trends": [
     {
-      "bucket": "Consulting",
-      "current": 106,
-      "prior": 85,
-      "change": 21
+      "bucket": "Communications",
+      "current": 41,
+      "prior": 32,
+      "change": 9
     },
     {
-      "bucket": "Communications",
-      "current": 39,
-      "prior": 31,
-      "change": 8
+      "bucket": "Consulting",
+      "current": 104,
+      "prior": 98,
+      "change": 6
     },
     {
       "bucket": "Policy",
-      "current": 44,
-      "prior": 42,
+      "current": 43,
+      "prior": 41,
       "change": 2
     },
     {
       "bucket": "Legal",
-      "current": 51,
-      "prior": 53,
-      "change": -2
+      "current": 48,
+      "prior": 54,
+      "change": -6
     }
   ],
   "new_employers": [
+    "Microsoft",
     "Mozilla"
   ]
 }
