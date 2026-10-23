@@ -747,5 +747,34 @@
       "International": 36
     },
     "new_last_7_days": 25
+  },
+  "2026-10-23": {
+    "total": 211,
+    "by_bucket": {
+      "Consulting": 81,
+      "Legal": 46,
+      "Policy": 42,
+      "Communications": 42
+    },
+    "by_company": {
+      "Accenture": 54,
+      "xAI": 7,
+      "Scale AI": 10,
+      "Anthropic": 53,
+      "Microsoft": 7,
+      "OpenAI": 31,
+      "Mozilla": 1,
+      "PwC": 5,
+      "ElevenLabs": 21,
+      "Cohere": 6,
+      "Perplexity": 12,
+      "Omidyar Network": 1,
+      "Future of Life Institute": 3
+    },
+    "by_region": {
+      "US": 178,
+      "International": 33
+    },
+    "new_last_7_days": 51
   }
 }
