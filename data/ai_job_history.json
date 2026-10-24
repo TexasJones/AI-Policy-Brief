@@ -778,9 +778,9 @@
     "new_last_7_days": 48
   },
   "2026-10-24": {
-    "total": 227,
+    "total": 234,
     "by_bucket": {
-      "Consulting": 89,
+      "Consulting": 96,
       "Legal": 51,
       "Policy": 47,
       "Communications": 40
@@ -793,7 +793,7 @@
       "xAI": 7,
       "Cohere": 8,
       "Scale AI": 10,
-      "Microsoft": 7,
+      "Microsoft": 14,
       "Mozilla": 1,
       "PwC": 5,
       "ElevenLabs": 21,
@@ -801,8 +801,8 @@
       "Future of Life Institute": 3
     },
     "by_region": {
-      "US": 192,
-      "International": 35
+      "US": 194,
+      "International": 40
     },
     "new_last_7_days": 51
   }
