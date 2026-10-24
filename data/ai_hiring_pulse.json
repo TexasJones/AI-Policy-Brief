@@ -1,42 +1,40 @@
 {
-  "date": "2026-10-23",
-  "total_jobs": 158,
-  "new_last_7_days": 48,
+  "date": "2026-10-24",
+  "total_jobs": 227,
+  "new_last_7_days": 51,
   "by_bucket": {
-    "Legal": 46,
-    "Consulting": 30,
-    "Policy": 41,
-    "Communications": 41
+    "Consulting": 89,
+    "Legal": 51,
+    "Policy": 47,
+    "Communications": 40
   },
   "has_comparison": true,
-  "total_change": -61,
+  "total_change": -5,
   "bucket_trends": [
     {
-      "bucket": "Communications",
-      "current": 41,
-      "prior": 34,
-      "change": 7
+      "bucket": "Policy",
+      "current": 47,
+      "prior": 44,
+      "change": 3
     },
     {
-      "bucket": "Policy",
-      "current": 41,
-      "prior": 42,
-      "change": -1
+      "bucket": "Communications",
+      "current": 40,
+      "prior": 39,
+      "change": 1
     },
     {
       "bucket": "Legal",
-      "current": 46,
-      "prior": 50,
-      "change": -4
+      "current": 51,
+      "prior": 51,
+      "change": 0
     },
     {
       "bucket": "Consulting",
-      "current": 30,
-      "prior": 93,
-      "change": -63
+      "current": 89,
+      "prior": 98,
+      "change": -9
     }
   ],
-  "new_employers": [
-    "Mozilla"
-  ]
+  "new_employers": []
 }
