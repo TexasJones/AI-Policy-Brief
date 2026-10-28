@@ -1,40 +1,43 @@
 {
-  "date": "2026-10-27",
-  "total_jobs": 230,
-  "new_last_7_days": 53,
+  "date": "2026-10-28",
+  "total_jobs": 241,
+  "new_last_7_days": 60,
   "by_bucket": {
-    "Consulting": 93,
-    "Communications": 38,
-    "Legal": 52,
-    "Policy": 47
+    "Legal": 56,
+    "Communications": 40,
+    "Policy": 48,
+    "Consulting": 97
   },
   "has_comparison": true,
-  "total_change": 27,
+  "total_change": 86,
   "bucket_trends": [
     {
       "bucket": "Consulting",
-      "current": 93,
-      "prior": 76,
-      "change": 17
+      "current": 97,
+      "prior": 32,
+      "change": 65
     },
     {
       "bucket": "Policy",
-      "current": 47,
-      "prior": 39,
-      "change": 8
+      "current": 48,
+      "prior": 37,
+      "change": 11
     },
     {
       "bucket": "Legal",
-      "current": 52,
-      "prior": 47,
-      "change": 5
+      "current": 56,
+      "prior": 48,
+      "change": 8
     },
     {
       "bucket": "Communications",
-      "current": 38,
-      "prior": 41,
-      "change": -3
+      "current": 40,
+      "prior": 38,
+      "change": 2
     }
   ],
-  "new_employers": []
+  "new_employers": [
+    "Accenture",
+    "Burson"
+  ]
 }
