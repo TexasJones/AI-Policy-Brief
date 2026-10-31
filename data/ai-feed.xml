@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-10-31T12:33:15Z" count="235">
+<jobs generated="2026-10-31T14:59:53Z" count="233">
   <job>
     <job_id>ashby-perplexity-7e4a95c3-6322-4300-9455-96c511ab2621</job_id>
     <title>Member of Technical Staff (AI Policy and Strategic Initiatives)</title>
@@ -2423,20 +2423,6 @@
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic's Legal team is looking for an experienced litigator to join our Litigation and Regulatory team. You'll manage a broad docket of litigation…</description>
   </job>
   <job>
-    <job_id>eightfold-microsoft-1970393556953336</job_id>
-    <title>Data &amp; AI Consultant</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556953336</apply_url>
-    <office_location>India, Karnataka, Bangalore; India, Maharashtra, Mumbai</office_location>
-    <region>International</region>
-    <date_posted>2026-09-29</date_posted>
-    <age_days>32</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
     <job_id>ashby-openai-a58b83f6-2955-4d89-8c13-14372c89263a</job_id>
     <title>Senior Counsel, Product (Hardware)</title>
     <company>OpenAI</company>
@@ -3077,20 +3063,6 @@
     <region>International</region>
     <date_posted>2026-08-07</date_posted>
     <age_days>85</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556950493</job_id>
-    <title>Principal Consultant - Dotnet Full stack &amp; AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556950493</apply_url>
-    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
-    <region>International</region>
-    <date_posted>2026-08-06</date_posted>
-    <age_days>86</age_days>
     <source>eightfold</source>
     <description/>
   </job>
