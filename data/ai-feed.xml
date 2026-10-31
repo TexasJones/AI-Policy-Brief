@@ -1,5 +1,19 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-10-31T14:59:53Z" count="233">
+<jobs generated="2026-10-31T19:14:27Z" count="236">
+  <job>
+    <job_id>greenhouse-anthropic-5461534008</job_id>
+    <title>Communications Manager, The Anthropic Institute</title>
+    <company>Anthropic</company>
+    <employer_type>AI organization</employer_type>
+    <bucket>Communications</bucket>
+    <apply_url>https://job-boards.greenhouse.io/anthropic/jobs/5461534008</apply_url>
+    <office_location>San Francisco, CA</office_location>
+    <region>US</region>
+    <date_posted>2026-10-31</date_posted>
+    <age_days>0</age_days>
+    <source>greenhouse</source>
+    <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;As a Communications Manager at Anthropic, you will bring The Anthropic Institute's research to the world. The Institute works to advance the public conversation around…</description>
+  </job>
   <job>
     <job_id>ashby-perplexity-7e4a95c3-6322-4300-9455-96c511ab2621</job_id>
     <title>Member of Technical Staff (AI Policy and Strategic Initiatives)</title>
@@ -785,20 +799,6 @@
     <description>&lt;p&gt;&lt;strong&gt;PLEASE NOTE:&amp;nbsp;&lt;/strong&gt;This is a fully remote, 1099 independent contractor opportunity with an estimated duration of six months and the potential for extension. To be eligible, candidates must be authorized to work in the United States; visa sponsorship is not available for this role.&lt;/p&gt; &lt;h3&gt;&lt;strong&gt;About the Program&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;The&lt;strong&gt; Human Frontier Collective (HFC) Fellowship&lt;/strong&gt; brings together top researchers and domain experts to collaborate on high-impact work that are shaping the future of AI. As an HFC Fellow, you’ll apply your academic and professional…</description>
   </job>
   <job>
-    <job_id>greenhouse-anthropic-5461534008</job_id>
-    <title>Communications Manager, The Anthropic Institute</title>
-    <company>Anthropic</company>
-    <employer_type>AI organization</employer_type>
-    <bucket>Communications</bucket>
-    <apply_url>https://job-boards.greenhouse.io/anthropic/jobs/5461534008</apply_url>
-    <office_location>San Francisco, CA | New York City, NY</office_location>
-    <region>US</region>
-    <date_posted>2026-10-22</date_posted>
-    <age_days>9</age_days>
-    <source>greenhouse</source>
-    <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;As a Communications Manager at Anthropic, you will bring The Anthropic Institute's research to the world. The Institute works to advance the public conversation around…</description>
-  </job>
-  <job>
     <job_id>greenhouse-anthropic-5460521008</job_id>
     <title>Regional Research Economist, Economic Research</title>
     <company>Anthropic</company>
@@ -1387,6 +1387,20 @@
     <description>About the Team Our team helps OpenAI advance data center development by connecting communications, permitting and community engagement. We work across the teams building these projects to bring community expertise and clear communication to practical development needs. About the Role We’re looking for a versatile communications and community engagement professional who can help move data center projects forward. You’ll combine community engagement with strong communication skills and experience in permitting and public meetings. This role calls for someone who can influence across…</description>
   </job>
   <job>
+    <job_id>eightfold-microsoft-1970393557027535</job_id>
+    <title>AI Consumption Global Strategy Director</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557027535</apply_url>
+    <office_location>United States, Multiple Locations, Multiple Locations; United States, Washington, Redmond</office_location>
+    <region>US</region>
+    <date_posted>2026-10-12</date_posted>
+    <age_days>19</age_days>
+    <source>eightfold</source>
+    <description/>
+  </job>
+  <job>
     <job_id>ashby-cohere-1c011283-34f3-4461-bb65-455d65a3ec84</job_id>
     <title>Product &amp; Technology Communications Manager</title>
     <company>Cohere</company>
@@ -1455,6 +1469,20 @@
     <age_days>23</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;We're looking for a Commercial Counsel, GTM to join our legal team at the forefront of shaping how cutting-edge AI technology reaches users,…</description>
+  </job>
+  <job>
+    <job_id>eightfold-microsoft-1970393557026911</job_id>
+    <title>Cloud &amp; AI (CAIP) Channel Strategy Lead- Agent Builders</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557026911</apply_url>
+    <office_location>United States, Multiple Locations, Multiple Locations; United States, Washington, Redmond</office_location>
+    <region>US</region>
+    <date_posted>2026-10-08</date_posted>
+    <age_days>23</age_days>
+    <source>eightfold</source>
+    <description/>
   </job>
   <job>
     <job_id>ashby-elevenlabs-f591a101-0ffe-44ba-8ff3-a913c86442b6</job_id>
@@ -3063,6 +3091,20 @@
     <region>International</region>
     <date_posted>2026-08-07</date_posted>
     <age_days>85</age_days>
+    <source>eightfold</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>eightfold-microsoft-1970393556950493</job_id>
+    <title>Principal Consultant - Dotnet Full stack &amp; AI</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556950493</apply_url>
+    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
+    <region>International</region>
+    <date_posted>2026-08-06</date_posted>
+    <age_days>86</age_days>
     <source>eightfold</source>
     <description/>
   </job>
