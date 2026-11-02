@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-01",
-  "total_jobs": 235,
-  "new_last_7_days": 37,
+  "date": "2026-11-02",
+  "total_jobs": 219,
+  "new_last_7_days": 38,
   "by_bucket": {
-    "Communications": 46,
-    "Policy": 41,
-    "Consulting": 89,
+    "Consulting": 81,
+    "Policy": 39,
+    "Communications": 40,
     "Legal": 59
   },
   "has_comparison": true,
-  "total_change": 15,
+  "total_change": -7,
   "bucket_trends": [
     {
       "bucket": "Legal",
@@ -19,25 +19,24 @@
     },
     {
       "bucket": "Communications",
-      "current": 46,
-      "prior": 40,
-      "change": 6
+      "current": 40,
+      "prior": 39,
+      "change": 1
     },
     {
       "bucket": "Consulting",
-      "current": 89,
-      "prior": 83,
-      "change": 6
+      "current": 81,
+      "prior": 89,
+      "change": -8
     },
     {
       "bucket": "Policy",
-      "current": 41,
-      "prior": 46,
-      "change": -5
+      "current": 39,
+      "prior": 47,
+      "change": -8
     }
   ],
   "new_employers": [
-    "Burson",
-    "Microsoft"
+    "Burson"
   ]
 }
