@@ -1,19 +1,5 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-11-06T13:33:47Z" count="228">
-  <job>
-    <job_id>workday-accenture-R00278920</job_id>
-    <title>Consultant Hybrid Cloud &amp; Agentic AI (all genders)</title>
-    <company>Accenture</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Munich/Consultant--Professional-Hybrid-Cloud--all-genders-_R00278920</apply_url>
-    <office_location/>
-    <region>US</region>
-    <date_posted>2026-11-06</date_posted>
-    <age_days>0</age_days>
-    <source>workday</source>
-    <description/>
-  </job>
+<jobs generated="2026-11-06T16:35:58Z" count="225">
   <job>
     <job_id>greenhouse-scaleai-4751098005</job_id>
     <title>Strategist</title>
@@ -43,40 +29,12 @@
     <description>About the Team OpenAI’s Legal team helps advance our mission by tackling novel legal issues in AI. Our team brings together professionals across technology, privacy, intellectual property, corporate, employment, tax, regulatory, and litigation. Our regulatory compliance work turns legal requirements into practical programs that support responsible AI development and deployment. About the Role As a Legal Program Manager, you will independently manage assigned programs and workstreams across Legal priorities, with a focus on emerging user risk. Your portfolio may include sensitive user…</description>
   </job>
   <job>
-    <job_id>workday-accenture-R00364532</job_id>
-    <title>AI Content Transformation Manager - Life Sciences</title>
-    <company>Accenture</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/New-York-One-Manhattan-West-Corp/AI-Content-Transformation-Manager---Life-Sciences_R00364532</apply_url>
-    <office_location/>
-    <region>US</region>
-    <date_posted>2026-11-05</date_posted>
-    <age_days>1</age_days>
-    <source>workday</source>
-    <description/>
-  </job>
-  <job>
     <job_id>workday-accenture-R00339342</job_id>
     <title>Enterprise AI Value Strategy Manager</title>
     <company>Accenture</company>
     <employer_type>Public affairs / policy</employer_type>
     <bucket>Consulting</bucket>
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Vienna-Borsegebaude/Enterprise-AI-Value-Strategy-Consultant--All-genders-_R00339342</apply_url>
-    <office_location/>
-    <region>US</region>
-    <date_posted>2026-11-05</date_posted>
-    <age_days>1</age_days>
-    <source>workday</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>workday-accenture-R00305651-1</job_id>
-    <title>Data &amp; AI Consultant – Databricks</title>
-    <company>Accenture</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Kuala-Lumpur-Exchange-106/S-C-GN---Tech-Advisory---Data---Analytics---Manager_R00305651-1</apply_url>
     <office_location/>
     <region>US</region>
     <date_posted>2026-11-05</date_posted>
@@ -407,20 +365,6 @@
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic is seeking a Regulatory Counsel to lead our legal work on AI regulation in the United States and to support our global AI regulatory…</description>
   </job>
   <job>
-    <job_id>eightfold-microsoft-1970393557052950</job_id>
-    <title>Senior Consultant Data, AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557052950</apply_url>
-    <office_location>India, Karnataka, Bangalore; India, Telangana, Hyderabad</office_location>
-    <region>International</region>
-    <date_posted>2026-11-05</date_posted>
-    <age_days>1</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
     <job_id>ashby-openai-68b1e4ba-da3f-4712-ad14-8c12ebaa28a4</job_id>
     <title>Senior Counsel, AI Product (Enterprise/API)</title>
     <company>OpenAI</company>
@@ -446,20 +390,6 @@
     <date_posted>2026-11-04</date_posted>
     <age_days>2</age_days>
     <source>workday</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393557048490</job_id>
-    <title>Technology Consultant - Apps &amp; AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557048490</apply_url>
-    <office_location>Thailand, Multiple Locations, Multiple Locations</office_location>
-    <region>US</region>
-    <date_posted>2026-11-04</date_posted>
-    <age_days>2</age_days>
-    <source>eightfold</source>
     <description/>
   </job>
   <job>
@@ -531,34 +461,6 @@
     <age_days>3</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic is looking for a Contracts Manager to support our commercial and technology transactions. You'll partner with our GTM teams on enterprise…</description>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393557050958</job_id>
-    <title>Technology Consultant - Data &amp; AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557050958</apply_url>
-    <office_location>Singapore, Singapore, Singapore</office_location>
-    <region>International</region>
-    <date_posted>2026-11-03</date_posted>
-    <age_days>3</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556953336</job_id>
-    <title>Data &amp; AI Consultant</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556953336</apply_url>
-    <office_location>India, Karnataka, Bangalore; India, Maharashtra, Mumbai</office_location>
-    <region>International</region>
-    <date_posted>2026-11-03</date_posted>
-    <age_days>3</age_days>
-    <source>eightfold</source>
-    <description/>
   </job>
   <job>
     <job_id>ashby-openai-8d332d03-1f38-40e3-85be-b4c99231a896</job_id>
@@ -1317,6 +1219,20 @@
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;Anthropic is building AI systems that will shape the trajectory of one of the most consequential technologies in human history. That work requires physical…</description>
   </job>
   <job>
+    <job_id>workday-accenture-R00319662</job_id>
+    <title>Resources Industry Consultant with AI</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Warsaw/Resources-Industry-Consultant-with-AI---ICH-Europe_R00319662</apply_url>
+    <office_location/>
+    <region>US</region>
+    <date_posted>2026-10-16</date_posted>
+    <age_days>21</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
     <job_id>greenhouse-anthropic-5454315008</job_id>
     <title>Community Engagement Manager, Data Centers (Montana &amp; Utah)</title>
     <company>Anthropic</company>
@@ -1611,20 +1527,6 @@
     <description>About the Team Our team helps OpenAI advance data center development by connecting communications, permitting and community engagement. We work across the teams building these projects to bring community expertise and clear communication to practical development needs. About the Role We’re looking for a versatile communications and community engagement professional who can help move data center projects forward. You’ll combine community engagement with strong communication skills and experience in permitting and public meetings. This role calls for someone who can influence across…</description>
   </job>
   <job>
-    <job_id>workday-accenture-R00218611</job_id>
-    <title>S&amp;C Global Network - AI - Hi Tech - Data Science Consultant</title>
-    <company>Accenture</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Pune-PDC2C/S-C-Global-Network---AI---Hi-Tech---Data-Science-Consultant_R00218611</apply_url>
-    <office_location/>
-    <region>US</region>
-    <date_posted>2026-10-12</date_posted>
-    <age_days>25</age_days>
-    <source>workday</source>
-    <description/>
-  </job>
-  <job>
     <job_id>ashby-cohere-1c011283-34f3-4461-bb65-455d65a3ec84</job_id>
     <title>Product &amp; Technology Communications Manager</title>
     <company>Cohere</company>
@@ -1637,6 +1539,20 @@
     <age_days>25</age_days>
     <source>ashby</source>
     <description>Who are we? Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems. We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that. We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a…</description>
+  </job>
+  <job>
+    <job_id>workday-accenture-R00355933</job_id>
+    <title>CyberCX - Senior Consultant - Secure AI</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Adelaide-30-Pirie-Street/CyberCX---Senior-Consultant---Secure-AI_R00355933</apply_url>
+    <office_location/>
+    <region>US</region>
+    <date_posted>2026-10-09</date_posted>
+    <age_days>28</age_days>
+    <source>workday</source>
+    <description/>
   </job>
   <job>
     <job_id>greenhouse-anthropic-5275765008</job_id>
@@ -1863,6 +1779,20 @@
     <description/>
   </job>
   <job>
+    <job_id>workday-accenture-R00356946</job_id>
+    <title>Data Science Generative AI Consultant</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Milano/Data-Science-Generative-AI-Consultant_R00356946</apply_url>
+    <office_location/>
+    <region>US</region>
+    <date_posted>2026-10-07</date_posted>
+    <age_days>30</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
     <job_id>workday-accenture-R00355004-1</job_id>
     <title>Enterprise AI Value Strategist Manager (All Genders)</title>
     <company>Accenture</company>
@@ -1961,6 +1891,20 @@
     <description/>
   </job>
   <job>
+    <job_id>workday-accenture-R00343273</job_id>
+    <title>CyberCX - Senior Consultant - Secure AI</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Sydney-2-Market-Street/CyberCX---Senior-Consultant---Secure-AI_R00343273</apply_url>
+    <office_location/>
+    <region>US</region>
+    <date_posted>2026-10-07</date_posted>
+    <age_days>30</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
     <job_id>workday-accenture-R00341093</job_id>
     <title>Enterprise AI Value Strategy Manager</title>
     <company>Accenture</company>
@@ -1989,6 +1933,34 @@
     <description/>
   </job>
   <job>
+    <job_id>workday-accenture-R00340146</job_id>
+    <title>S&amp;C GN - TS&amp;T – Digital Foundations - AI Op Model &amp; Governance - Senior Manager</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Policy</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Gurugram/S-C-GN---TS-T---Digital-Foundations---AI-Op-Model---Governance---Senior-Manager_R00340146</apply_url>
+    <office_location/>
+    <region>US</region>
+    <date_posted>2026-10-07</date_posted>
+    <age_days>30</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>workday-accenture-R00340104-1</job_id>
+    <title>S&amp;C GN - TS&amp;T – Digital Foundations - AI Op Model &amp; Governance - Consultant</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Policy</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Gurugram/S-C-GN---TS-T---Digital-Foundations---AI-Op-Model---Governance---Consultant_R00340104-1</apply_url>
+    <office_location/>
+    <region>US</region>
+    <date_posted>2026-10-07</date_posted>
+    <age_days>30</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
     <job_id>workday-accenture-R00337227</job_id>
     <title>Agentic Data Governance Specialist (AI&amp;Data)</title>
     <company>Accenture</company>
@@ -2009,20 +1981,6 @@
     <employer_type>Public affairs / policy</employer_type>
     <bucket>Consulting</bucket>
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Bengaluru/XMLNAME--ACN-GN---SONG---MT---Gen-AI-Led-Marketing-Reinvention-TMO----Senior-Manager_R00331611</apply_url>
-    <office_location/>
-    <region>US</region>
-    <date_posted>2026-10-07</date_posted>
-    <age_days>30</age_days>
-    <source>workday</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>workday-accenture-R00314082</job_id>
-    <title>AI CX Delivery Consultant</title>
-    <company>Accenture</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/London/Customer-Experience---Contact-Platform-Consultant_R00314082</apply_url>
     <office_location/>
     <region>US</region>
     <date_posted>2026-10-07</date_posted>
@@ -2073,12 +2031,40 @@
     <description/>
   </job>
   <job>
-    <job_id>workday-accenture-R00278424-1</job_id>
-    <title>Data &amp; AI Security Consultant</title>
+    <job_id>workday-accenture-R00289754</job_id>
+    <title>#ACN S&amp;C GN - Tech Strategy &amp; Transformation - AI Op Model &amp; Governance - Senior Manager</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Policy</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Bengaluru/XMLNAME--ACN-S-CGN---Tech-Strategy---Advisory---Data-Strategy---Senior-Manager_R00289754</apply_url>
+    <office_location/>
+    <region>US</region>
+    <date_posted>2026-10-07</date_posted>
+    <age_days>30</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>workday-accenture-R00289753</job_id>
+    <title>#ACN S&amp;C GN - Tech Strategy &amp; Transformation - AI Op Model &amp; Governance - Manager</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Policy</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Bengaluru/XMLNAME--ACN-S-CGN---Tech-Strategy---Advisory---Data-Strategy---Manager_R00289753</apply_url>
+    <office_location/>
+    <region>US</region>
+    <date_posted>2026-10-07</date_posted>
+    <age_days>30</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>workday-accenture-R00289454</job_id>
+    <title>EU Public Sector Consultant (AI &amp; Data)</title>
     <company>Accenture</company>
     <employer_type>Public affairs / policy</employer_type>
     <bucket>Consulting</bucket>
-    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Porto/Data---AI-Security-Consultant_R00278424-1</apply_url>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Athens/EU-Public-Sector---Data-Consultant_R00289454</apply_url>
     <office_location/>
     <region>US</region>
     <date_posted>2026-10-07</date_posted>
@@ -3011,20 +2997,6 @@
     <description/>
   </job>
   <job>
-    <job_id>eightfold-microsoft-1970393556950493</job_id>
-    <title>Principal Consultant - Dotnet Full stack &amp; AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556950493</apply_url>
-    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
-    <region>International</region>
-    <date_posted>2026-08-06</date_posted>
-    <age_days>92</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
     <job_id>ashby-openai-2b148425-b807-46a5-97e1-fae307aacb80</job_id>
     <title>Associate General Counsel, Commercial – Infrastructure</title>
     <company>OpenAI</company>
@@ -3093,20 +3065,6 @@
     <age_days>164</age_days>
     <source>ashby</source>
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556856700</job_id>
-    <title>Microsoft Frontier Company - Senior AI Business Consultant</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556856700</apply_url>
-    <office_location>Japan, Tokyo-to, Tokyo</office_location>
-    <region>International</region>
-    <date_posted>2026-04-07</date_posted>
-    <age_days>213</age_days>
-    <source>eightfold</source>
-    <description/>
   </job>
   <job>
     <job_id>ashby-perplexity-2be717cb-ad3e-4052-a464-79b107a70406</job_id>
