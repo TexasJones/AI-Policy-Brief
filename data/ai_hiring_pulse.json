@@ -1,40 +1,42 @@
 {
-  "date": "2026-11-05",
-  "total_jobs": 214,
-  "new_last_7_days": 35,
+  "date": "2026-11-06",
+  "total_jobs": 228,
+  "new_last_7_days": 58,
   "by_bucket": {
-    "Consulting": 76,
-    "Legal": 61,
-    "Communications": 38,
-    "Policy": 39
+    "Consulting": 88,
+    "Legal": 64,
+    "Policy": 38,
+    "Communications": 38
   },
   "has_comparison": true,
-  "total_change": -20,
+  "total_change": -6,
   "bucket_trends": [
     {
       "bucket": "Legal",
-      "current": 61,
+      "current": 64,
       "prior": 55,
-      "change": 6
+      "change": 9
     },
     {
       "bucket": "Policy",
-      "current": 39,
-      "prior": 43,
-      "change": -4
+      "current": 38,
+      "prior": 41,
+      "change": -3
     },
     {
       "bucket": "Communications",
       "current": 38,
-      "prior": 42,
-      "change": -4
+      "prior": 43,
+      "change": -5
     },
     {
       "bucket": "Consulting",
-      "current": 76,
-      "prior": 94,
-      "change": -18
+      "current": 88,
+      "prior": 95,
+      "change": -7
     }
   ],
-  "new_employers": []
+  "new_employers": [
+    "Omidyar Network"
+  ]
 }
