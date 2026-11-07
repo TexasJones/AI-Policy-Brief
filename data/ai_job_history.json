@@ -1020,11 +1020,11 @@
     "new_last_7_days": 51
   },
   "2026-11-07": {
-    "total": 226,
+    "total": 221,
     "by_bucket": {
-      "Policy": 43,
+      "Policy": 42,
       "Legal": 62,
-      "Consulting": 84,
+      "Consulting": 80,
       "Communications": 37
     },
     "by_company": {
@@ -1036,17 +1036,17 @@
       "OpenAI": 34,
       "ElevenLabs": 21,
       "Accenture": 59,
-      "Microsoft": 8,
       "Mozilla": 1,
       "Cohere": 8,
       "Burson": 1,
       "PwC": 2,
+      "Microsoft": 3,
       "Future of Life Institute": 3
     },
     "by_region": {
-      "US": 191,
-      "International": 35
+      "US": 189,
+      "International": 32
     },
-    "new_last_7_days": 49
+    "new_last_7_days": 46
   }
 }

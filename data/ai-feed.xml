@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-11-07T13:33:07Z" count="226">
+<jobs generated="2026-11-07T15:23:26Z" count="221">
   <job>
     <job_id>greenhouse-anthropic-5474544008</job_id>
     <title>Political Economist, Rule of Law</title>
@@ -435,20 +435,6 @@
     <description/>
   </job>
   <job>
-    <job_id>eightfold-microsoft-1970393557048490</job_id>
-    <title>Technology Consultant - Apps &amp; AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557048490</apply_url>
-    <office_location>Thailand, Multiple Locations, Multiple Locations</office_location>
-    <region>US</region>
-    <date_posted>2026-11-04</date_posted>
-    <age_days>3</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
     <job_id>ashby-openai-73a111f9-e83d-4cce-9148-2a32ccf1d251</job_id>
     <title>Senior Legal Discovery Program Manager</title>
     <company>OpenAI</company>
@@ -517,34 +503,6 @@
     <age_days>4</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic is looking for a Contracts Manager to support our commercial and technology transactions. You'll partner with our GTM teams on enterprise…</description>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393557050958</job_id>
-    <title>Technology Consultant - Data &amp; AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557050958</apply_url>
-    <office_location>Singapore, Singapore, Singapore</office_location>
-    <region>International</region>
-    <date_posted>2026-11-03</date_posted>
-    <age_days>4</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556953336</job_id>
-    <title>Data &amp; AI Consultant</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556953336</apply_url>
-    <office_location>India, Karnataka, Bangalore; India, Maharashtra, Mumbai</office_location>
-    <region>International</region>
-    <date_posted>2026-11-03</date_posted>
-    <age_days>4</age_days>
-    <source>eightfold</source>
-    <description/>
   </job>
   <job>
     <job_id>ashby-openai-8d332d03-1f38-40e3-85be-b4c99231a896</job_id>
@@ -1121,20 +1079,6 @@
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;The Editorial Publishing team is looking for a team member to write, edit, and review material that Anthropic publishes about its own systems, including model cards, risk reports, safety and…</description>
   </job>
   <job>
-    <job_id>eightfold-microsoft-1970393557043738</job_id>
-    <title>Product Manager II, AI Tools Governance</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Policy</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557043738</apply_url>
-    <office_location>United States, Washington, Redmond</office_location>
-    <region>US</region>
-    <date_posted>2026-10-22</date_posted>
-    <age_days>16</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
     <job_id>workday-pwc-769071WD</job_id>
     <title>OGC Tech/AI Counsel (Senior Manager)</title>
     <company>PwC</company>
@@ -1146,20 +1090,6 @@
     <date_posted>2026-10-20</date_posted>
     <age_days>18</age_days>
     <source>workday</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556939424</job_id>
-    <title>Microsoft Frontier Company - Principal Consultant, Data &amp; AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556939424</apply_url>
-    <office_location>Korea, Seoul, Seoul</office_location>
-    <region>International</region>
-    <date_posted>2026-10-20</date_posted>
-    <age_days>18</age_days>
-    <source>eightfold</source>
     <description/>
   </job>
   <job>
