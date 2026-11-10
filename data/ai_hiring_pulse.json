@@ -1,43 +1,40 @@
 {
-  "date": "2026-11-09",
-  "total_jobs": 223,
-  "new_last_7_days": 45,
+  "date": "2026-11-10",
+  "total_jobs": 228,
+  "new_last_7_days": 50,
   "by_bucket": {
+    "Policy": 46,
     "Consulting": 80,
-    "Policy": 43,
-    "Legal": 63,
-    "Communications": 37
+    "Communications": 38,
+    "Legal": 64
   },
   "has_comparison": true,
-  "total_change": 4,
+  "total_change": 10,
   "bucket_trends": [
     {
       "bucket": "Policy",
-      "current": 43,
-      "prior": 39,
-      "change": 4
+      "current": 46,
+      "prior": 41,
+      "change": 5
     },
     {
       "bucket": "Legal",
-      "current": 63,
+      "current": 64,
       "prior": 59,
-      "change": 4
+      "change": 5
+    },
+    {
+      "bucket": "Communications",
+      "current": 38,
+      "prior": 37,
+      "change": 1
     },
     {
       "bucket": "Consulting",
       "current": 80,
       "prior": 81,
       "change": -1
-    },
-    {
-      "bucket": "Communications",
-      "current": 37,
-      "prior": 40,
-      "change": -3
     }
   ],
-  "new_employers": [
-    "Microsoft",
-    "Omidyar Network"
-  ]
+  "new_employers": []
 }
