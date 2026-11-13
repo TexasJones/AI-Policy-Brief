@@ -1,5 +1,19 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-11-13T13:33:12Z" count="218">
+<jobs generated="2026-11-13T16:56:15Z" count="219">
+  <job>
+    <job_id>ashby-openai-38e66047-7d81-4347-8e64-2c16bc9a803a</job_id>
+    <title>Strategic Delivery Lead, National Security</title>
+    <company>OpenAI</company>
+    <employer_type>AI organization</employer_type>
+    <bucket>Policy</bucket>
+    <apply_url>https://jobs.ashbyhq.com/openai/38e66047-7d81-4347-8e64-2c16bc9a803a</apply_url>
+    <office_location>Washington, DC</office_location>
+    <region>US</region>
+    <date_posted>2026-11-13</date_posted>
+    <age_days>0</age_days>
+    <source>ashby</source>
+    <description>About the team The OpenAI for Government team is a dynamic, mission-driven group leveraging frontier AI to transform how governments achieve their missions. Our team works to empower public servants with secure, compliant AI tools (e.g., ChatGPT Enterprise, ChatGPT Gov) and mission-aligned deployments that meet government technical requirements with strong reliability and safety. As part of the OpenAI for Government team you will work across the U.S. national security enterprises, helping to accelerate adoption through hands‑on support, tailored training, and early insights—so civil servants…</description>
+  </job>
   <job>
     <job_id>workday-accenture-R00365674</job_id>
     <title>AI Transformation (Consultant/Manager) - Banking</title>

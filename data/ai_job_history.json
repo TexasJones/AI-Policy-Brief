@@ -1026,18 +1026,18 @@
     "new_last_7_days": 45
   },
   "2026-11-13": {
-    "total": 218,
+    "total": 219,
     "by_bucket": {
+      "Policy": 45,
       "Consulting": 76,
       "Communications": 37,
-      "Legal": 61,
-      "Policy": 44
+      "Legal": 61
     },
     "by_company": {
+      "OpenAI": 33,
       "Accenture": 61,
       "Anthropic": 55,
       "Perplexity": 15,
-      "OpenAI": 32,
       "xAI": 8,
       "Scale AI": 10,
       "Mozilla": 2,
@@ -1049,9 +1049,9 @@
       "Future of Life Institute": 3
     },
     "by_region": {
-      "US": 189,
+      "US": 190,
       "International": 29
     },
-    "new_last_7_days": 27
+    "new_last_7_days": 28
   }
 }
