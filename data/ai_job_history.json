@@ -1,33 +1,4 @@
 {
-  "2026-10-08": {
-    "total": 215,
-    "by_bucket": {
-      "Legal": 53,
-      "Consulting": 87,
-      "Policy": 44,
-      "Communications": 31
-    },
-    "by_company": {
-      "RAND Corporation": 1,
-      "Accenture": 55,
-      "ElevenLabs": 23,
-      "Scale AI": 14,
-      "Anthropic": 46,
-      "Microsoft": 7,
-      "OpenAI": 33,
-      "Perplexity": 13,
-      "PwC": 4,
-      "xAI": 5,
-      "Cohere": 10,
-      "Omidyar Network": 1,
-      "Future of Life Institute": 3
-    },
-    "by_region": {
-      "US": 176,
-      "International": 39
-    },
-    "new_last_7_days": 56
-  },
   "2026-10-09": {
     "total": 209,
     "by_bucket": {
@@ -1053,5 +1024,34 @@
       "International": 36
     },
     "new_last_7_days": 45
+  },
+  "2026-11-13": {
+    "total": 218,
+    "by_bucket": {
+      "Consulting": 76,
+      "Communications": 37,
+      "Legal": 61,
+      "Policy": 44
+    },
+    "by_company": {
+      "Accenture": 61,
+      "Anthropic": 55,
+      "Perplexity": 15,
+      "OpenAI": 32,
+      "xAI": 8,
+      "Scale AI": 10,
+      "Mozilla": 2,
+      "Omidyar Network": 3,
+      "ElevenLabs": 18,
+      "Cohere": 8,
+      "Burson": 1,
+      "PwC": 2,
+      "Future of Life Institute": 3
+    },
+    "by_region": {
+      "US": 189,
+      "International": 29
+    },
+    "new_last_7_days": 27
   }
 }
