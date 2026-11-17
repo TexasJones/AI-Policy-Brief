@@ -1,39 +1,39 @@
 {
-  "date": "2026-11-16",
-  "total_jobs": 228,
-  "new_last_7_days": 29,
+  "date": "2026-11-17",
+  "total_jobs": 222,
+  "new_last_7_days": 25,
   "by_bucket": {
-    "Policy": 46,
+    "Consulting": 83,
+    "Policy": 45,
     "Legal": 60,
-    "Consulting": 86,
-    "Communications": 36
+    "Communications": 34
   },
   "has_comparison": true,
-  "total_change": 5,
+  "total_change": -6,
   "bucket_trends": [
     {
       "bucket": "Consulting",
-      "current": 86,
+      "current": 83,
       "prior": 80,
-      "change": 6
-    },
-    {
-      "bucket": "Policy",
-      "current": 46,
-      "prior": 43,
       "change": 3
     },
     {
-      "bucket": "Communications",
-      "current": 36,
-      "prior": 37,
+      "bucket": "Policy",
+      "current": 45,
+      "prior": 46,
       "change": -1
+    },
+    {
+      "bucket": "Communications",
+      "current": 34,
+      "prior": 38,
+      "change": -4
     },
     {
       "bucket": "Legal",
       "current": 60,
-      "prior": 63,
-      "change": -3
+      "prior": 64,
+      "change": -4
     }
   ],
   "new_employers": []
