@@ -1032,19 +1032,20 @@
     "new_last_7_days": 41
   },
   "2026-11-20": {
-    "total": 213,
+    "total": 220,
     "by_bucket": {
-      "Consulting": 76,
+      "Consulting": 83,
       "Policy": 44,
       "Communications": 36,
       "Legal": 57
     },
     "by_company": {
-      "Accenture": 60,
+      "Accenture": 59,
       "OpenAI": 32,
       "PwC": 6,
       "Mozilla": 2,
       "Anthropic": 48,
+      "Microsoft": 8,
       "ElevenLabs": 16,
       "Scale AI": 10,
       "xAI": 8,
@@ -1056,8 +1057,8 @@
     },
     "by_region": {
       "US": 181,
-      "International": 32
+      "International": 39
     },
-    "new_last_7_days": 43
+    "new_last_7_days": 45
   }
 }

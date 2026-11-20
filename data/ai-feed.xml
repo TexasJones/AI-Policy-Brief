@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-11-20T13:33:03Z" count="213">
+<jobs generated="2026-11-20T17:31:28Z" count="220">
   <job>
     <job_id>workday-accenture-R00366178</job_id>
     <title>Enterprise AI Value Strategist - Manager (All genders)</title>
@@ -21,6 +21,20 @@
     <employer_type>Public affairs / policy</employer_type>
     <bucket>Consulting</bucket>
     <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Kuala-Lumpur-Exchange-106/Industry---Enterprise-CEO-Advisory---Enterprise-AI-Value-Strategy-Consultant_R00365666</apply_url>
+    <office_location/>
+    <region>US</region>
+    <date_posted>2026-11-20</date_posted>
+    <age_days>0</age_days>
+    <source>workday</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>workday-accenture-R00343549</job_id>
+    <title>Data &amp; AI Strategy - Consultant</title>
+    <company>Accenture</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/London/Enterprise-AI-Value-Strategist---Consultant_R00343549</apply_url>
     <office_location/>
     <region>US</region>
     <date_posted>2026-11-20</date_posted>
@@ -125,6 +139,20 @@
     <age_days>1</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic is seeking an exceptional Legal Program Manager to serve as the operational backbone of contracting for the Compute and Infrastructure team.…</description>
+  </job>
+  <job>
+    <job_id>eightfold-microsoft-1970393556657600</job_id>
+    <title>Principal Apps AI Consultant</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556657600</apply_url>
+    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
+    <region>International</region>
+    <date_posted>2026-11-19</date_posted>
+    <age_days>1</age_days>
+    <source>eightfold</source>
+    <description/>
   </job>
   <job>
     <job_id>ashby-openai-ecb1119c-0439-4b8d-938b-851b3ed84a02</job_id>
@@ -995,6 +1023,20 @@
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;Hardware is becoming critical to how AI gets built, and the legal questions are as new as the technology. We're hiring a Commercial Counsel, Hardware to help Anthropic's…</description>
   </job>
   <job>
+    <job_id>eightfold-microsoft-1970393557052950</job_id>
+    <title>Senior Consultant Data, AI</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557052950</apply_url>
+    <office_location>India, Karnataka, Bangalore; India, Telangana, Hyderabad</office_location>
+    <region>International</region>
+    <date_posted>2026-11-05</date_posted>
+    <age_days>15</age_days>
+    <source>eightfold</source>
+    <description/>
+  </job>
+  <job>
     <job_id>ashby-openai-68b1e4ba-da3f-4712-ad14-8c12ebaa28a4</job_id>
     <title>Senior Counsel, AI Product (Enterprise/API)</title>
     <company>OpenAI</company>
@@ -1020,6 +1062,20 @@
     <date_posted>2026-11-04</date_posted>
     <age_days>16</age_days>
     <source>workday</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>eightfold-microsoft-1970393557048490</job_id>
+    <title>Technology Consultant - Apps &amp; AI</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557048490</apply_url>
+    <office_location>Thailand, Multiple Locations, Multiple Locations</office_location>
+    <region>US</region>
+    <date_posted>2026-11-04</date_posted>
+    <age_days>16</age_days>
+    <source>eightfold</source>
     <description/>
   </job>
   <job>
@@ -1051,20 +1107,6 @@
     <description>About ElevenLabs ElevenLabs is an AI research and product company transforming how we interact with technology. We launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always. We have expanded from voice into three main platforms: ElevenAgents…</description>
   </job>
   <job>
-    <job_id>workday-accenture-R00343549</job_id>
-    <title>Data &amp; AI Strategy - Consultant</title>
-    <company>Accenture</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/London/Enterprise-AI-Value-Strategist---Consultant_R00343549</apply_url>
-    <office_location/>
-    <region>US</region>
-    <date_posted>2026-11-03</date_posted>
-    <age_days>17</age_days>
-    <source>workday</source>
-    <description/>
-  </job>
-  <job>
     <job_id>workday-accenture-14752574</job_id>
     <title>Enterprise AI Value Strategy Consultant</title>
     <company>Accenture</company>
@@ -1091,6 +1133,20 @@
     <age_days>17</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic is looking for a Contracts Manager to support our commercial and technology transactions. You'll partner with our GTM teams on enterprise…</description>
+  </job>
+  <job>
+    <job_id>eightfold-microsoft-1970393557050958</job_id>
+    <title>Technology Consultant - Data &amp; AI</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557050958</apply_url>
+    <office_location>Singapore, Singapore, Singapore</office_location>
+    <region>International</region>
+    <date_posted>2026-11-03</date_posted>
+    <age_days>17</age_days>
+    <source>eightfold</source>
+    <description/>
   </job>
   <job>
     <job_id>ashby-openai-8d332d03-1f38-40e3-85be-b4c99231a896</job_id>
@@ -1793,20 +1849,6 @@
     <description/>
   </job>
   <job>
-    <job_id>workday-accenture-R00352787</job_id>
-    <title>Strategy Manager for Technology &amp; AI-Native Companies</title>
-    <company>Accenture</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/New-York-One-Manhattan-West-Corp/Strategy-Manager-for-Technology---AI-Native-Companies_R00352787</apply_url>
-    <office_location/>
-    <region>US</region>
-    <date_posted>2026-10-21</date_posted>
-    <age_days>30</age_days>
-    <source>workday</source>
-    <description/>
-  </job>
-  <job>
     <job_id>workday-accenture-R00349837</job_id>
     <title>Enterprise AI Value Strategy Consultant</title>
     <company>Accenture</company>
@@ -2126,6 +2168,20 @@
     <date_posted>2026-10-21</date_posted>
     <age_days>30</age_days>
     <source>workday</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>eightfold-microsoft-1970393556939424</job_id>
+    <title>Microsoft Frontier Company - Principal Consultant, Data &amp; AI</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556939424</apply_url>
+    <office_location>Korea, Seoul, Seoul</office_location>
+    <region>International</region>
+    <date_posted>2026-10-20</date_posted>
+    <age_days>31</age_days>
+    <source>eightfold</source>
     <description/>
   </job>
   <job>
@@ -2841,6 +2897,48 @@
     <age_days>98</age_days>
     <source>ashby</source>
     <description>Who are we? Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems. We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that. We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a…</description>
+  </job>
+  <job>
+    <job_id>eightfold-microsoft-1970393556942264</job_id>
+    <title>Data and AI Security Consultant</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556942264</apply_url>
+    <office_location>India, Telangana, Hyderabad</office_location>
+    <region>International</region>
+    <date_posted>2026-08-07</date_posted>
+    <age_days>105</age_days>
+    <source>eightfold</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>eightfold-microsoft-1970393556942258</job_id>
+    <title>Data and AI Security Consultant</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556942258</apply_url>
+    <office_location>India, Telangana, Hyderabad</office_location>
+    <region>International</region>
+    <date_posted>2026-08-07</date_posted>
+    <age_days>105</age_days>
+    <source>eightfold</source>
+    <description/>
+  </job>
+  <job>
+    <job_id>eightfold-microsoft-1970393556950493</job_id>
+    <title>Principal Consultant - Dotnet Full stack &amp; AI</title>
+    <company>Microsoft</company>
+    <employer_type>Public affairs / policy</employer_type>
+    <bucket>Consulting</bucket>
+    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556950493</apply_url>
+    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
+    <region>International</region>
+    <date_posted>2026-08-06</date_posted>
+    <age_days>106</age_days>
+    <source>eightfold</source>
+    <description/>
   </job>
   <job>
     <job_id>ashby-openai-2b148425-b807-46a5-97e1-fae307aacb80</job_id>
