@@ -24,15 +24,15 @@
       "change": -1
     },
     {
-      "bucket": "Consulting",
-      "current": 77,
-      "prior": 81,
-      "change": -4
-    },
-    {
       "bucket": "Legal",
       "current": 57,
       "prior": 61,
+      "change": -4
+    },
+    {
+      "bucket": "Consulting",
+      "current": 77,
+      "prior": 81,
       "change": -4
     }
   ],
