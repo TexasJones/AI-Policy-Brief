@@ -1,19 +1,5 @@
 <?xml version="1.0" ?>
-<jobs generated="2026-11-27T13:33:22Z" count="208">
-  <job>
-    <job_id>eightfold-microsoft-1970393557070379</job_id>
-    <title>Data &amp; AI Consultant</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557070379</apply_url>
-    <office_location>India, Karnataka, Bangalore; India, Maharashtra, Mumbai</office_location>
-    <region>International</region>
-    <date_posted>2026-11-26</date_posted>
-    <age_days>1</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
+<jobs generated="2026-11-27T18:41:44Z" count="201">
   <job>
     <job_id>workday-accenture-14328924</job_id>
     <title>Data &amp; AI Consultant</title>
@@ -181,20 +167,6 @@
     <age_days>3</age_days>
     <source>ashby</source>
     <description>About the Team OpenAI’s Legal team plays a crucial role in advancing our mission by tackling innovative and fundamental legal issues in AI. The team includes professionals from diverse legal fields – technology, AI, infrastructure, privacy, IP, corporate, employment, tax, regulatory, and litigation – who collaborate closely with colleagues across the company. If you are passionate about being a technology lawyer working on cutting-edge challenges, you’ll thrive here. About the Role We are seeking an experienced commercial counsel to join our EMEA Commercial Legal team. You will support…</description>
-  </job>
-  <job>
-    <job_id>workday-accenture-R00373558</job_id>
-    <title>Life Sciences End-to-End Value Chain AI Transformation Consultant/Manager</title>
-    <company>Accenture</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Arlington-1201-Wilson-Corp/Life-Sciences-End-to-End-Value-Chain-AI-Transformation-Consultant-Manager_R00373558</apply_url>
-    <office_location/>
-    <region>US</region>
-    <date_posted>2026-11-23</date_posted>
-    <age_days>4</age_days>
-    <source>workday</source>
-    <description/>
   </job>
   <job>
     <job_id>greenhouse-scaleai-4752556005</job_id>
@@ -517,20 +489,6 @@
     <age_days>8</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic is seeking an exceptional Legal Program Manager to serve as the operational backbone of contracting for the Compute and Infrastructure team.…</description>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556657600</job_id>
-    <title>Principal Apps AI Consultant</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556657600</apply_url>
-    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
-    <region>International</region>
-    <date_posted>2026-11-19</date_posted>
-    <age_days>8</age_days>
-    <source>eightfold</source>
-    <description/>
   </job>
   <job>
     <job_id>ashby-openai-ecb1119c-0439-4b8d-938b-851b3ed84a02</job_id>
@@ -1177,20 +1135,6 @@
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the role&lt;/h2&gt; &lt;p&gt;Hardware is becoming critical to how AI gets built, and the legal questions are as new as the technology. We're hiring a Commercial Counsel, Hardware to help Anthropic's…</description>
   </job>
   <job>
-    <job_id>eightfold-microsoft-1970393557052950</job_id>
-    <title>Senior Consultant Data, AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557052950</apply_url>
-    <office_location>India, Karnataka, Bangalore; India, Telangana, Hyderabad</office_location>
-    <region>International</region>
-    <date_posted>2026-11-05</date_posted>
-    <age_days>22</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
     <job_id>ashby-openai-68b1e4ba-da3f-4712-ad14-8c12ebaa28a4</job_id>
     <title>Senior Counsel, AI Product (Enterprise/API)</title>
     <company>OpenAI</company>
@@ -1216,20 +1160,6 @@
     <date_posted>2026-11-04</date_posted>
     <age_days>23</age_days>
     <source>workday</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393557048490</job_id>
-    <title>Technology Consultant - Apps &amp; AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557048490</apply_url>
-    <office_location>Thailand, Multiple Locations, Multiple Locations</office_location>
-    <region>US</region>
-    <date_posted>2026-11-04</date_posted>
-    <age_days>23</age_days>
-    <source>eightfold</source>
     <description/>
   </job>
   <job>
@@ -1259,20 +1189,6 @@
     <age_days>24</age_days>
     <source>greenhouse</source>
     <description>&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Anthropic&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;Anthropic is looking for a Contracts Manager to support our commercial and technology transactions. You'll partner with our GTM teams on enterprise…</description>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393557050958</job_id>
-    <title>Technology Consultant - Data &amp; AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393557050958</apply_url>
-    <office_location>Singapore, Singapore, Singapore</office_location>
-    <region>International</region>
-    <date_posted>2026-11-03</date_posted>
-    <age_days>24</age_days>
-    <source>eightfold</source>
-    <description/>
   </job>
   <job>
     <job_id>ashby-openai-8d332d03-1f38-40e3-85be-b4c99231a896</job_id>
@@ -2769,20 +2685,6 @@
     <region>International</region>
     <date_posted>2026-08-07</date_posted>
     <age_days>112</age_days>
-    <source>eightfold</source>
-    <description/>
-  </job>
-  <job>
-    <job_id>eightfold-microsoft-1970393556950493</job_id>
-    <title>Principal Consultant - Dotnet Full stack &amp; AI</title>
-    <company>Microsoft</company>
-    <employer_type>Public affairs / policy</employer_type>
-    <bucket>Consulting</bucket>
-    <apply_url>https://apply.careers.microsoft.com/careers/job/1970393556950493</apply_url>
-    <office_location>India, Telangana, Hyderabad; India, Karnataka, Bangalore</office_location>
-    <region>International</region>
-    <date_posted>2026-08-06</date_posted>
-    <age_days>113</age_days>
     <source>eightfold</source>
     <description/>
   </job>
